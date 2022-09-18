@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Home{% endblock title %}
+{% block content %}
+<div class="container text-center">
+    <h1 class="my-2">Paradox</h1>
+    <ul class="nav nav-tabs border-warning border-bottom">
+        <li class="nav-item ms-auto">
+            <a class="nav-link link-warning fw-bold" href="#">Physics</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link link-warning fw-bold" href="#">Mathematics</a>
+        </li>
+        <li class="nav-item me-auto">
+            <a class="nav-link link-warning fw-bold" href="{% url 'programming' %}">Programing</a>
+        </li>
+    </ul>
+</div>
+{% endblock content %}
