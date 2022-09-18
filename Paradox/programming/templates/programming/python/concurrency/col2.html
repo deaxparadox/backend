@@ -7,7 +7,7 @@
 
     <div class="container-fluid mt-2">
         <div class="container-fluid d-flex justify-content-center">
-            <img class="h-100 w-100" src="../Static/Images/Concurrency.jpeg" alt="img not found">
+            <img class="h-100 w-100" src="{% static 'images/concurrency/concurrency.jpeg' %}" alt="img not found">
         </div>
         <div class="container-fluid text-center">
             <small>Fig 1. Concurrency vs parallelism</small>
@@ -291,7 +291,7 @@
         <div class="container mb-5" id="GIL">
             <h3>GIL (Global Interpretor Lock)</h3>
             <p class="m-3 text-secondary fs-6">
-                The GIL prevents one python process from executing mroe than one Python bytecode instruction at any given time. This means ethat event if we have multiple threads on a machine with multiple cores, a Pytho nprocess can have only one thread running Python code at a time.
+                The GIL prevents one python process from executing more than one Python bytecode instruction at any given time. This means that event if we have multiple threads on a machine with multiple cores, a Python process can have only one thread running Python code at a time.
                 <br><br>
                 When we say CPython is not "thread safe", we mean that if two or mroe threads modify a shread variable, that variable may end in an unexpected state. This unexpected state depends on the order on which that threads access the variable, commonly known as a "race condition".
                 <br><br>
