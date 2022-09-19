@@ -1,3 +1,5 @@
+{% load static %}
+
 <div id="Col1" class="col-lg-3 col-md-4">
                 
     <!-- Collapse Topic -->
@@ -8,31 +10,31 @@
                     <!-- Python -->
                     <a class="btn btn-primary m-2" data-bs-toggle="collapse" href="#PythonCollapse"
                         role="button" aria-expanded="false" aria-controls="PythonCollapse">
-                        Python
+                        <img src="{% static 'images/PythonLogoBW48px.png' %}" alt="" srcset="">
                     </a>
 
 
                     <!-- Javascript -->
-                    <a class="btn btn-primary m-2" data-bs-toggle="collapse" href="#JavascriptCollapse"
+                    <a class="btn btn-secondary m-2" data-bs-toggle="collapse" href="#JavascriptCollapse"
                         role="button" aria-expanded="false" aria-controls="JavascriptCollapse">
-                        Javascript
+                        <img src="{% static 'images/JavascriptLogoBW48px.png' %}" alt="" srcset="">
                     </a>
 
                     <!-- Rust -->
-                    <a class="btn btn-primary m-2" data-bs-toggle="collapse" href="#RustCollapse"
+                    <a class="btn btn-danger m-2" data-bs-toggle="collapse" href="#RustCollapse"
                         role="button" aria-expanded="false" aria-controls="RustCollapse">
-                        Rust
+                        <img src="{% static 'images/RustLogoBW48px.png' %}" alt="" srcset="">
                     </a>
 
 
                     <!-- C -->
-                    <a class="btn btn-primary m-2 " data-bs-toggle="collapse" href="#CCollapse"
+                    <a class="btn btn-light m-2 " data-bs-toggle="collapse" href="#CCollapse"
                         role="button" aria-expanded="false" aria-controls="CCollapse">
-                        C programming
+                        <img src="{% static 'images/CLogoBW48px.png' %}" alt="" srcset="">
                     </a>
 
                     <!-- Project -->
-                    <a class="btn btn-primary m-2 " data-bs-toggle="collapse" href="#ProjectCollapse"
+                    <a class="btn btn-success m-2 " data-bs-toggle="collapse" href="#ProjectCollapse"
                         role="button" aria-expanded="false" aria-controls="ProjectCollapse">
                         Project
                     </a>
@@ -45,39 +47,159 @@
     <div class="container-fluid">
         <div class="container-fluid text-bg-warning rounded-3  my-2">
             <div class="collapse pb-2" id="PythonCollapse">
-                <h5 class="pt-3">Python</h5>
-                <ul>
-                    <li>
-                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
-                            Django
-                        </a>
-                    </li>
-                    <li>
-                        <a href="{% url 'programming_python_concurrency' %}"
-                            class="Link d-block link-dark text-decoration-none bg-warning border-0">
-                            Concurrency
-                        </a>
-
-                    </li>
-                    <li>
-                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
-                            Networking
-                        </a>
-
-                    </li>
-                    <li>
-                        <a class="Link d-block link-dark text-decoration-none bg-warning border-0">Data
-                            science
-                        </a>
-                    </li>
-                    <li>
-                        <a class="Link d-block link-dark text-decoration-none bg-warning border-0">Neural
-                            networks
-                        </a>
-                    </li>
-                </ul>
-
-
+                <div class="container text-center">
+                    <h5 class="pt-3">Python</h5>
+                </div>
+                <table>
+                    <tr id="PlusMinusPythonBasics" class="list-unstyled" >
+                        <td>
+                            <!-- PythonBasics -->
+                            <a class="Link d-block link-dark text-decoration-none bg-warning border-0" data-bs-toggle="collapse"
+                                href="#PythonBasics" role="button" aria-expanded="false" aria-controls="PythonBasics">
+                                <i class="bi bi-caret-right-fill"></i> Basics
+                                <div class="collapse mt-2" id="PythonBasics">
+                                    <ul>
+                                        <li>
+                                            <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                                Data Types
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                                Variables
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                                Array
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                                Tuples
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                                Dictionary
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                                Statements and Expressions
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                                Functions
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                                Conditions
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                                Loops
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                                Control flow
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                                Comments
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                <i class="bi bi-caret-right"></i> Object Oriented Programming
+                            </a>
+                        </td>
+                    </tr>
+                    <tr id="PlusMinusPythonAdvance" class="list-unstyled" >
+                        <td>
+                            <!-- PythonAdvance -->
+                            <a class="Link d-block link-dark text-decoration-none bg-warning border-0" data-bs-toggle="collapse"
+                                href="#PythonAdvance" role="button" aria-expanded="false" aria-controls="PythonAdvance">
+                                <i class="bi bi-caret-right-fill"></i> Advance
+                                <div class="collapse mt-2" id="PythonAdvance">
+                                    <ul>
+                                        <li>
+                                            <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                                Class
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                                Decorator
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                                MetaClasses
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                                DataClasses
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                                Lambda
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                <i class="bi bi-caret-right"></i> Metaprogramming
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                <i class="bi bi-caret-right"></i> Modules
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                <i class="bi bi-caret-right"></i> Design
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="{% url 'programming_python_concurrency' %}" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                <i class="bi bi-caret-right"></i> Concurrency and Parallelism
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                <i class="bi bi-caret-right"></i> Networking
+                            </a>
+                        </td>
+                    </tr>
+                </table>
             </div>
         </div>
     </div>
@@ -109,21 +231,333 @@
     <div class="container-fluid ">
         <div class="container-fluid text-bg-warning rounded-3  my-2">
             <div class="collapse pb-2" id="RustCollapse">
-                <h5 class="pt-3">Rust</h5>
-                <ul>
-                    <li>
-                        <a href="#" class="Link ms-3 d-block link-dark text-decoration-none bg-warning border-0">Basics</a>
-                    </li>
-                </ul>
+                <div class="container-fluid text-center">
+                    <h5 class="pt-3">Rust</h5>
+                </div>
+                <table>
+                    <tr id="PlusMinusRustBasics" class="list-unstyled" >
+                        <td>
+                            <!-- RustBasics -->
+                            <a class="Link d-block link-dark text-decoration-none bg-warning border-0" data-bs-toggle="collapse"
+                                href="#RustBasics" role="button" aria-expanded="false" aria-controls="RustBasics">
+                                <i class="bi bi-caret-right-fill"></i> Basics
+                                <div class="collapse mt-2" id="RustBasics">
+                                    <ul>
+                                        <li>
+                                            <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                                Data Types
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                                Variables
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                                Mutablilty
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                                Functions
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                                Conditions
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                                Control flow
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                                Comments
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </td>
+                    </tr>
+                    
+                    <tr id="PlusMinusRustOwnership" class="list-unstyled" >
+                        <td>
+                            <!-- RustOwnership -->
+                            <a class="Link d-block link-dark text-decoration-none bg-warning border-0" data-bs-toggle="collapse"
+                                href="#RustOwnership" role="button" aria-expanded="false" aria-controls="RustOwnership">
+                                <i class="bi bi-caret-right-fill"></i> Ownership
+                                <div class="collapse mt-2" id="RustOwnership">
+                                    <ul>
+                                        <li><a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                                References
+                                            </a>
+                                        </li>
+                                        <li><a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                                Borrowing
+                                            </a>
+                                        </li>
+                                        <li><a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                                Slice Types
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr id="PlusMinusRustStructure" class="list-unstyled" >
+                        <td>
+                            <!-- RustStructure -->
+                            <a class="Link d-block link-dark text-decoration-none bg-warning border-0" data-bs-toggle="collapse"
+                                href="#RustStructure" role="button" aria-expanded="false" aria-controls="RustStructure">
+                                <i class="bi bi-caret-right-fill"></i> Structure
+                                <div class="collapse mt-2" id="RustStructure">
+                                    <ul>
+                                        <li><a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                                Defining and instantiating struct
+                                            </a>
+                                        </li>
+                                        <li><a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                                Methods syntax using impl 
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr id="PlusMinusRustEnum" class="list-unstyled" >
+                        <td>
+                            <!-- RustEnum -->
+                            <a class="Link d-block link-dark text-decoration-none bg-warning border-0" data-bs-toggle="collapse"
+                                href="#RustEnum" role="button" aria-expanded="false" aria-controls="RustEnum">
+                                <i class="bi bi-caret-right-fill"></i> Enum
+                                <div class="collapse mt-2" id="RustEnum">
+                                    <ul>
+                                        <li><a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                                Defining enum
+                                            </a>
+                                        </li>
+                                        <li><a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                                match contorl flow
+                                            </a>
+                                        </li>
+                                        <li><a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                                if-let
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr id="PlusMinusRustModules" class="list-unstyled" >
+                        <td>
+                            <!-- RustModules -->
+                            <a class="Link d-block link-dark text-decoration-none bg-warning border-0" data-bs-toggle="collapse"
+                                href="#RustModules" role="button" aria-expanded="false" aria-controls="RustModules">
+                                <i class="bi bi-caret-right-fill"></i> Modules
+                                <div class="collapse mt-2" id="RustModules">
+                                    <ul>
+                                        <li><a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                                Packages
+                                            </a>
+                                        </li>
+                                        <li><a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                                Crates
+                                            </a>
+                                        </li>
+                                        <li><a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                                Modules
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr id="PlusMinusRustCollection" class="list-unstyled" >
+                        <td>
+                            <!-- RustCollection -->
+                            <a class="Link d-block link-dark text-decoration-none bg-warning border-0" data-bs-toggle="collapse"
+                                href="#RustCollection" role="button" aria-expanded="false" aria-controls="RustCollection">
+                                <i class="bi bi-caret-right-fill"></i> Collection
+                                <div class="collapse mt-2" id="RustCollection">
+                                    <ul>
+                                        <li><a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                                Vectors
+                                            </a>
+                                        </li>
+                                        <li><a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                                Strings
+                                            </a>
+                                        </li>
+                                        <li><a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                                Hashmaps
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                <i class="bi bi-caret-right"></i> Error handling
+                            </a>
+                        </td>
+                    </tr>
+                    <tr id="PlusMinusRustGenericTraitLife">
+                        <td>
+                            <!-- RustGenericTraitLife -->
+                            <a class="Link d-block link-dark text-decoration-none bg-warning border-0" data-bs-toggle="collapse"
+                            href="#RustGenericTraitLife" role="button" aria-expanded="false" aria-controls="RustGenericTraitLife">
+                                <i class="bi bi-caret-right-fill"></i> Generic Types, Traits, and Lifetimes
+                                <div class="collapse mt-2" id="RustGenericTraitLife">
+                                    <ul>
+                                        <li>
+                                            <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                                Generic Types
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                                Traits
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                                Lifetimes
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                <i class="bi bi-caret-right"></i> Automated Tests
+                            </a>
+                        </td>
+                    </tr>
+                    
+                    <tr id="PlusMinusRustProjects">
+                        <td>
+                            <!-- RustProjects -->
+                            <a class="Link d-block link-dark text-decoration-none bg-warning border-0" data-bs-toggle="collapse"
+                            href="#RustProjects" role="button" aria-expanded="false" aria-controls="RustProjects">
+                                <i class="bi bi-caret-right-fill"></i> Projects
+                                <div class="collapse mt-2" id="RustProjects">
+                                    <ul>
+                                        <li>
+                                            <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                                Command Line Program
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                                Multithreaded Web Server
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                                Lifetimes
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                <i class="bi bi-caret-right"></i> Smart Pointers
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                <i class="bi bi-caret-right"></i> Concurrency
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                <i class="bi bi-caret-right"></i> Object Oriented Programming
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                <i class="bi bi-caret-right"></i> Pattern and Matching
+                            </a>
+                        </td>
+                    </tr>
+                    <tr id="PlusMinusRustAdvance">
+                        <td>
+                            <!-- RustAdvance -->
+                            <a class="Link d-block link-dark text-decoration-none bg-warning border-0" data-bs-toggle="collapse"
+                            href="#RustAdvance" role="button" aria-expanded="false" aria-controls="RustAdvance">
+                                <i class="bi bi-caret-right-fill"></i> Advance
+                                <div class="collapse mt-2" id="RustAdvance">
+                                    <ul>
+                                        <li>
+                                            <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                                Unsafe Rust
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                                Advance Trait
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                                Advance Type
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                                Advance Functions and Closures
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                                Macro
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </td>
+                    </tr>
+                    
+                </table>
             </div>
         </div>
     </div>
+
+    
+
 
     <!-- CCollapse -->
     <div class="container-fluid ">
         <div class="container-fluid text-bg-warning rounded-3 border-0 my-2">
             <div class="collapse pb-2" id="CCollapse">
-                <h5 class="pt-3">C programming</h5>
+                <div class="container-fluid text-center">
+                    <h5 class="pt-3">C programming</h5>
+                </div>
                 <ul>
                     <li>
                         <a href="#" class="Link ms-3 d-block link-dark text-decoration-none bg-warning border-0">
@@ -218,7 +652,7 @@
 
 
     <!-- Select topic content -->
-    <div id="Col1Col3" class="container-fluid sticky-top pt-3">
+    <div id="Col1Col3" class="container-fluid sticky-top pt-0">
         <!-- Collapse Topic -->
         <div class="container-fluid text-bg-warning rounded-3 py-3 my-3">
 
