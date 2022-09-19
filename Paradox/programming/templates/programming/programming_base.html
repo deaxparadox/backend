@@ -6,7 +6,7 @@
 {% include "programming/include/navbar.html" %}
 
 {% comment %} MAIN {% endcomment %}
-<div class="container-fluid">
+<div class="container-fluid mb-5">
     
     <div class="row">
         {% block row %}{% endblock row %}
@@ -15,7 +15,5 @@
 </div>
 
 {% comment %} FOOTER {% endcomment %}
-<div class="container-fluid" id="Footer">
-    {% include "programming/include/footer.html" %}
-</div>
+{% include "programming/include/footer.html" %}
 {% endblock content %}
