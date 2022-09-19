@@ -6,16 +6,16 @@ $(document).ready(function () {
 
         $("#Col3").hide();
         // $("#Col1#Col2").removeClass()
-        $(".Redirect").mouseover(function () {
-            $(this).addClass("")
-        })
-        $(".Redirect").mouseout(function () {
-            $(this).removeClass("")
-        })
+        // $(".Redirect").mouseover(function () {
+        //     $(this).addClass("")
+        // })
+        // $(".Redirect").mouseout(function () {
+        //     $(this).removeClass("")
+        // })
     
     
-        $(".Link").addClass("text-decoration-underline")
-        $(".LinkInverse").addClass("border-1 border-warning border-bottom")  
+        // $(".Link").addClass("text-decoration-underline")
+        // $(".LinkInverse").addClass("border-1 border-warning border-bottom")  
         
         // $("#Col3Move").removeClass("sticky-top")
         $("#Col3Move").appendTo("#Col1Col3");
