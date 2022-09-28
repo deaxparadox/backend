@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+
+{% block title %}Counter{% endblock title %}
+{% block content %}
+
+
+<style>
+    .col-md-6 {
+        margin-top: 180px !important;
+    }
+
+    button {
+        margin: 20px !important;
+    }
+</style>
+
+
+<div class="container ">
+    <div class="d-flex justify-content-center">
+        <div class="col-md-6 text-center border border-3 border-light p-5">
+            <h1>Javascript Counter</h1>
+            <h1 id="number">0</h1>
+
+            <button onclick="increment()" class="btn btn-success">INCREMENT</button>
+            <button onclick="decrement()" class="btn btn-danger">DECREMENT</button>
+            <button onclick="neutral()" class="btn btn-primary">NEUTRAL</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    increment = () => {
+        increase = document.getElementById("number")
+        number = Number(increase.innerHTML) + 1;
+        console.log(number);
+        increase.innerHTML = number;
+
+    }
+
+    decrement = () => {
+        decrease = document.getElementById("number")
+        number = Number(decrease.innerHTML) - 1;
+        console.log(number);
+        decrease.innerHTML = number;
+
+    }
+
+    neutral = () => {
+        neut = document.getElementById("number")
+        number = 0;
+        console.log(number);
+        neut.innerHTML = number;
+
+    }
+</script>
+
+{% endblock content %}

@@ -1,12 +1,12 @@
-$(document).ready(function () {
+// $(document).ready(function () {
     // Adjust column accout to width
     let Width = window.innerWidth;
     if (Width < 1200) {
         console.log("width less than 1200px")
 
-        $("#Col3").hide();
-        // $("#Col1#Col2").removeClass()
-        // $(".Redirect").mouseover(function () {
+        // $("#Col3").hide();
+        // // $("#Col1#Col2").removeClass()
+        // $(".Redirect").click(function () {
         //     $(this).addClass("")
         // })
         // $(".Redirect").mouseout(function () {
@@ -21,6 +21,8 @@ $(document).ready(function () {
         $("#Col3Move").appendTo("#Col1Col3");
         $("#Col3").empty();
     }
+
+
 
 
 
@@ -48,4 +50,4 @@ $(document).ready(function () {
         $(this).removeClass("border-2 border-warning border-bottom")
     })
 
-})
+// })

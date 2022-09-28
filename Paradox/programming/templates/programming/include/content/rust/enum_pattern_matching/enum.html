@@ -1,0 +1,401 @@
+{% load static %}
+<!-- Col2 -->
+<!-- Content -->
+<div id="Col2" class="col-lg-6 col-md-8">
+    <div class="container text-center text-bg-warning rounded mt-2">
+        <ul class="bg-warning py-2">
+            <li class="list-unstyled d-inline">
+                <a href="../programming.html" class="Link text-decoration-none text-dark">
+                    programming</a>
+            </li>
+            <li class="list-unstyled text-dark d-inline">/</li>
+            <li class="list-unstyled d-inline">
+                <a href="../rust.html" class="Link text-decoration-none text-dark">
+                    rust</a>
+            </li>
+            <li class="list-unstyled text-dark d-inline">/</li>
+            <li class="list-unstyled d-inline">
+                <a href="{% url 'programming_rust_enum_enum' %}" class="Link text-decoration-none text-dark">
+                    enum</a>
+            </li>
+        </ul>
+    </div>
+
+    <div id="Enum" class="container mt-4">
+    
+        <div class="container">
+            <h3>Enum</h3>
+        </div>
+        
+        <div class="container">
+            <p class="m-3 text-secondary fs-6">
+                Structs in rust give you a way of grouping together related fields and data, like a Rectangle with its width and heights, enums give you a way to saying a value is one of a possible set of values. For example if you want to say that like <i>Circle</i> and <i>Triangle</i>, <i>Rectangle</i> is also one of a set of possible shapes. 
+                <br>
+                <br>
+                Let's <i>enumerate</i> <i>IP addresses</i>. Currently, two major standards are used for IP addresses: <i>V4 (version four)</i> and <i>V6 (version six)</i>. We can enumerate all possible variants, which is where enumeration get its name. Any IP address can be either a V4 or a V6 address, but not both at the same time. That property of IP addresses makes the enum data structure appropriate, because an enum value can only be one of its variants. Both V4 and V6 addresses are still fundamentally IP addresses, so they should be treated as the same type when the code is handling situations that apply to any kind of IP address.
+            </p>
+        </div>
+
+    
+        <div class="container">
+            <p class="m-3 text-secondary fs-6">
+                We are going to define an <i>IpAddrKind</i> enumeration and listing all possible kinds an IP address can be, <i>V4</i> and <i>V6</i>. These are the variants of the enum. 
+            </p>
+        </div>
+        
+        <div class="container p-2">
+
+            <pre class="rounded-3">
+                <code class="language-rust">
+        enum IpAddrKind {
+            V4,
+            V6,
+        }
+                </code>
+            </pre>
+        </div>
+        
+        <div class="container">
+            <p class="m-3 text-secondary fs-6">
+                <i>IpAddrKind</i> is now a custom data type. We can now create instances of each of two variants of <i>IpAddrKind</i>.
+            </p>
+        </div>
+
+        <div class="container p-2">
+            <pre class="rounded-3">
+                <code class="language-rust">
+        let four: IpAddrKind = IpAddrKind::V4;
+        let six: IpAddrKind = IpAddrKind::V6;
+                </code>
+            </pre>
+        </div>
+        
+        <div class="container">
+            <p class="m-3 text-secondary fs-6">
+                The variants of the enum are namespaced under its identifier, and we use a double colon to separate the two. Both values <i>IpAddrKind::V4</i> and <i>IpAddrKind::V6</i> are of the same type: <i>IpAddrKind</i>.
+            </p>
+        </div>
+        
+        <div class="container">
+            <p class="m-3 text-secondary">
+                We can now, define a function that takes any <i>IpAdd</i>:
+            </p>
+        </div>
+        
+        <div class="container p-2">
+            <pre class="rounded-3">
+                <code class="language-rust">
+        fn route(ip_kind: IpAddrKind) {}
+                </code>
+            </pre>
+        </div>
+        
+        <div class="container">
+            <p class="m-3 text-secondary">
+                We can call this function with either variant:
+            </p>
+        </div>
+        
+        <div class="container p-2">
+            <pre class="rounded-3">
+                <code class="language-rust">
+        route(IpAddrKind::V4);
+        route(IpAddrKind::V6);
+                </code>
+            </pre>
+        </div>
+
+        <div class="container">
+            <p class="m-3 text-secondary">
+                Full code:
+            </p>
+        </div>
+
+        <div class="container p-2">
+            <pre class="rounded-3">
+                <code class="language-rust">
+        enum IpAddrKind {
+            V4,
+            V6,
+        }
+        
+        fn main() {
+            let four: IpAddrKind = IpAddrKind::V4;
+            let six: IpAddrKind = IpAddrKind::V6;
+        
+            route(IpAddrKind::V4);
+            route(IpAddrKind::V6);
+        }
+        
+        fn route(ip_kind: IpAddrKind) {}
+                </code>
+            </pre>
+        </div>
+
+        <div id="EnumDataInEnum" class="container">
+            <h3 class="mt-3" id="">
+                Data in Enum
+            </h3>
+        </div>
+
+        <div class="container">
+            <p class="m-3 text-secondary">
+                We can put data directly into each enum variant.
+            </p>
+        </div>
+
+        <div class="container p-2">
+            <pre class="rounded-3">
+                <code class="language-rust">
+        enum IpAddr {
+            V4(String),
+            V6(String),
+        }
+        
+        fn main() {
+            let home: IpAddr = IpAddr::V4(String::from("127.0.0.1"));
+            let loopback: IpAddr = IpAddr::V6(String::from("::1"));
+        }
+                </code>
+            </pre>
+        </div>
+        <div class="container">
+            <p class="m-3 text-secondary">
+                We attach data to each varaint of the enum directly. Another thing to notice: the name of each enum variant that we define also becomes a function that constructs an instance of the enum. The is, <i>IpAddr::V4()</i> is a function call that takes a <i>String</i> argument and returns an instance of the <i>IpAddr</i>. We automatically get this constructor function defined as a result of defining the enum.
+            </p>
+        </div>
+
+        <div id="EnumDataInEnumUsingStruct" class="container">
+            <h6 class="mt-3" id="">
+                Data in enum using struct
+            </h6>
+        </div>
+
+        <div class="container">
+            <p class="m-3 text-secondary">
+                We can also use struct to store data of enum.
+            </p>
+        </div>
+
+        <div class="container p-2">
+            <pre class="rounded-3">
+                <code class="language-rust">
+        enum IpAddrKind {
+            V4,
+            V6,
+        }
+        
+        struct IpAddr {
+            kind: IpAddrKind,
+            address: String,
+        }
+        
+        fn main() {
+                
+            let home = IpAddr {
+                kind: IpAddrKind::V4,
+                address: String::from("127.0.0.1"),
+            };
+        
+            let loopback = IpAddr {
+                kind: IpAddrKind::V6,
+                address: String::from("::1"),
+            };
+        }
+                </code>
+            </pre>
+        </div>
+
+        <div class="container">
+            <p class="m-3 text-secondary">
+                This struct <i>IpAddr</i> that has two field: a <i>kind</i> field that is of type <i>IpAddrKind</i>, and and <i>address</i> field of type <i>String</i>. The second instance is <i>loopback</i>. It has the other variant of <i>IpAddrKind</i> as its kind value, <i>V6</i>, and has address <i>::1</i> associated with it. We've used a struct to bundle the kind and "address" values together, so now the variant is associated with the value.
+            </p>
+        </div>
+        
+
+        <div id="EnumVariantsDifferentTypes" class="container pt-2">
+            <h3>Enum variants of different types:</h3>
+        </div>
+
+        <div class="container">
+            <p class="m-3 text-secondary">
+                In enum each variant can have different types of amounts of associated data. Version of type IP addresses will always have four numeric components that will have values between 0 and 255. If we want to store <I>V4</I> address as four <i>u8</i> values but still express <i>V6</i> addresses as one <i>String</i> value.
+            </p>
+        </div>
+
+        <div class="container p-2">
+            <pre class="rounded-3">
+                <code class="language-rust">
+        enum IpAddr {
+            V4(u8, u8, u8, u8),
+            V6(String),
+        }
+        
+        fn main() {
+            let home: IpAddr = IpAddr::V4(127, 0, 0, 1);
+            let loopback: IpAddr = IpAddr::V6(String::from("::11"));
+        }
+                </code>
+            </pre>
+        </div>
+
+
+        <div class="container">
+            <p class="m-3 text-secondary">
+                This one has a wide variety of types embedded in its variants.
+                <br>
+                In this example enum has four variants with different types:
+                <ul>
+                    <li class="text-secondary">
+                        <i>Quit</i> has not data associated with it at all.
+                    </li>
+                    <li class="text-secondary">
+                        <i>Move</i> has name fields like a struct does.
+                    </li>
+                    <li class="text-secondary">
+                        <i>Write</i> includes a single <i>String</i>.
+                    </li>
+                    <li class="text-secondary">
+                        <i>ChangeColor</i> inlcudes three <i>i32</i> values.
+                    </li>
+                </ul>
+            </p>
+        </div>
+
+        <div id="EnumMessage" class="container p-2">
+            <pre class="rounded-3">
+                <code class="language-rust">
+        enum Message {
+            Quit,
+            Move {
+                x: i32, 
+                y: i32,
+            },
+            Write(String),
+            ChangeColor(i32, i32, i32),
+        }                    
+                </code>
+            </pre>
+        </div>
+
+        <div class="container">
+            <p class="m-3 text-secondary">
+                If we try to implement above example in <i>struct</i> definitions, we have to define different kinds of <i>struct</i> definitions. The following structs could hold the same data that the preceding enum variants hold:
+            </p>
+        </div>
+
+        <div class="container p-2">
+            <pre class="rounded-3">
+                <code class="language-rust">
+        // unit struct
+        struct QuitMessage;
+
+        struct MoveMessage {
+            x: i32,
+            y: i32,
+        }
+
+        // tuple struct
+        struct WriteMessage(String);
+
+        // type struct
+        struct ChangeColorMessage(i32, i32, i32);
+                </code>
+            </pre>
+        </div>
+
+        <div class="container">
+            <p class="m-3 text-secondary">
+                But if we used the different structs, which each have their own type, we couldn't easily define a function to take any of these kinds of messages as we could with the <i>Message</i> enum defined <i><a class="text-decoration-none text-primary" href="#EnumVariantsDifferentTypes">here</a></i>, which is a single
+            </p>
+        </div>
+
+
+       
+
+        <div id="EnumMethods" class="container  mt-3">
+            <h3 class="" id="">
+                Enum Methods
+            </h3>
+        </div>
+
+        <div class="container">
+            <p class="m-3 text-secondary">
+                There is one more similarity between enums and structs: just we're able to define methods on struct using <i>impl</i>, we're also able to define methods on enums. Here's a method named call that we could define on our <i><a class="text-decoration-none  text-primary" href="#EnumMessage">Message</a></i>
+            </p>
+        </div>
+
+        <div class="container p-2">
+            <pre class="rounded-3">
+                <code class="language-rust">
+        enum Message {
+            Quit,
+            Move {
+                x: i32, 
+                y: i32,
+            },
+            Write(String),
+            ChangeColor(i32, i32, i32),
+        }
+        
+        impl Message {
+            fn call(&self) {
+            // write some thing
+            }
+        }
+        
+        fn main() {
+            let m = Message::Write(String::from("hell"));
+        }
+                </code>
+            </pre>
+        </div>
+
+        <div id="OptionEnum" class="container mt-3">
+            <h3>Option enum</h3>
+        </div>
+
+        <div class="container">
+            <p class="text-secondary m-3">
+                Tis enum is defined by Rust Standard Library. The <i>Option</i> type encodes the very common scenario in which a value could be something or it could be nothing. Rust doesn't have the null feature that many other languages have. <i>Null</i> is a vlaue that means there is not value there. In languages with null, variables can always be in one of two states: null or not-null.
+            </p>
+        </div>
+
+        <div class="container p-2">
+            <pre class="rounded-3">
+                <code class="language-rust">
+        enum Option<T> {
+            None, 
+            Some(T),
+        }                    
+                </code>
+            </pre>
+        </div>
+
+        <div class="container">
+            <p class="m-3 text-secondary">
+                The <i>&ltT&gt</i> is a feature of Rust. It's a generic type parameter. It means the <i>Some</i> variant of the <i>Option</i> enum can hold one piece of data of any type, and that each concrete type that gets tused in place of <i>T</i> makes the overall <i>Option&ltT&gt</i> type a different type.
+            </p>
+
+            <p class="m-3 text-secondary">
+                Examples of using <i>Option</i> values to hold number types and string types:
+            </p>
+        </div>
+
+        <div class="container p-3">
+            <pre class="rounded-3">
+                <code class="language-rust">
+        use std::option::Option;
+
+        fn main() {
+            let some_number: Option<i32> = Some(5);
+            let some_char: Option<char> = Some('e');
+        
+            let absent_number: Option<i32> = None;
+        }}                           
+                </code>
+            </pre>
+        </div>
+        <!-- code before here -->
+    </div>
+</div>

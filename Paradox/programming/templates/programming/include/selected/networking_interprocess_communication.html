@@ -1,0 +1,29 @@
+{% extends 'programming/include/col1.html' %}
+
+{% block selected %}
+    <!-- Select topic content -->
+<div id="Col1Col3" class="container-fluid sticky-top pt-3">
+    <!-- Collapse Topic -->
+    <div class="container-fluid text-bg-warning rounded-3 py-3 my-3">
+
+        <!-- content goes here -->
+        <div class="container-fluid">
+            <h5 class="text-center">
+                Networking and Interprocess Communication
+            </h5>
+        </div>
+        <ul>
+            <li><a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">asyncio</a></li>
+            <li><a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">socket</a></li>
+            <li><a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">ssl</a></li>
+            <li><a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">select</a></li>
+            <li><a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">selector</a></li>
+            <li><a href="{% url 'programming_py_net_inter_com_signal' %}" class="Link d-block link-dark text-decoration-none bg-warning border-0">signal</a></li>
+            <li><a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">mmap</a></li>
+        </ul>
+
+        
+    </div>
+
+</div>
+{% endblock selected %}

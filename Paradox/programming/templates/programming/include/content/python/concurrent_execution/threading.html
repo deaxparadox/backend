@@ -1,0 +1,269 @@
+{% load static %}
+<div id="Col2" class="col-lg-6 col-md-8">
+
+    {% comment %} position bar {% endcomment %}
+    <div class="container text-center text-bg-warning rounded mt-2">
+        <ul class="bg-warning py-2">
+            <li class="list-unstyled d-inline">
+                <a href="{% url 'programming' %}" class="Link text-decoration-none text-dark">
+                    programming
+                </a>
+            </li>
+            <li class="list-unstyled text-dark d-inline">/</li>
+            <li class="list-unstyled d-inline">
+                <a href="{% url 'programming_py' %}" class="Link text-decoration-none text-dark">
+                    python
+                </a>
+            </li>
+            <li class="list-unstyled text-dark d-inline">/</li>
+            <li class="list-unstyled d-inline">
+                <a href="{% url 'programming_py_concurrent_execution_threading' %}" class="Link text-decoration-none text-dark">
+                    threading
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="container-fluid mt-2">
+        <div class="container-fluid d-flex justify-content-center">
+            <img class="h-100 w-100" src="{% static 'images/concurrency/PythonThreading' %}" alt="img not found">
+        </div>
+        <div class="container-fluid text-center">
+            <small>Fig 1. Threading</small>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <div class="container">
+            <h3>Threading</h3>
+        </div>
+        
+        <div class="container">
+            <p class="m-3 text-secondary">
+                This module constructs higher-level threading interfaces on top of the lower level <a class="Link text-primary" href="#">_thread</a> module.
+            </p>
+        </div>
+
+        <div class="container">
+            <p class="m-3 text-info">
+                <b>CPython implementation detail:</b> In CPython, due to the <a href="http://localhost:8000/prog/py/concurrent/#GIL" class="Link text-primary">Global Interpretor Lock (GIL)</a>, only one thread can execute Python code at once. If you want you application to make better use of the computational resources of multi-core machines, you should use <a href="http://localhost:8000/prog/py/concurrent/#GIL" class="Link text-primary">multiprocessing</a> or <a href="http://localhost:8000/prog/py/concurrent/#GIL" class="Link text-primary">concurrent.futures.ProcessPoolExecutor</a>. However, if you want to run I/O-bound tasks simultaneously, this is appropriate model.
+            </p>
+        </div>
+
+
+        <div id="ThreadingThreadObject" class="container">
+            <h3>Thread Object</h3>
+        </div>
+
+        <div class="container">
+            <p class="m-3 text-secondary">
+                Our first program will run 5 task simultaneously. We are using Thread <i>object</i> to create threads, then we call start method of it to run those threads.
+            </p>
+        </div>
+
+        <div class="container p-2">
+            <pre class="rounded-3">
+                <code class="language-python">
+        import threading
+        from time import * 
+        
+        def worker():
+            print("Started at {}".format(strftime("%Y-%m-%d:%H%M%S")))
+            sleep(1)
+            print("Completed at {}".format(strftime("%Y-%m-%d:%H%M%S")))
+        
+        
+        def main():
+            for i in range(5):
+                threading.Thread(
+                    target=worker
+                ).start()
+        
+        if __name__ == "__main__":
+            main()
+                </code>
+            </pre>
+        </div>
+
+        <!-- sub classing -->
+        <div id="ThreadingSubclassingThreadObject" class="container">
+            <h6 class="mt-3" id="">
+                Subclassing Thread Object
+            </h6>
+        </div>
+        
+        <div class="container">
+            <p class="m-3 text-secondary">
+                In this example we are going to use inheritance, by inheriting the Thread class in our <i>Worker</i> class.We're also going to name each thread.
+            </p>
+        </div>
+
+        <div class="container p-2">
+            <pre class="rounded-3">
+                <code class="language-python">
+        import threading
+        from time import * 
+        
+        # inheriting the Thread class
+        class Worker(threading.Thread):
+            def __init__(self, *args, **kwargs):
+                super().__init__(*args, **kwargs)
+        
+            def run(self):
+                print("Started at {}".format(strftime("%Y-%m-%d:%H%M%S")))
+                sleep(1)
+                print("Completed at {}".format(strftime("%Y-%m-%d:%H%M%S")))
+        
+        
+        def main():
+        
+            for i in range(5):
+                t = Worker()
+        
+                #  naming our threads
+                t.start()
+                
+        if __name__ == "__main__":
+            main()
+                </code>
+            </pre>
+        </div>
+
+        <div class="container">
+            <p class="m-3 text-secondary">
+                Here, <i>t.name</i> is used to give name to thread, <i>name</i> is variable defined in <i>Thread</i> Object.
+                <br>
+            </p>
+        </div>
+
+
+        <!-- argument and thread name -->
+        <div id="ThreadingThreadObjectArgumentsAndName" class="container">
+            <h6 class="mt-3" id="">
+                Passing Arguments and Thread Name
+            </h6>
+        </div>
+
+        <div class="container">
+            <p class="m-3 text-secondary">
+                Passing arguments <i>(*args)</i> or keywords argument <i>(**kwargs)</i> is very easy. When we pass our worker function as target to Thread Object, we can also give our args (or kwargs) to the function with <i>args (or kwargs)</i>.
+                <br>
+            </p>
+        </div>
+
+        <div class="container p-2">
+            <pre class="rounded-3">
+                <code class="language-python">
+        import threading
+        from time import * 
+        
+        def worker(*args, **kwargs) -> None:
+            # using thread name
+            t_name: str = threading.current_thread().name
+            
+            print("{} started at {}".format(t_name, strftime("%Y-%m-%d:%H%M%S")))
+            print("\n{} provide {} with value {}.\n".format(kwargs["name"], t_name, args[0]))
+            sleep(1)
+            print("{} completed at {}".format(t_name, strftime("%Y-%m-%d:%H%M%S")))
+        
+        def main() -> None:
+            for i in range(5):
+                # Creating thread
+                t = threading.Thread(
+                    target=worker,
+                    args=(i,),
+                    kwargs={"name": "paradox",},
+                )
+        
+                #  naming our threads
+                tname = "worker_" + str(i)     
+                t.name = tname
+        
+                # starting threads
+                t.start()
+                
+        if __name__ == "__main__":
+            main()
+                </code>
+            </pre>
+        </div>
+
+
+        <!-- Lock Object -->
+        <div id="#ThreadingLockObject" class="container">
+            <h6 class="mt-3" id="">
+                Lock Object
+            </h6>
+        </div>
+
+        <div class="container">
+            <p class="m-3 text-secondary">
+                In the <i>Race Condition</i>, many threads simultaneously try to access value and modify, this can lead to error in application, because some might get modified value, while other get old value. This could result in severe damage. 
+                <br>
+                <br>
+                To avoid error in <i>Race Condition</i> we use <i>Lock</i> Object, threads acquire lock one at a time, and modify value.
+                <br>
+            </p>
+        </div>
+
+        <div class="container p-2">
+            <pre class="rounded-3">
+                <code class="language-python">
+        import threading
+        from time import * 
+        
+        class lock_increment:
+            lock = threading.Lock()
+            number: int = 0
+        
+        def worker(*args, **kwargs) -> None:
+            t_name: str = threading.current_thread().name
+            
+            while lock_increment.lock.locked():
+                print("{:>10}: locked".format(t_name))
+                sleep(1)
+            else:
+                lock_increment.lock.acquire()
+                print("{:>10}: lock acquired".format(t_name))
+                print("{:>10}: incrementing value".format(t_name))
+                lock_increment.number += 1
+                print("{:>10}: value is {}".format(t_name, lock_increment.number))
+                lock_increment.lock.release()
+                
+            
+        def main() -> None:
+            for i in range(2):
+                # Creating thread
+                t = threading.Thread(
+                    target=worker,
+                    args=(i,),
+                    kwargs={"name": "paradox",},
+                )
+        
+                #  naming our threads
+                tname = "worker_" + str(i)     
+                t.name = tname
+        
+                # starting threads
+                t.start()
+                
+        if __name__ == "__main__":
+            main()
+                </code>
+            </pre>
+        </div>
+
+
+
+
+            
+        <!-- See also  -->
+        <div id="SeeAlso" class="container">
+            <p class="m-3 text-info">
+                ...
+            </p>
+        </div>
+
+        <!-- code before here -->
+    </div>
+</div>

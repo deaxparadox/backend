@@ -6,6 +6,3 @@ from django.views import generic
 class ProgramingView(generic.TemplateView):
     template_name: str = "programming/index.html"
 
-
-class PythonConcurrencyView(generic.TemplateView):
-    template_name: str = "programming/python/concurrency.html"

@@ -1,9 +1,24 @@
 {% load static %}
 <div id="Col2" class="col-lg-6 col-md-8">
+
+    {% comment %} position bar {% endcomment %}
     <div class="container text-center text-bg-warning rounded mt-2">
-        <p class="fs-3 fw-bold py-2"><a class="text-decoration-none link-dark"
-                href="{% url 'programming' %}">Programming</a>
-        </p>
+        <ul class="bg-warning py-2">
+            <li class="list-unstyled d-inline">
+                <a href="{% url 'programming' %}" class="Link text-decoration-none text-dark">
+                    programming</a>
+            </li>
+            <li class="list-unstyled text-dark d-inline">/</li>
+            <li class="list-unstyled d-inline">
+                <a href="{% url 'programming_py' %}" class="Link text-decoration-none text-dark">
+                    python</a>
+            </li>
+            <li class="list-unstyled text-dark d-inline">/</li>
+            <li class="list-unstyled d-inline">
+                <a href="{% url 'programming_py_concurrent_execution' %}" class="Link text-decoration-none text-dark">
+                    concurrency</a>
+            </li>
+        </ul>
     </div>
 
     <div class="container-fluid mt-2">
@@ -134,7 +149,7 @@
         <div class="container mb-5" id="ConcurrencyVsParallelism">
             <h3>Concurrency vs Parallelism</h3>
             <p class="m-3 text-secondary fs-6">
-                Concurrency is about multiple tasks that can happend independently from one another. We can have concurrency on a CPU with on one core, as the operation will employ "preemptive multitasking" to switch between tasks.
+                Concurrency is about multiple tasks that can happend independently from one another. We can have concurrency on a CPU with on one core, as the operation will employ <i>preemptive multitasking</i> to switch between tasks.
                 <br><br>
                 Parallelism means that we must be executing two or more tasks at the same time. One a machine with one core, that is not possible. To make this possible, we need a CPU with multiple cores that can run two tasks together.
             </p>

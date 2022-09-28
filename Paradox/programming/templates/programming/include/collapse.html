@@ -1,0 +1,1966 @@
+{% load static %}
+
+<!-- Collapse Topic -->
+<div class="container">
+    {% comment %} <div class="container-fluid"> {% endcomment %}
+        <div class="container-fluid rounded-3 my-2 ">
+            <p class="text-center">
+                <!-- Python -->
+                <a class="btn btn-warning m-1" data-bs-toggle="collapse" href="#PythonCollapse"
+                    role="button" aria-expanded="false" aria-controls="PythonCollapse">
+                    <img src="{% static 'images/PythonLogoBW32px.png' %}" alt="" srcset="">
+                </a>
+
+
+                <!-- Rust -->
+                <a class="btn btn-warning m-1" data-bs-toggle="collapse" href="#RustCollapse"
+                    role="button" aria-expanded="false" aria-controls="RustCollapse">
+                    <img src="{% static 'images/RustLogoBW32px.png' %}" alt="" srcset="">
+                </a>
+
+
+                <!-- C -->
+                <a class="btn btn-warning  m-1" data-bs-toggle="collapse" href="#CCollapse"
+                    role="button" aria-expanded="false" aria-controls="CCollapse">
+                    <img src="{% static 'images/CLogoBW32px.png' %}" alt="" srcset="">
+                </a>
+
+                <!-- Javascript -->
+                <a class="btn btn-warning m-1" data-bs-toggle="collapse" href="#JavascriptCollapse"
+                    role="button" aria-expanded="false" aria-controls="JavascriptCollapse">
+                    <img src="{% static 'images/JavascriptLogoBW32px.png' %}" alt="" srcset="">
+                </a>
+
+                <!-- Django -->
+                <a class="btn btn-warning m-1" data-bs-toggle="collapse" href="#DjangoCollapse"
+                    role="button" aria-expanded="false" aria-controls="DjangoCollapse">
+                    <img src="{% static 'images/DjangoBW32px.png' %}" alt="">
+                </a>
+
+                <!-- Project -->
+                <a class="btn btn-warning m-1" data-bs-toggle="collapse" href="#ProjectCollapse"
+                    role="button" aria-expanded="false" aria-controls="ProjectCollapse">
+                    Project
+                </a>
+            </p>
+        </div>
+    {% comment %} </div> {% endcomment %}
+</div>
+
+<!-- PythonCollapse -->
+<div class="container-fluid">
+    <div class="container-fluid text-bg-warning rounded-3  my-2">
+        <div class="collapse pb-2" id="PythonCollapse">
+            <div class="container text-center">
+                <h5 class="pt-3">
+                    <a href="{% url 'programming_py' %}" class="Link text-decoration-none text-dark">Python</a>
+                </h5>
+            </div>
+            
+            <div>
+                <div id="CaretUpDownPythonBasics" class="list-unstyled" >
+                        <!-- PythonBasics -->
+                        <a class="Link d-block link-dark text-decoration-none bg-warning border-0" data-bs-toggle="collapse"
+                            href="#PythonBasics" role="button" aria-expanded="false" aria-controls="PythonBasics">
+                            <i class="bi bi-caret-right-fill"></i> Basics
+                        </a>
+                        <div class="collapse mt-2" id="PythonBasics">
+                            <ul>
+                                <li>
+                                    <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                        Data Types and Variables
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                        Comments
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                        Arrays and Tuples
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                        Dictionary
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                        Statements and Expressions
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                        Functions
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                        Modules
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                        Scopes and Namespaces
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                </div>
+                
+                <div id="CaretUpDownPythonIntermediate" class="list-unstyled" >
+                        <!-- PythonIntermediate -->
+                        <a class="Link d-block link-dark text-decoration-none bg-warning border-0" data-bs-toggle="collapse"
+                            href="#PythonIntermediate" role="button" aria-expanded="false" aria-controls="PythonIntermediate">
+                            <i class="bi bi-caret-right-fill"></i> Intermediate
+                            <div class="collapse mt-2" id="PythonIntermediate">
+                                <ul>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            File Handling
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            Object-oriented programming
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            Iterator, Generator and Decorators
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            Lambda Expression
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            Regular Expression
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+                </div>
+
+                <div id="CaretUpDownPythonAdvance" class="list-unstyled" >
+                    <!-- PythonAdvance -->
+                    <a class="Link d-block link-dark text-decoration-none bg-warning border-0" data-bs-toggle="collapse"
+                        href="#PythonAdvance" role="button" aria-expanded="false" aria-controls="PythonAdvance">
+                        <i class="bi bi-caret-right-fill"></i> Advance
+                        <div class="collapse mt-2" id="PythonAdvance">
+                            <ul>
+                                <li>
+                                    <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                        Writing Library
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0 ">
+                                        Building Framework
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                        Python C Extensions
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                        Closure
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                        Factory Functions
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                        Methods Chaining
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                        Regular Expression
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+
+                <div id="CaretUpDownPythonDSA" class="list-unstyled" >
+                    <!-- PythonDSA -->
+                    <a class="Link d-block link-dark text-decoration-none bg-warning border-0" data-bs-toggle="collapse"
+                        href="#PythonDSA" role="button" aria-expanded="false" aria-controls="PythonDSA">
+                        <i class="bi bi-caret-right-fill"></i> Data Structure
+                        <div class="collapse mt-2" id="PythonDSA">
+                            <ul>
+                                <li>
+                                    <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0 ">
+                                        Arrays
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                        Linkedlists
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                        Binary Tree
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+
+                <div id="CaretUpDownPythonExpert">
+                    <!-- PythonExpert -->
+                    <a class="Link d-block link-dark text-decoration-none bg-warning border-0" data-bs-toggle="collapse"
+                        href="#PythonExpert" role="button" aria-expanded="false" aria-controls="PythonExpert">
+                        <i class="bi bi-caret-right-fill"></i> Expert
+                        <div class="collapse mt-2" id="PythonExpert">
+                            <ul>
+                                <li>
+                                    <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                        Metaprogramming
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                        Design Patterns
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+                
+                <div id="CaretUpDownPythonBuiltinFunctions">
+                    <!-- PythonBuiltinFunctions -->
+                    <a class="Link d-block link-dark text-decoration-none bg-warning border-0" data-bs-toggle="collapse"
+                        href="#PythonBuiltinFunctions" role="button" aria-expanded="false" aria-controls="PythonBuiltinFunctions">
+                        <i class="bi bi-caret-right-fill"></i> Built-in Functions
+                        <div class="collapse mt-2" id="PythonBuiltinFunctions">
+                            <ul>
+                                <li>
+                                    <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                        abs()
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                        aiter()
+                                    </a>
+                                </li>
+                                <li><a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                        all()
+                                    </a>
+                                </li>
+                                <li><a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                        any()
+                                    </a>
+                                </li>
+                                <li><a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                        anext()
+                                    </a>
+                                </li>
+                                <li><a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                        ascii()
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+                
+                <div>
+                    <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                        <i class="bi bi-caret-right"></i> Language Topics
+                    </a>
+                </div>               
+                
+                <div class="container text-center mt-3">
+                    <h6>Standard Library</h6>
+                </div>
+                <div id="CaretUpDownPythonFunctionalProgramming">
+                        <!-- PythonFunctionalProgramming -->
+                        <a class="Link d-block link-dark text-decoration-none bg-warning border-0" data-bs-toggle="collapse"
+                            href="#PythonFunctionalProgramming" role="button" aria-expanded="false" aria-controls="PythonFunctionalProgramming">
+                            <i class="bi bi-caret-right-fill"></i> Functional Programming
+                            <div class="collapse mt-2" id="PythonFunctionalProgramming">
+                                <ul>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            Functools
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            Itertools
+                                        </a>
+                                    </li>
+                                    <li><a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            Operator
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+                </div>
+                <div id="CaretUpDownPythonConcurrentExecution" class="list-unstyled" >
+                        <!-- PythonConcurrentExecution -->
+                        <a class="Link d-block link-dark text-decoration-none bg-warning border-0" data-bs-toggle="collapse"
+                            href="#PythonConcurrentExecution" role="button" aria-expanded="false" aria-controls="PythonConcurrentExecution">
+                            <i class="bi bi-caret-right-fill"></i> Concurrent Execution
+                            <div class="collapse mt-2" id="PythonConcurrentExecution">
+                                <ul>
+                                    <li>
+                                        <a href="{% url 'programming_py_concurrent_execution' %}" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            Concurrency vs Parallelism
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="{% url 'programming_py_concurrent_execution_threading' %}" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            threading
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            multiprocessing
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            concurrent
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            subprocess
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            scheld
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            queue
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            contextvars
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            _thread 
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+                </div>
+                <div id="CaretUpDownPythonNetworkingInterprocess" class="list-unstyled" >
+                        <!-- PythonNetworkingInterprocess -->
+                        <a class="Link d-block link-dark text-decoration-none bg-warning border-0" data-bs-toggle="collapse"
+                            href="#PythonNetworkingInterprocess" role="button" aria-expanded="false" aria-controls="PythonNetworkingInterprocess">
+                            <i class="bi bi-caret-right-fill"></i> Networking and Interprocess Communication
+                            <div class="collapse mt-2" id="PythonNetworkingInterprocess">
+                                <ul>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            asyncio
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            socket  
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            ssl
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            select
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            selector
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="{% url 'programming_py_net_inter_com_signal' %}" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            signal
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            mmap
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+                </div>
+                <div id="CaretUpDownPythonInternetDataHandling">
+                        <!-- PythonIntenetDataHandling -->
+                        <a class="Link d-block link-dark text-decoration-none bg-warning border-0" data-bs-toggle="collapse"
+                            href="#PythonIntenetDataHandling" role="button" aria-expanded="false" aria-controls="PythonIntenetDataHandling">
+                            <i class="bi bi-caret-right-fill"></i> Internet Data Handling
+                            <div class="collapse mt-2" id="PythonIntenetDataHandling">
+                                <ul>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            email
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            json
+                                        </a>
+                                    </li>
+                                    <li><a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            mailbox
+                                        </a>
+                                    </li>
+                                    <li><a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            mimetypes
+                                        </a>
+                                    </li>
+                                    <li><a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            base64
+                                        </a>
+                                    </li>
+                                    <li><a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            binhex
+                                        </a>
+                                    </li>
+                                    <li><a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            binascii
+                                        </a>
+                                    </li>
+                                    <li><a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            mainbox
+                                        </a>
+                                    </li>
+                                    <li><a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            quopri
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+                </div>
+                <div id="CaretUpDownPythonStructuredMarkup">
+                        <!-- LanguageTopic -->
+                        <a class="Link d-block link-dark text-decoration-none bg-warning border-0" data-bs-toggle="collapse"
+                            href="#StructuredMarkup" role="button" aria-expanded="false" aria-controls="StructuredMarkup">
+                            <i class="bi bi-caret-right-fill"></i> Structured Markup Processing Tools
+                            <div class="collapse mt-2" id="StructuredMarkup">
+                                <ul>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            HTML
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            XML
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+                </div>
+                <div id="CaretUpDownPythonInternetProtocols">
+                        <!-- LanguageTopic -->
+                        <a class="Link d-block link-dark text-decoration-none bg-warning border-0" data-bs-toggle="collapse"
+                            href="#InternetProtocols" role="button" aria-expanded="false" aria-controls="InternetProtocols">
+                            <i class="bi bi-caret-right-fill"></i> Internet Protocols and Suppport
+                            <div class="collapse mt-2" id="InternetProtocols">
+                                <ul>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            webbrowser
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            wsgiref
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            urllib
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            http
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            ftplib
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            poplib
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            imaplib
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            smtplib
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            uuid
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            socketserver
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            xmprpc
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            ipaddress
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- RustCollapse -->
+<div class="container-fluid ">
+    <div class="container-fluid text-bg-warning rounded-3  my-2">
+        <div class="collapse py-3" id="RustCollapse">
+            <div class="container-fluid text-center">
+                <h5 class="pt-3">
+                    <a href="../rust.html" class="Link text-decoration-none text-dark">Rust</a>
+                </h5>
+            </div>
+            <div>
+                <div id="CaretUpDownRustBasics" class="list-unstyled" >
+                        <!-- RustBasics -->
+                        <a class="Link d-block link-dark text-decoration-none bg-warning border-0" data-bs-toggle="collapse"
+                            href="#RustBasics" role="button" aria-expanded="false" aria-controls="RustBasics">
+                            <i class="bi bi-caret-right-fill"></i> Basics
+                            <div class="collapse mt-2" id="RustBasics">
+                                <ul>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            Data Types
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            Variables
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            Mutablilty
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            Functions
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            Conditions
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            Control flow
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            Comments
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+                </div>
+                
+                <div id="CaretUpDownRustOwnership" class="list-unstyled" >
+                        <!-- CaretUpDownRustOwnership -->
+                        <a class="Link d-block link-dark text-decoration-none bg-warning border-0" data-bs-toggle="collapse"
+                            href="#RustOwnership" role="button" aria-expanded="false" aria-controls="RustOwnership">
+                            <i class="bi bi-caret-right-fill"></i> Ownership
+                            <div class="collapse mt-2" id="RustOwnership">
+                                <ul>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            What is ownership?
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            References
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            Borrowing
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+                </div>
+                <div id="CaretUpDownRustStructure" class="list-unstyled" >
+                        <!-- CaretUpDownRustStructure -->
+                        <a class="Link d-block link-dark text-decoration-none bg-warning border-0" data-bs-toggle="collapse"
+                            href="#RustStructure" role="button" aria-expanded="false" aria-controls="RustStructure">
+                            <i class="bi bi-caret-right-fill"></i> Structure
+                            <div class="collapse mt-2" id="RustStructure">
+                                <ul>
+                                    <li>
+                                        <a href="../rust/advance/structure/struct.html" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            Using Structs 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../rust/advance/structure/struct.html" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            Structs methods
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+                </div>
+                <div id="CaretUpDownRustEnumMatchIflet" class="list-unstyled" >
+                        <!-- CaretUpDownRustEnumMatchIflet -->
+                        <a class="Link d-block link-dark text-decoration-none bg-warning border-0" data-bs-toggle="collapse"
+                            href="#RustEnumMatchIflet" role="button" aria-expanded="false" aria-controls="RustEnumMatchIflet">
+                            <i class="bi bi-caret-right-fill"></i> Enum and Pattern Matching
+                            <div class="collapse mt-2" id="RustEnumMatchIflet">
+                                <ul>
+                                    <li>
+                                        <a href="{% url 'programming_rust_enum_enum' %}" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            What is Enum ?
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            Match contol flow
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            Concise iflet
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+                </div>
+                <div id="CaretUpDownRustModules" class="list-unstyled" >
+                        <!-- CaretUpDownRustModules -->
+                        <a class="Link d-block link-dark text-decoration-none bg-warning border-0" data-bs-toggle="collapse"
+                            href="#RustModules" role="button" aria-expanded="false" aria-controls="RustModules">
+                            <i class="bi bi-caret-right-fill"></i> Modules
+                            <div class="collapse mt-2" id="RustModules">
+                                <ul>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            Packages
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            Crates
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            Modules
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            Use Keyword
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+                </div>
+                <div id="CaretUpDownRustCollections" class="list-unstyled" >
+                        <!-- CaretUpDownRustCollections -->
+                        <a class="Link d-block link-dark text-decoration-none bg-warning border-0" data-bs-toggle="collapse"
+                            href="#RustCollections" role="button" aria-expanded="false" aria-controls="RustCollections">
+                            <i class="bi bi-caret-right-fill"></i> Collections
+                            <div class="collapse mt-2" id="RustCollections">
+                                <ul>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            Vectors
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../rust/advance/structure/struct.html" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            Strings
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            Hashmaps
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+                </div>
+                <div id="CaretUpDownRustError" class="list-unstyled" >
+                        <!-- CaretUpDownRustError -->
+                        <a class="Link d-block link-dark text-decoration-none bg-warning border-0" data-bs-toggle="collapse"
+                            href="#RustError" role="button" aria-expanded="false" aria-controls="RustError">
+                            <i class="bi bi-caret-right-fill"></i> Error handling
+                            <div class="collapse mt-2" id="RustError">
+                                <ul>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            Unrecovreable Errors
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            Recoverable Errors
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            To Panic or Not to Panic
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+                </div>
+                <div id="CaretUpDownRustGenericTraitLife" class="list-unstyled" >
+                        <!-- CaretUpDownRustGenericTraitLife -->
+                        <a class="Link d-block link-dark text-decoration-none bg-warning border-0" data-bs-toggle="collapse"
+                            href="#RustGenericTraitLife" role="button" aria-expanded="false" aria-controls="RustGenericTraitLife">
+                            <i class="bi bi-caret-right-fill"></i> Generic, Trait and Lifetimes
+                            <div class="collapse mt-2" id="RustGenericTraitLife">
+                                <ul>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            Generic Data Types
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            Traits
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            Lifetimes
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+                </div>
+                <div>
+                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                            <i class="bi bi-caret-right"></i> Automated Tests
+                        </a>
+                </div>
+                <div id="CaretUpDownRustSmartPointers" class="list-unstyled" >
+                        <!-- RustSmartPointers -->
+                        <a class="Link d-block link-dark text-decoration-none bg-warning border-0" data-bs-toggle="collapse"
+                            href="#RustSmartPointers" role="button" aria-expanded="false" aria-controls="RustSmartPointers">
+                            <i class="bi bi-caret-right-fill"></i> Smart Pointers
+                            <div class="collapse mt-2" id="RustSmartPointers">
+                                <ul>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            Using Box<T>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            Deref Trait
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            Drop Trait
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            Rc &ltT&gt, The Reference Counted Smart Pointers
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            RefCell&ltT&gt
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+                </div>
+                <div id="CaretUpDownRustConcurrency" class="list-unstyled" >
+                        <!-- RustBasics -->
+                        <a class="Link d-block link-dark text-decoration-none bg-warning border-0" data-bs-toggle="collapse"
+                            href="#RustConcurrency" role="button" aria-expanded="false" aria-controls="RustConcurrency">
+                            <i class="bi bi-caret-right-fill"></i> Concurrency
+                            <div class="collapse mt-2" id="RustConcurrency">
+                                <ul>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            Using Threads
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            Data Between Threads
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            Shared-State Concurrency
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            Sync and Send Traits
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+                </div>
+                <div>
+                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                            <i class="bi bi-caret-right"></i> Object Oriented Programming
+                        </a>
+                </div>                              
+                <div>
+                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                            <i class="bi bi-caret-right"></i> Patterns and Matching
+                        </a>
+                </div>
+                <div id="CaretUpDownRustAdvance">
+                        <!-- RustAdvance -->
+                        <a class="Link d-block link-dark text-decoration-none bg-warning border-0" data-bs-toggle="collapse"
+                        href="#RustAdvance" role="button" aria-expanded="false" aria-controls="RustAdvance">
+                            <i class="bi bi-caret-right-fill"></i> Advance
+                            <div class="collapse mt-2" id="RustAdvance">
+                                <ul>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            Unsafe Rust
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            Advance Traits
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            Advance Types
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            Advance Functions and Closures
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            Macros
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+                </div>
+                <div id="CaretUpDownRustProjects">
+                        <!-- RustProjects -->
+                        <a class="Link d-block link-dark text-decoration-none bg-warning border-0" data-bs-toggle="collapse"
+                        href="#RustProjects" role="button" aria-expanded="false" aria-controls="RustProjects">
+                            <i class="bi bi-caret-right-fill"></i> Projects
+                            <div class="collapse mt-2" id="RustProjects">
+                                <ul>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            Command Line Program
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            Multithreaded Web Server
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- CCollapse -->
+<div class="container-fluid ">
+    <div class="container-fluid text-bg-warning rounded-3 border-0 my-2">
+        <div class="collapse pb-2" id="CCollapse">
+            <div class="container-fluid text-center">
+                <h5 class="pt-3">
+                    <a href="../c.html" class="Link text-decoration-none text-dark">C Programming</a>
+                </h5>
+            </div>
+            <div>
+                <div>
+                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                            <i class="bi bi-c-circle"></i> C Programming
+                        </a>
+                </div>
+                <div id="CCircleCBasics">
+                        <!-- CCircleCBasics -->
+                        <a class="Link d-block link-dark text-decoration-none bg-warning border-0" data-bs-toggle="collapse"
+                        href="#CBasics" role="button" aria-expanded="false" aria-controls="CBasics">
+                            <i class="bi bi-c-circle-fill"></i> Basics
+                            <div class="collapse mt-2" id="CBasics">
+                                <ul>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            Data Types
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            Variables
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            Statements
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            Control Flow
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            Functions
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            Arrays
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+                </div>
+                <div>
+                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                            <i class="bi bi-c-circle"></i> Pointers
+                        </a>
+                </div>
+                <div>
+                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                            <i class="bi bi-c-circle"></i> Characters and Strings
+                        </a>
+                </div>
+                <div>
+                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                            <i class="bi bi-c-circle"></i> Input/Output
+                        </a>
+                </div>
+                <div>
+                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                            <i class="bi bi-c-circle"></i> C Programming
+                        </a>
+                </div>
+                <div>
+                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                            <i class="bi bi-c-circle"></i> Structures
+                        </a>
+                </div>
+                <div>
+                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                            <i class="bi bi-c-circle"></i> Unions
+                        </a>
+                </div>
+                <div>
+                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                            <i class="bi bi-c-circle"></i> Bit Manupulations
+                        </a>
+                </div>
+                <div>
+                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                            <i class="bi bi-c-circle"></i> Enumerations
+                        </a>
+                </div>
+                <div>
+                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                            <i class="bi bi-c-circle"></i> File Processing
+                        </a>
+                </div>
+                <div id="CCircleCDataStructures">
+                        <!-- CCircleCDataStructures -->
+                        <a class="Link d-block link-dark text-decoration-none bg-warning border-0" data-bs-toggle="collapse"
+                        href="#CDataStructures" role="button" aria-expanded="false" aria-controls="CDataStructures">
+                            <i class="bi bi-c-circle-fill"></i> Data Structures
+                            <div class="collapse mt-2" id="CDataStructures">
+                                <ul>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            Self Referential Structures
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            Dynamic Memory Allocations
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            Dynamic Memory Allocation
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            Linked List
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            Stacks
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            Queues
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            Trees
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+                </div>
+                <div>
+                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                            <i class="bi bi-c-circle"></i> Preprocessor
+                        </a>
+                </div>
+                
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- JavascriptCollapse -->
+<div class="container-fluid ">
+    <div class="container-fluid text-bg-warning rounded-3  my-2">
+        <div class="collapse pb-2" id="JavascriptCollapse">
+            <div class="container text-center">
+                <h5 class="pt-3">
+                    <a href="{% url 'programming_js' %}" class="Link text-decoration-none text-dark">Javascript</a>
+                </h5>
+            </div>
+            
+            <div>
+                <div id="CaretUpDownJavascriptBasics">
+                        <!-- JavascriptBaiscs -->
+                        <a class="Link d-block link-dark text-decoration-none bg-warning border-0" data-bs-toggle="collapse"
+                            href="#JavascriptBaiscs" role="button" aria-expanded="false" aria-controls="JavascriptBaiscs">
+                            <i class="bi bi-caret-right-fill"></i> Basics
+                            <div class="collapse mt-2" id="JavascriptBaiscs">
+                                <ul>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            Data Types
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            Variables
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            Expressions
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            Operators
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            Statements and control flow
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            Arrays
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            Objects
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            Functions
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            Arrays
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+                </div>
+                <div id="CaretUpDownJavascriptAdvance">
+                        <!-- JavascriptAdvance -->
+                        <a class="Link d-block link-dark text-decoration-none bg-warning border-0" data-bs-toggle="collapse"
+                            href="#JavascriptAdvance" role="button" aria-expanded="false" aria-controls="JavascriptAdvance">
+                            <i class="bi bi-caret-right-fill"></i> Advance
+                            <div class="collapse mt-2" id="JavascriptAdvance">
+                                <ul>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            Classes
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            Modules
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+                </div>
+                <div id="CaretUpDownJavascriptJSSL">
+                        <!-- JavascriptJSSL -->
+                        <a class="Link d-block link-dark text-decoration-none bg-warning border-0" data-bs-toggle="collapse"
+                            href="#JavascriptJSSL" role="button" aria-expanded="false" aria-controls="JavascriptJSSL">
+                            <i class="bi bi-caret-right-fill"></i> Javascript Standard Library
+                            <div class="collapse mt-2" id="JavascriptJSSL">
+                                <ul>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            Set
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            Maps
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            Pattern and Regular Expressions
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            Date and Time
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            Error
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            JSON
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            Internationalization
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            Console
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            URL
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            Maps
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+                </div>
+                <div>
+                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                            <i class="bi bi-caret-right"></i> Iterators
+                        </a>
+                </div>
+                <div>
+                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                            <i class="bi bi-caret-right"></i> Generators
+                        </a>
+                </div>
+                <div>
+                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                            <i class="bi bi-caret-right"></i> Asynchronous Javascript
+                        </a>
+                </div>                
+                <div>
+                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                            <i class="bi bi-caret-right"></i> Metaprogramming
+                        </a>
+                </div>
+                <div>
+                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                            <i class="bi bi-caret-right"></i> Document object model
+                        </a>
+                </div>              
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- DjangoCollapse -->
+<div class="container-fluid ">
+    <div class="container-fluid text-bg-warning rounded-3 border-0 my-2">
+        <div class="collapse pb-2" id="DjangoCollapse">
+            <div class="container text-center">
+                <h5 class="pt-3">
+                    <a href="#" class="Link text-decoration-none text-dark">Django</a>
+                </h5>
+            </div>
+            {% comment %} <p class="bg-danger rounded-3 p-3 mt-4"></p> {% endcomment %}
+            <ul>
+                <li>
+                    <a href=""
+                        class="Link ms-3 d-block link-dark text-decoration-none bg-warning border-0">Calculator</a>
+                </li>
+                <li>
+                    <a href=""
+                        class="Link ms-3 d-block link-dark text-decoration-none bg-warning border-0">Guess
+                        guess</a>
+                </li>
+                <li>
+                    <a href=""
+                        class="Link ms-3 d-block link-dark text-decoration-none bg-warning border-0">Rock
+                        paper scissor</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- ProjectCollapse -->
+<div class="container-fluid">
+    <div class="container-fluid text-bg-warning rounded-3 border-0 my-2">
+        <div class="collapse pb-3" id="ProjectCollapse">
+            <div class="container text-center">
+                <h5 class="pt-3">
+                    <a href="#" class="Link text-decoration-none text-dark">Project</a>
+                </h5>
+            </div>
+            <!-- <p class="bg-danger rounded-3 p-3 mt-4"></p> -->
+            
+
+            <!-- WebDevelopment -->
+            <div>
+                <div id="CaretUpDownWebDevelopment">
+                
+                    <a class="Link d-block link-dark text-decoration-none bg-warning border-0" data-bs-toggle="collapse"
+                        href="#WebDevelopment" role="button" aria-expanded="false" aria-controls="WebDevelopment">
+                        <i class="bi bi-caret-right-fill"></i> Web Development
+                    </a>
+                </div>
+                <div class="collapse ms-3" id="WebDevelopment">
+                    <div id="CaretUpDownWebDevelopmentCounter">
+                        <!-- WebDevelopmentCounter -->
+                        <a class="Link d-block link-dark text-decoration-none bg-warning border-0" data-bs-toggle="collapse"
+                            href="#WebDevelopmentCounter" role="button" aria-expanded="false" aria-controls="WebDevelopmentCounter">
+                            <i class="bi bi-caret-right-fill"></i> Counter
+                            <div class="collapse " id="WebDevelopmentCounter">
+                                <ul>
+                                    <li>
+                                        <a href="{% url 'programming_project_counter' %}" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            Regular
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                            React version
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script >
+    // 
+    //  Projct
+    //
+    //  Web Development
+    //  
+    let CaretUpDownWebDevelopment = document.getElementById("CaretUpDownWebDevelopment")
+    CaretUpDownWebDevelopment.addEventListener("click", function () {
+        let Change = this.firstElementChild.firstElementChild;
+
+        if (Change.classList.contains("bi-caret-right-fill")) {
+            Change.classList.remove("bi-caret-right-fill")
+            Change.classList.add("bi-caret-down-fill")
+        } else {
+            Change.classList.remove("bi-caret-down-fill")
+            Change.classList.add("bi-caret-right-fill")
+        }
+    });
+    // 
+    //  Web Development
+    //  
+    let CaretUpDownWebDevelopmentCounter = document.getElementById("CaretUpDownWebDevelopmentCounter")
+    CaretUpDownWebDevelopmentCounter.addEventListener("click", function () {
+        let Change = this.firstElementChild.firstElementChild;
+
+        if (Change.classList.contains("bi-caret-right-fill")) {
+            Change.classList.remove("bi-caret-right-fill")
+            Change.classList.add("bi-caret-down-fill")
+        } else {
+            Change.classList.remove("bi-caret-down-fill")
+            Change.classList.add("bi-caret-right-fill")
+        }
+    });
+    // 
+    //  
+    //  
+    //  PYTHON
+    // 
+    //
+    // Basics
+    let CaretUpDownPythonBasics = document.getElementById("CaretUpDownPythonBasics")
+    CaretUpDownPythonBasics.addEventListener("click", function () {
+        let Change = this.firstElementChild.firstElementChild;
+
+        if (Change.classList.contains("bi-caret-right-fill")) {
+            Change.classList.remove("bi-caret-right-fill")
+            Change.classList.add("bi-caret-down-fill")
+        } else {
+            Change.classList.remove("bi-caret-down-fill")
+            Change.classList.add("bi-caret-right-fill")
+        }
+    });
+    // 
+    //
+    // CaretUpDownPythonIntermediate
+    let CaretUpDownPythonIntermediate = document.getElementById("CaretUpDownPythonIntermediate")
+    CaretUpDownPythonIntermediate.addEventListener("click", function () {
+        let Change = this.firstElementChild.firstElementChild;
+
+        if (Change.classList.contains("bi-caret-right-fill")) {
+            Change.classList.remove("bi-caret-right-fill")
+            Change.classList.add("bi-caret-down-fill")
+        } else {
+            Change.classList.remove("bi-caret-down-fill")
+            Change.classList.add("bi-caret-right-fill")
+        }
+    });
+    // 
+    //
+    // Advance
+    let CaretUpDownPythonAdvance = document.getElementById("CaretUpDownPythonAdvance")
+    CaretUpDownPythonAdvance.addEventListener("click", function () {
+        let Change = this.firstElementChild.firstElementChild;
+
+        if (Change.classList.contains("bi-caret-right-fill")) {
+            Change.classList.remove("bi-caret-right-fill")
+            Change.classList.add("bi-caret-down-fill")
+        } else {
+            Change.classList.remove("bi-caret-down-fill")
+            Change.classList.add("bi-caret-right-fill")
+        }
+    });
+    // 
+    //
+    // CaretUpDownPythonDSA
+    let CaretUpDownPythonDSA = document.getElementById("CaretUpDownPythonDSA")
+    CaretUpDownPythonDSA.addEventListener("click", function () {
+        let Change = this.firstElementChild.firstElementChild;
+
+        if (Change.classList.contains("bi-caret-right-fill")) {
+            Change.classList.remove("bi-caret-right-fill")
+            Change.classList.add("bi-caret-down-fill")
+        } else {
+            Change.classList.remove("bi-caret-down-fill")
+            Change.classList.add("bi-caret-right-fill")
+        }
+    });
+    // 
+    //
+    // Expert
+    let CaretUpDownPythonExpert = document.getElementById("CaretUpDownPythonExpert")
+    CaretUpDownPythonExpert.addEventListener("click", function () {
+        let Change = this.firstElementChild.firstElementChild;
+
+        if (Change.classList.contains("bi-caret-right-fill")) {
+            Change.classList.remove("bi-caret-right-fill")
+            Change.classList.add("bi-caret-down-fill")
+        } else {
+            Change.classList.remove("bi-caret-down-fill")
+            Change.classList.add("bi-caret-right-fill")
+        }
+    });
+    //
+    // BuiltinFunctions
+    let CaretUpDownPythonBuiltinFunctions = document.getElementById("CaretUpDownPythonBuiltinFunctions")
+    CaretUpDownPythonBuiltinFunctions.addEventListener("click", function () {
+        let Change = this.firstElementChild.firstElementChild;
+
+        if (Change.classList.contains("bi-caret-right-fill")) {
+            Change.classList.remove("bi-caret-right-fill")
+            Change.classList.add("bi-caret-down-fill")
+        } else {
+            Change.classList.remove("bi-caret-down-fill")
+            Change.classList.add("bi-caret-right-fill")
+        }
+    });
+    // 
+    //
+    // Advance
+    let CaretUpDownPythonFunctionalProgramming = document.getElementById("CaretUpDownPythonFunctionalProgramming")
+    CaretUpDownPythonFunctionalProgramming.addEventListener("click", function () {
+        let Change = this.firstElementChild.firstElementChild;
+
+        if (Change.classList.contains("bi-caret-right-fill")) {
+            Change.classList.remove("bi-caret-right-fill")
+            Change.classList.add("bi-caret-down-fill")
+        } else {
+            Change.classList.remove("bi-caret-down-fill")
+            Change.classList.add("bi-caret-right-fill")
+        }
+    });
+    // 
+    //
+    // Advance
+    let CaretUpDownPythonConcurrentExecution = document.getElementById("CaretUpDownPythonConcurrentExecution")
+    CaretUpDownPythonConcurrentExecution.addEventListener("click", function () {
+        let Change = this.firstElementChild.firstElementChild;
+
+        if (Change.classList.contains("bi-caret-right-fill")) {
+            Change.classList.remove("bi-caret-right-fill")
+            Change.classList.add("bi-caret-down-fill")
+        } else {
+            Change.classList.remove("bi-caret-down-fill")
+            Change.classList.add("bi-caret-right-fill")
+        }
+    });
+    // 
+    //
+    // Advance
+    let CaretUpDownPythonNetworkingInterprocess = document.getElementById("CaretUpDownPythonNetworkingInterprocess")
+    CaretUpDownPythonNetworkingInterprocess.addEventListener("click", function () {
+        let Change = this.firstElementChild.firstElementChild;
+
+        if (Change.classList.contains("bi-caret-right-fill")) {
+            Change.classList.remove("bi-caret-right-fill")
+            Change.classList.add("bi-caret-down-fill")
+        } else {
+            Change.classList.remove("bi-caret-down-fill")
+            Change.classList.add("bi-caret-right-fill")
+        }
+    });
+    // 
+    //
+    // Internet Data Handling
+    let CaretUpDownPythonInternetDataHandling = document.getElementById("CaretUpDownPythonInternetDataHandling")
+    CaretUpDownPythonInternetDataHandling.addEventListener("click", function () {
+        let Change = this.firstElementChild.firstElementChild;
+
+        if (Change.classList.contains("bi-caret-right-fill")) {
+            Change.classList.remove("bi-caret-right-fill")
+            Change.classList.add("bi-caret-down-fill")
+        } else {
+            Change.classList.remove("bi-caret-down-fill")
+            Change.classList.add("bi-caret-right-fill")
+        }
+    });
+    // 
+    //
+    // Structured Markup
+    let CaretUpDownPythonStructuredMarkup = document.getElementById("CaretUpDownPythonStructuredMarkup")
+    CaretUpDownPythonStructuredMarkup.addEventListener("click", function () {
+        let Change = this.firstElementChild.firstElementChild;
+
+        if (Change.classList.contains("bi-caret-right-fill")) {
+            Change.classList.remove("bi-caret-right-fill")
+            Change.classList.add("bi-caret-down-fill")
+        } else {
+            Change.classList.remove("bi-caret-down-fill")
+            Change.classList.add("bi-caret-right-fill")
+        }
+    });
+    // 
+    //
+    // Internet Protocols
+    let CaretUpDownPythonInternetProtocols = document.getElementById("CaretUpDownPythonInternetProtocols")
+    CaretUpDownPythonInternetProtocols.addEventListener("click", function () {
+        let Change = this.firstElementChild.firstElementChild;
+
+        if (Change.classList.contains("bi-caret-right-fill")) {
+            Change.classList.remove("bi-caret-right-fill")
+            Change.classList.add("bi-caret-down-fill")
+        } else {
+            Change.classList.remove("bi-caret-down-fill")
+            Change.classList.add("bi-caret-right-fill")
+        }
+    });
+    // 
+    //
+    // //  
+    //  JAVASCRIPT
+    // 
+    //
+    // Basics
+    let CaretUpDownJavascriptBasics = document.getElementById("CaretUpDownJavascriptBasics")
+    CaretUpDownJavascriptBasics.addEventListener("click", function () {
+        let Change = this.firstElementChild.firstElementChild;
+
+        if (Change.classList.contains("bi-caret-right-fill")) {
+            Change.classList.remove("bi-caret-right-fill")
+            Change.classList.add("bi-caret-down-fill")
+        } else {
+            Change.classList.remove("bi-caret-down-fill")
+            Change.classList.add("bi-caret-right-fill")
+        }
+    });
+    // 
+    //
+    // Advance
+    let CaretUpDownJavascriptAdvance = document.getElementById("CaretUpDownJavascriptAdvance")
+    CaretUpDownJavascriptAdvance.addEventListener("click", function () {
+        let Change = this.firstElementChild.firstElementChild;
+
+        if (Change.classList.contains("bi-caret-right-fill")) {
+            Change.classList.remove("bi-caret-right-fill")
+            Change.classList.add("bi-caret-down-fill")
+        } else {
+            Change.classList.remove("bi-caret-down-fill")
+            Change.classList.add("bi-caret-right-fill")
+        }
+    });
+    //
+    // Standard libraray
+    let CaretUpDownJavascriptJSSL = document.getElementById("CaretUpDownJavascriptJSSL")
+    CaretUpDownJavascriptJSSL.addEventListener("click", function () {
+        let Change = this.firstElementChild.firstElementChild;
+
+        if (Change.classList.contains("bi-caret-right-fill")) {
+            Change.classList.remove("bi-caret-right-fill")
+            Change.classList.add("bi-caret-down-fill")
+        } else {
+            Change.classList.remove("bi-caret-down-fill")
+            Change.classList.add("bi-caret-right-fill")
+        }
+    });
+
+
+
+    // 
+    //  
+    //  RUST
+    // 
+    //
+    // Basics
+    let CaretUpDownRustBasics = document.getElementById("CaretUpDownRustBasics")
+    CaretUpDownRustBasics.addEventListener("click", function () {
+        let Change = this.firstElementChild.firstElementChild;
+
+        if (Change.classList.contains("bi-caret-right-fill")) {
+            Change.classList.remove("bi-caret-right-fill")
+            Change.classList.add("bi-caret-down-fill")
+        } else {
+            Change.classList.remove("bi-caret-down-fill")
+            Change.classList.add("bi-caret-right-fill")
+        }
+    });
+    // 
+    //
+    // Ownership
+    let CaretUpDownRustOwnership = document.getElementById("CaretUpDownRustOwnership")
+    CaretUpDownRustOwnership.addEventListener("click", function () {
+        let Change = this.firstElementChild.firstElementChild;
+
+        if (Change.classList.contains("bi-caret-right-fill")) {
+            Change.classList.remove("bi-caret-right-fill")
+            Change.classList.add("bi-caret-down-fill")
+        } else {
+            Change.classList.remove("bi-caret-down-fill")
+            Change.classList.add("bi-caret-right-fill")
+        }
+    }); 
+    //
+    // Structure
+    let CaretUpDownRustStructure = document.getElementById("CaretUpDownRustStructure")
+    CaretUpDownRustStructure.addEventListener("click", function () {
+        let Change = this.firstElementChild.firstElementChild;
+
+        if (Change.classList.contains("bi-caret-right-fill")) {
+            Change.classList.remove("bi-caret-right-fill")
+            Change.classList.add("bi-caret-down-fill")
+        } else {
+            Change.classList.remove("bi-caret-down-fill")
+            Change.classList.add("bi-caret-right-fill")
+        }
+    }); 
+    //
+    // Enum
+    let CaretUpDownRustEnumMatchIflet = document.getElementById("CaretUpDownRustEnumMatchIflet")
+    CaretUpDownRustEnumMatchIflet.addEventListener("click", function () {
+        let Change = this.firstElementChild.firstElementChild;
+
+        if (Change.classList.contains("bi-caret-right-fill")) {
+            Change.classList.remove("bi-caret-right-fill")
+            Change.classList.add("bi-caret-down-fill")
+        } else {
+            Change.classList.remove("bi-caret-down-fill")
+            Change.classList.add("bi-caret-right-fill")
+        }
+    }); 
+    // 
+    //  
+    // Collection
+    let CaretUpDownRustCollections = document.getElementById("CaretUpDownRustCollections")
+    CaretUpDownRustCollections.addEventListener("click", function () {
+        let Change = this.firstElementChild.firstElementChild;
+
+        if (Change.classList.contains("bi-caret-right-fill")) {
+            Change.classList.remove("bi-caret-right-fill")
+            Change.classList.add("bi-caret-down-fill")
+        } else {
+            Change.classList.remove("bi-caret-down-fill")
+            Change.classList.add("bi-caret-right-fill")
+        }
+    });
+    // 
+    // 
+    // 
+    //  
+    // Modules
+    let CaretUpDownRustModules = document.getElementById("CaretUpDownRustModules")
+    CaretUpDownRustModules.addEventListener("click", function () {
+        let Change = this.firstElementChild.firstElementChild;
+
+        if (Change.classList.contains("bi-caret-right-fill")) {
+            Change.classList.remove("bi-caret-right-fill")
+            Change.classList.add("bi-caret-down-fill")
+        } else {
+            Change.classList.remove("bi-caret-down-fill")
+            Change.classList.add("bi-caret-right-fill")
+        }
+    });
+    // 
+    // Generic Type, Trait, and Lifetimes
+    (function () {
+        let CaretUpDownRustGenericTraitLife = document.getElementById("CaretUpDownRustGenericTraitLife")
+        CaretUpDownRustGenericTraitLife.addEventListener("click", function () {
+            let Change = this.firstElementChild.firstElementChild;
+            // console.log(Change);
+            // console.log(document.getElementById("CaretUpDownRustGenericTraitLife").firstElementChild.firstElementChild)
+            // console.log(Change.classList.contains("bi-caret-right-fill"));
+
+            if (Change.classList.contains("bi-caret-right-fill")) {
+                // console.log("contain down")
+                Change.classList.remove("bi-caret-right-fill")
+                Change.classList.add("bi-caret-down-fill")
+            } else {
+                // console.log("contain up")
+                Change.classList.remove("bi-caret-down-fill")
+                Change.classList.add("bi-caret-right-fill")
+            }
+        });
+    })();
+    // 
+    // 
+    // Error
+    (function () {
+        let CaretUpDownRustError = document.getElementById("CaretUpDownRustError")
+        CaretUpDownRustError.addEventListener("click", function () {
+            let Change = this.firstElementChild.firstElementChild;
+            // console.log(Change);
+            // console.log(document.getElementById("CaretUpDownRustGenericTraitLife").firstElementChild.firstElementChild)
+            // console.log(Change.classList.contains("bi-caret-right-fill"));
+
+            if (Change.classList.contains("bi-caret-right-fill")) {
+                // console.log("contain down")
+                Change.classList.remove("bi-caret-right-fill")
+                Change.classList.add("bi-caret-down-fill")
+            } else {
+                // console.log("contain up")
+                Change.classList.remove("bi-caret-down-fill")
+                Change.classList.add("bi-caret-right-fill")
+            }
+        });
+    })();
+    // 
+    // 
+    // Error
+    (function () {
+        let CaretUpDownRustSmartPointers = document.getElementById("CaretUpDownRustSmartPointers")
+        CaretUpDownRustSmartPointers.addEventListener("click", function () {
+            let Change = this.firstElementChild.firstElementChild;
+            // console.log(Change);
+            // console.log(document.getElementById("CaretUpDownRustGenericTraitLife").firstElementChild.firstElementChild)
+            // console.log(Change.classList.contains("bi-caret-right-fill"));
+
+            if (Change.classList.contains("bi-caret-right-fill")) {
+                // console.log("contain down")
+                Change.classList.remove("bi-caret-right-fill")
+                Change.classList.add("bi-caret-down-fill")
+            } else {
+                // console.log("contain up")
+                Change.classList.remove("bi-caret-down-fill")
+                Change.classList.add("bi-caret-right-fill")
+            }
+        });
+    })();
+    // 
+    // 
+    // Error
+    (function () {
+        let CaretUpDownRustConcurrency = document.getElementById("CaretUpDownRustConcurrency")
+        CaretUpDownRustConcurrency.addEventListener("click", function () {
+            let Change = this.firstElementChild.firstElementChild;
+            // console.log(Change);
+            // console.log(document.getElementById("CaretUpDownRustGenericTraitLife").firstElementChild.firstElementChild)
+            // console.log(Change.classList.contains("bi-caret-right-fill"));
+
+            if (Change.classList.contains("bi-caret-right-fill")) {
+                // console.log("contain down")
+                Change.classList.remove("bi-caret-right-fill")
+                Change.classList.add("bi-caret-down-fill")
+            } else {
+                // console.log("contain up")
+                Change.classList.remove("bi-caret-down-fill")
+                Change.classList.add("bi-caret-right-fill")
+            }
+        });
+    })();
+    // 
+    // 
+    // Error
+    (function () {
+        let CaretUpDownRustAdvance = document.getElementById("CaretUpDownRustAdvance")
+        CaretUpDownRustAdvance.addEventListener("click", function () {
+            let Change = this.firstElementChild.firstElementChild;
+            // console.log(Change);
+            // console.log(document.getElementById("CaretUpDownRustGenericTraitLife").firstElementChild.firstElementChild)
+            // console.log(Change.classList.contains("bi-caret-right-fill"));
+
+            if (Change.classList.contains("bi-caret-right-fill")) {
+                // console.log("contain down")
+                Change.classList.remove("bi-caret-right-fill")
+                Change.classList.add("bi-caret-down-fill")
+            } else {
+                // console.log("contain up")
+                Change.classList.remove("bi-caret-down-fill")
+                Change.classList.add("bi-caret-right-fill")
+            }
+        });
+    })();
+    // 
+    // 
+    // Error
+    (function () {
+        let CaretUpDownRustProjects = document.getElementById("CaretUpDownRustProjects")
+        CaretUpDownRustProjects.addEventListener("click", function () {
+            let Change = this.firstElementChild.firstElementChild;
+            // console.log(Change);
+            // console.log(document.getElementById("CaretUpDownRustGenericTraitLife").firstElementChild.firstElementChild)
+            // console.log(Change.classList.contains("bi-caret-right-fill"));
+
+            if (Change.classList.contains("bi-caret-right-fill")) {
+                // console.log("contain down")
+                Change.classList.remove("bi-caret-right-fill")
+                Change.classList.add("bi-caret-down-fill")
+            } else {
+                // console.log("contain up")
+                Change.classList.remove("bi-caret-down-fill")
+                Change.classList.add("bi-caret-right-fill")
+            }
+        });
+    })();
+
+
+
+    // 
+    // C
+    //  C - Programming
+    // 
+    // 
+    // Basics
+    (function () {
+        let CCircleCBasics = document.getElementById("CCircleCBasics")
+        CCircleCBasics.addEventListener("click", function () {
+            let Change = this.firstElementChild.firstElementChild;
+            // console.log(Change);
+            // console.log(document.getElementById("CaretUpDownRustGenericTraitLife").firstElementChild.firstElementChild)
+            console.log(Change.classList.contains("bi-caret-right-fill"));
+
+            if (Change.classList.contains("bi-c-circle-fill")) {
+                // console.log("contain down")
+                Change.classList.remove("bi-c-circle-fill")
+                Change.classList.add("bi-c-circle")
+            } else {
+                // console.log("contain up")
+                Change.classList.remove("bi-c-circle")
+                Change.classList.add("bi-c-circle-fill")
+            }
+        });
+    })();
+    // 
+    // Data Structure
+    (function () {
+        let CCircleCDataStructures = document.getElementById("CCircleCDataStructures")
+        CCircleCDataStructures.addEventListener("click", function () {
+            let Change = this.firstElementChild.firstElementChild;
+            // console.log(Change);
+            // console.log(document.getElementById("CaretUpDownRustGenericTraitLife").firstElementChild.firstElementChild)
+            console.log(Change.classList.contains("bi-caret-right-fill"));
+
+            if (Change.classList.contains("bi-c-circle-fill")) {
+                // console.log("contain down")
+                Change.classList.remove("bi-c-circle-fill")
+                Change.classList.add("bi-c-circle")
+            } else {
+                // console.log("contain up")
+                Change.classList.remove("bi-c-circle")
+                Change.classList.add("bi-c-circle-fill")
+            }
+        });
+    })();
+
+    $(document).ready(function () {
+        // Adjust column accout to width
+        let Width = window.innerWidth;
+        if (Width < 1200) {
+            console.log("width less than 1200px")
+
+            // $("#Col3").hide();
+            // // $("#Col1#Col2").removeClass()
+            // $(".Redirect").click(function () {
+            //     $(this).addClass("")
+            // })
+            // $(".Redirect").mouseout(function () {
+            //     $(this).removeClass("")
+            // })
+        
+        
+            // $(".Link").addClass("text-decoration-underline")
+            // $(".LinkInverse").addClass("border-1 border-warning border-bottom")  
+            
+            // $("#Col3Move").removeClass("sticky-top")
+            $("#Col3Move").appendTo("#Col1Col3");
+            $("#Col3").empty();
+        }
+
+
+
+
+
+        $(".Redirect").mouseover(function () {
+            $(this).addClass("")
+        })
+        $(".Redirect").mouseout(function () {
+            $(this).removeClass("")
+        })
+
+
+        $(".Link").mouseover(function () {
+            $(this).addClass("text-decoration-underline")
+        })
+
+        $(".Link").mouseout(function () {
+            $(this).removeClass("text-decoration-underline")
+        })
+
+        $(".LinkInverse").mouseover(function () {
+            $(this).addClass("border-2 border-warning border-bottom")
+        })
+
+        $(".LinkInverse").mouseout(function () {
+            $(this).removeClass("border-2 border-warning border-bottom")
+        })
+
+    })
+</script>
