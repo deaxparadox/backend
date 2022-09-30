@@ -9,4 +9,5 @@ urlpatterns = [
 
     # 
     path("rust/enum/enum/", views_rust.RustEnumWhatIsEnumView.as_view(), name="programming_rust_enum_enum"),
+    path("rust/enum/match_iflet/", views_rust.RustEnumMatchIfLetView.as_view(), name="programming_rust_enum_matchiflet"),
 ]

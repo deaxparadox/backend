@@ -1,0 +1,215 @@
+{% load static %}
+<div id="Col2" class="col-lg-6 col-md-8">
+
+    {% comment %} position bar {% endcomment %}
+    <div class="container text-center text-bg-warning rounded mt-2">
+        <ul class="bg-warning py-2">
+            <li class="list-unstyled d-inline">
+                <a href="{% url 'programming' %}" class="Link text-decoration-none text-dark">
+                    programming</a>
+            </li>
+            <li class="list-unstyled text-dark d-inline">/</li>
+            <li class="list-unstyled d-inline">
+                <a href="#" class="Link text-decoration-none text-dark">
+                    python</a>
+            </li>
+            <li class="list-unstyled text-dark d-inline">/</li>
+            <li class="list-unstyled d-inline">
+                <a href="{% url 'programming_dsa_linkedlist_stack' %}" class="Link text-decoration-none text-dark">
+                    stack
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="container text-center pt-3">
+        <h3>
+            Stack
+        </h3>
+
+    </div>
+
+    <div class="container">
+        <p class="text-secondary">
+            Stack is LIFO (Last In First Out) data structures. In LIFO data structure element inserted (or appended) at
+            last is removed first. We are goind to implement stack using linked list.
+        </p>
+    </div>
+
+    <div class="container mt-5">
+
+        <style>
+            * {
+                box-sizing: border-box
+            }
+
+            .PageRelated {
+                display: none;
+            }
+
+            /* Style tab links */
+            /* .tablink { */
+            /* background-color: #555; */
+            /* color: white; */
+            /* float: left; */
+            /* border: none; */
+            /* outline: none; */
+            /* cursor: pointer; */
+            /* padding: 14px 16px; */
+            /* font-size: 17px; */
+            /* width: 25%; */
+            /* } */
+
+            /* .tablink:hover {
+                background-color: #777;
+            } */
+
+            /* Style the tab content (and add height:100% for full page content) */
+            .tabcontent {
+                color: white;
+                display: none;
+                padding: 100px 20px;
+                height: 100%;
+            }
+        </style>
+
+
+        <div class="container row">
+            <div class="container-fluid p-1  col-md-3 col-sm-3">
+                <button class="tablink btn btn-primary rounded-3 h-100 w-100"
+                    onclick="openPage('DSAPython', this, '', 'PageRelatedPython')" id="openDefault">
+                    Python
+                </button>
+            </div>
+            <div class="container-fluid p-1  col-md-3 col-sm-3">
+                <button class="tablink btn btn-primary rounded-3 h-100 w-100"
+                    onclick="openPage('DSARust', this, '', 'PageRelatedRust')">
+                    Rust
+                </button>
+            </div>
+            <div class="container-fluid p-1 col-md-3 col-sm-3">
+                <button class="tablink btn  btn-primary rounded-3 h-100 w-100" onclick="openPage('DSAC', this, '', 'PageRelatedC')">
+                    C
+                </button>
+            </div>
+            <div class="container-fluid p-1  col-md-3 col-sm-3">
+                <button class="tablink btn  btn-primary rounded-3 h-100 w-100"
+                    onclick="openPage('DSAJavascript', this, '', 'PageRelatedJavascript')">
+                    Javascript
+                </button>
+            </div>
+        </div>
+
+
+        <pre id="DSAPython" class="tabcontent mt-3">
+            <code class="language-python">
+        class _Node:
+            def __init__(self, data=None, pre=None) -> None:
+                self._data = data 
+                self._pre = pre
+
+        class Stack:
+            def __init__(self) -> None:
+                self._tail = _Node()
+                self._size = 0
+
+            def __len__(self):
+                return self._size 
+
+            def is_empty(self):
+                return self._size == 0
+
+            def append(self, data):
+                newNode = _Node(data, self._tail)
+                self._tail = newNode
+                self._size += 1
+
+            def pop(self):
+                removeItem = self._tail
+                self._tail = self._tail._pre
+                self._size -= 1
+                return removeItem._data
+
+            def print(self):
+                __copy = self._tail
+                __size = self._size
+                print("{:&gt10} {:&lt10}".format("Index", "Data"))
+                while __copy._pre is not None:
+                    print("{:&gt10} {:&lt10}".format(__size, __copy._data))
+                    __copy = __copy._pre
+                    __size -= 1
+                
+                del __copy
+                del __size
+
+        def main():
+            stk = Stack()
+            for i in range(10):
+                stk.append(i)
+            stk.print()
+            print(stk.pop())
+            stk.print()
+
+        if __name__ == "__main__":
+            main()
+            </code>
+        </pre>
+
+        <pre id="DSARust" class="tabcontent mt-3">
+            <code class="language-rust">
+                println!("Hello Paradox")
+            </code>
+        </pre>
+
+        <pre id="DSAC" class="tabcontent mt-3">
+            <code class="language-c">
+                printf("Hello Paradox\n");
+            </code>
+        </pre>
+
+        <pre id="DSAJavascript" class="tabcontent mt-3">
+            <code class="language-javascript">
+                console.log("Hello Paradox")
+            </code>
+        </pre>
+
+        <script defer>
+            function openPage(pageName, elmnt, color, page_related) {
+                var i, tabcontent, tablinks;
+
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+
+                let PageRelateds = document.getElementsByClassName("PageRelated");
+                for (i = 0; i < PageRelateds.length; i++) {
+                    PageRelateds[i].style.display = 'none';
+                }
+
+                tablinks = document.getElementsByClassName("tablink");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].classList.add("btn-primary");
+                    tablinks[i].classList.remove("bg-warning");
+                    tablinks[i].classList.remove("text-dark");
+                    tablinks[i].style.backgroundColor = "";
+                }
+
+                document.getElementById(pageName).style.display = "block";
+                document.getElementById(page_related).style.display = "block";
+
+                elmnt.style.backgroundColor = color;
+                elmnt.classList.remove("btn-primary");
+                elmnt.classList.add("bg-warning");
+                elmnt.classList.add("text-dark");
+
+            }
+
+            
+            // button "openDefault" is clicked at the end of page_related.html
+            // so every everything is working
+
+        </script>
+
+    </div>
+</div>

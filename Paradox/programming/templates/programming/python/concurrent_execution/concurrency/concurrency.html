@@ -1,0 +1,10 @@
+{% extends 'programming/base.html' %}
+{% load static %}
+{% block title %}python concurrency{% endblock title %}
+{% block row %}
+
+{% include 'programming/python/concurrent_execution/concurrent_execution.html' %}
+{% include 'programming/python/concurrent_execution/concurrency/content.html' %}
+{% include 'programming/python/concurrent_execution/concurrency/page_related.html' %}
+
+{% endblock row %}
