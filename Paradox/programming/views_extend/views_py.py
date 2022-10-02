@@ -6,6 +6,15 @@ from django.views import generic
 class PythonView(generic.TemplateView):
     template_name: str = "programming/python.html"
 
+# 
+# Basics
+#
+class PythonBasicsTypesVarComm(generic.TemplateView):
+    template_name: str = "programming/python/basics/data_types_variables/data_types_variables.html"
+# 
+class PythonBasicsListTuple(generic.TemplateView):
+    template_name: str = "programming/python/basics/array_tuple/array_tuple.html"
+
 
 # 
 #   Concurrency

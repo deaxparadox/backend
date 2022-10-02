@@ -6,45 +6,45 @@
         <div class="container-fluid rounded-3 my-2 ">
             <p class="text-center">
                 <!-- Python -->
-                <a class="btn btn-warning m-1" data-bs-toggle="collapse" href="#PythonCollapse"
-                    role="button" aria-expanded="false" aria-controls="PythonCollapse">
+                <a id="MainPythonCollapse" On="false" class="btn btn-warning m-1" data-bs-toggle="collapse" href="#PythonCollapse"
+                    role="button" aria-expanded="false" aria-controls="PythonCollapse" >
                     <img src="{% static 'images/PythonLogoBW32px.png' %}" alt="" srcset="">
                 </a>
 
 
                 <!-- Rust -->
-                <a class="btn btn-warning m-1" data-bs-toggle="collapse" href="#RustCollapse"
-                    role="button" aria-expanded="false" aria-controls="RustCollapse">
+                <a id="MainRustCollapse" On="false" class="btn btn-warning m-1 MainCollapse" data-bs-toggle="collapse" href="#RustCollapse"
+                    role="button" aria-expanded="false" aria-controls="RustCollapse" >
                     <img src="{% static 'images/RustLogoBW32px.png' %}" alt="" srcset="">
                 </a>
 
 
                 <!-- C -->
-                <a class="btn btn-warning  m-1" data-bs-toggle="collapse" href="#CCollapse"
-                    role="button" aria-expanded="false" aria-controls="CCollapse">
+                <a id="MainCCollapse" On="false" class="btn btn-warning  m-1 MainCollapse" data-bs-toggle="collapse" href="#CCollapse"
+                    role="button" aria-expanded="false" aria-controls="CCollapse" >
                     <img src="{% static 'images/CLogoBW32px.png' %}" alt="" srcset="">
                 </a>
 
                 <!-- Javascript -->
-                <a class="btn btn-warning m-1" data-bs-toggle="collapse" href="#JavascriptCollapse"
+                <a id="MainJavascriptCollapse" On="false" class="btn btn-warning m-1 MainCollapse" data-bs-toggle="collapse" href="#JavascriptCollapse"
                     role="button" aria-expanded="false" aria-controls="JavascriptCollapse">
                     <img src="{% static 'images/JavascriptLogoBW32px.png' %}" alt="" srcset="">
                 </a>
 
                 <!-- Django -->
-                <a class="btn btn-warning m-1" data-bs-toggle="collapse" href="#DjangoCollapse"
+                <a id="MainDjangoCollapse" On="false" class="btn btn-warning m-1 MainCollapse" data-bs-toggle="collapse" href="#DjangoCollapse"
                     role="button" aria-expanded="false" aria-controls="DjangoCollapse">
                     <img src="{% static 'images/DjangoBW32px.png' %}" alt="">
                 </a>
 
                 <!-- DSA -->
-                <a class="btn btn-warning m-1" data-bs-toggle="collapse" href="#DSACollapse"
+                <a id="MainDSACollapse" On="false" class="btn btn-warning m-1 MainCollapse" data-bs-toggle="collapse" href="#DSACollapse"
                     role="button" aria-expanded="false" aria-controls="DSACollapse">
                     <!-- <img src="" alt=""> -->DSA
                 </a>
 
                 <!-- Project -->
-                <a class="btn btn-warning m-1" data-bs-toggle="collapse" href="#ProjectCollapse"
+                <a id="MainProjectCollapse" On="false" class="btn btn-warning m-1 MainCollapse" data-bs-toggle="collapse" href="#ProjectCollapse"
                     role="button" aria-expanded="false" aria-controls="ProjectCollapse">
                     Project
                 </a>
@@ -73,18 +73,13 @@
                         <div class="collapse mt-2" id="PythonBasics">
                             <ul>
                                 <li>
-                                    <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
-                                        Data Types and Variables
+                                    <a href="{% url 'programming_py_type_var_comm' %}" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                        Data types, Varaibles and Comments
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
-                                        Comments
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="Link d-block link-dark text-decoration-none bg-warning border-0">
-                                        Arrays and Tuples
+                                    <a href="{% url 'programming_py_list_tuple' %}" class="Link d-block link-dark text-decoration-none bg-warning border-0">
+                                        List and Tuple
                                     </a>
                                 </li>
                                 <li>
@@ -2265,6 +2260,9 @@
             }
         });
     })();
+
+
+    
 
     $(document).ready(function () {
         // Adjust column accout to width
