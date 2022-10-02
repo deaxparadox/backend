@@ -1,0 +1,58 @@
+<div class="container m-3" id="MultiprocessingProcessClass">
+    <h3 class="mt-5">
+        Process class
+    </h3>
+    <p class="m-3 text-secondary">
+        In <i>multiprocessing</i>, processes are spawned by creating a Process object and then calling its <i>start()</i> method.
+    </p>
+    <pre>
+        <code class="language-python">
+        import multiprocessing
+        from multiprocessing import Pool
+        
+        
+        def Fibo(x: int) -> int:
+            if x == 0:
+                return 0
+            elif x == 1:
+                return 1
+            else: 
+                return Fibo(x-1) + Fibo(x-2)
+        
+        def Calculate(x: int) -> None:
+            FibVal: int = Fibo(x)
+            print("fibonacci for %s is %s" % (x, FibVal))
+        
+        def main():
+            num: int = 40
+            nums = [num for x in range(2)]
+            
+            for i in range(2):
+                multiprocessing.Process(
+                    target=Calculate, 
+                    args=(num,),
+                ).start()
+            
+        
+        if __name__ == "__main__":
+            main()                        
+        </code>
+    </pre>
+    <p class="m-3 text-secondary">
+        Output:
+    </p>
+    <pre>
+        <code class="language-bash">
+        $ time python3 fibonacci.py
+        fibonacci for 40 is 102334155
+        fibonacci for 40 is 102334155
+
+        real	0m36.986s
+        user	1m13.702s
+        sys	0m0.009s
+        </code>
+    </pre>
+    <p class="m-3 text-secondary">
+        
+    </p>
+</div>

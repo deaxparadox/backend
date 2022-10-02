@@ -10,7 +10,16 @@ urlpatterns = [
 
     # Concurrent execution
     path("py/concurrent/", views_py.PythonConcurrencyView.as_view(), name="programming_py_concurrent_execution"),
-    path("py/concurrent/threading/", views_py.PythonConcurrencyThreadingView.as_view(), name="programming_py_concurrent_execution_threading"),
+    path(
+        "py/concurrent/threading/", 
+        views_py.PythonConcurrencyThreadingView.as_view(), 
+        name="programming_py_concurrent_execution_threading"
+    ),
+    path(
+        "py/concurrent/multiprocessing/", 
+        views_py.PythonConcurrencyMultiprocessingView.as_view(), 
+        name="programming_py_concurrent_execution_multiprocessing"
+    ),
 
     # NetworkingAndInterprocessCommunication
     path("py/net_inter_com/signal/", views_py.PythonNetworkingInterprocessCommunicationView.as_view(), name="programming_py_net_inter_com_signal"),

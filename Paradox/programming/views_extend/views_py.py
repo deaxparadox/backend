@@ -16,14 +16,19 @@ class PythonBasicsListTuple(generic.TemplateView):
     template_name: str = "programming/python/basics/array_tuple/array_tuple.html"
 
 
-# 
-#   Concurrency
-# 
+##############################
+#  Concurrency               #
+##############################
 class PythonConcurrencyView(generic.TemplateView):
     template_name: str = "programming/python/concurrent_execution/concurrency/concurrency.html"
-
+# 
+# Threading
 class PythonConcurrencyThreadingView(generic.TemplateView):
     template_name: str = "programming/python/concurrent_execution/threading/threading.html"
+# 
+# Multiprocessing
+class PythonConcurrencyMultiprocessingView(generic.TemplateView):
+    template_name: str = "programming/python/concurrent_execution/multiprocessing/multiprocessing.html"
 
 
 # 
