@@ -1,0 +1,9 @@
+{% load crispy_forms_tags %}
+<div class="container DivHL p-5 mt-3 rounded-4">
+    <form action="" method="post" class="p-3">
+        {% csrf_token %}
+        {{ form|crispy }}
+        <p>Are you sure want to delete "{{blog_delete.title}}" ?</p>
+        <input type="submit" value="Delete" class="btn btn-danger">
+    </form>
+</div>

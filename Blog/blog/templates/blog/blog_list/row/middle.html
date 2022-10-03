@@ -1,0 +1,25 @@
+<div class="container">
+    {% comment %} <div class="text-center container-fluid my-5">
+        <h2>Blogs</h2>
+    </div>
+    {% endcomment %}
+
+    <div class="containerm my-5">
+
+        {% for blog in blog_list %}
+        <div class="container p-3 DivHL rounded-5 m-3">
+            <a class="text-decoration-none mx-3 DivHL" href="{% url 'blog_detail' blog.id %}">
+                <h5 class="d-inline  DivHL">
+                    {{blog.title}}
+                </h5>
+                &ThickSpace;&ThickSpace;&ThickSpace;By: <small class=" DivHL">{{ blog.author}}</small>
+                &ThickSpace;&ThickSpace;&ThickSpace;Date: <small class=" DivHL">{{ blog.date }}</small>
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+
+    <div class="container text-center p-4">
+        <a href="{% url 'blog_create' %}" class="btn btn-primary">New</a>
+    </div>
+</div>
