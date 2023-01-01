@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}Todo app{% endblock title %}
+{% block content %}
+
+<div id="todo">
+    <ul id="todo-list">
+        {% for todo in todos %}
+        <li class="todo-item">
+            <h3>{{todo.title}}</h3>
+            <p>{{todo.memo}}</p>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock content %}
