@@ -1,0 +1,15 @@
+<div class="container-fluid pb-3" id="latest">
+    <div class="container-fluid mt-3 mb-3">
+        <h3 class="text-warning">Latest</h3>
+        <ul class="mt-2 mb-2 pt-2 pb-2 rounded-3">
+            {% for blog in latest_blogs %}
+                <li class="text-warning">
+                    <a href="{{ blog.get_absolute.url }}"  class="text-decoration-none text-warning">
+                        {{ blog.title }}
+                    </a>
+                </li>
+            {% endfor %}
+            
+        </ul>
+    </div>
+</div>

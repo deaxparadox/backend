@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}Plot{% endblock title %}
+{% block content %}
+    <div class="center" id="heading">
+        <h1>Plotting with Django</h1>
+    </div>
+
+    
+    <div class="center" id="graph-container">
+        <h3>Sample plot</h3>
+        
+        <form action="" class="input-form">
+            <label for="x">X</label>
+            <input type="number" name="x" id="x">
+            <label for="y">Y</label>
+            <input type="number" name="y" id="y">
+        </form>
+        <button id="plot">Plot</button>
+
+        <div id="graph-holder">
+            <img id="graph" src="data:image/png;base64, {{ graph }}" alt="">
+        </div>
+    </div>
+
+    
+{% endblock content %}
