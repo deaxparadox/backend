@@ -1,7 +1,9 @@
 from django.urls import path 
 
 from . import views 
-from .api.apiview import BlogListView
+from api import apiview
+from .feeds import LatestPostsFeed
+
 
 app_name = "blog"
 
@@ -15,7 +17,10 @@ urlpatterns = [
     path("<int:post_id>/share/", views.post_share, name="post_share"),
     path("<int:post_id>/comment/", views.post_comment, name="post_comment"),
     path("tag/<slug:tag_slug>/", views.post_list, name="post_list_by_tag"),
+    path("feed/", LatestPostsFeed(), name="post_feed"),
+    path("search/", views.post_search, name="post_search"),
 
     # API
-    path("api/", BlogListView.as_view(), name="api_post_list")
+    path("api/", apiview.BlogListView.as_view(), name="api_post_list"),
+    path("api/create/", apiview.BlogCreateView.as_view(), name="api_post_create")
 ]

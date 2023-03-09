@@ -1,1 +1,6 @@
-Env
+.gitignore
+**/db.sqlite3
+**/__pycache__
+**/.pytest_cache
+**/*.code-workspace
+**/*env
