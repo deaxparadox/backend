@@ -159,13 +159,13 @@ AUTHENTICATION_BACKENDS = [
 ]
 
 # SOCIAL_AUTH_FACEBOOK
-SOCIAL_AUTH_FACEBOOK_KEY = "801057611185918"
-SOCIAL_AUTH_FACEBOOK_SECRET = "0a6739c506a6aea73eb94cdc7c30b262"
+SOCIAL_AUTH_FACEBOOK_KEY = ""
+SOCIAL_AUTH_FACEBOOK_SECRET = ""
 SOCIAL_AUTH_FACEBOOK_SCOPE = ["email"]
 
 # SOCIAL_AUTH_GOOGLE
-SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = "840432309812-upee5msnh6pb8pm77nmmt9866hgveeb6.apps.googleusercontent.com"
-SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = "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"
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = ""
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = ""
 
 SOCIAL_AUTH_PIPELINE = (
     'social_core.pipeline.social_auth.social_details',
@@ -179,5 +179,8 @@ SOCIAL_AUTH_PIPELINE = (
     'social_core.pipeline.social_auth.load_extra_data',
     'social_core.pipeline.user.user_details',
 )
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 0340bc13f800b663a27b19de58e8b9e958a76a39
