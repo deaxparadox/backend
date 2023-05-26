@@ -1,0 +1,47 @@
+version: "3.10"
+services:
+
+
+  web:
+    container_name: djgraphql
+    build: .  
+    ports:
+      - "8000:8000"
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/app
+    depends_on:
+      - db
+      - redis
+      - rabbitmq
+    links:
+      - redis
+      - db
+      - rabbitmq
+
+  db:
+    container_name: djgraphql_postgres
+    image: postgres:13
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    environment:
+      - "POSTGRES_HOST_AUTH_METHOD=trust"
+
+
+
+  redis:
+    container_name: djgraphql_redis
+    restart: on-failure
+    image: redis:latest
+    ports:
+      - "6379:6379"
+    
+  rabbitmq:
+    container_name: djgraphql_rabbitmq
+    restart: on-failure
+    image: rabbitmq:latest 
+    ports:
+      - "5672:5672"
+
+volumes:
+  postgres_data:
