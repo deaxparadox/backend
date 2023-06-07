@@ -6,38 +6,42 @@ from selenium.webdriver.common.by import By
 
 from time import sleep
 
+from .models import Question
 
-from .models import Question, Choice
-
-class TestPages(TestCase):
+class Testpages(TestCase):
     def setUp(self) -> None:
-        # question 1
-        self.question1 = Question.objects.create(question_text="What is hobby")
+        # Question 1
+        self.question1 = Question.objects.create(
+            question_text= "What is your hobby?"
+        )
         self.question1.choice_set.create(choice_text="Painting")
         self.question1.choice_set.create(choice_text="Cooking")
         self.question1.choice_set.create(choice_text="Gaming")
         self.question1.choice_set.create(choice_text="Writing")
+    
+        # Question 2
 
-        # question 2
-        self.question2 = Question.objects.create(question_text="What is favourite food?")
+        self.question2 = Question.objects.create(
+            question_text= "What is your favourite food?"
+        )
         self.question2.choice_set.create(choice_text="Biryani")
         self.question2.choice_set.create(choice_text="Fry Chicken")
         self.question2.choice_set.create(choice_text="Samosa")
         self.question2.choice_set.create(choice_text="Momos")
-        
+
     def test_index(self):
         index = self.client.get("/")
         self.assertEqual(index.status_code, 200)
+        self.assertTemplateUsed(index, "base.html")
         self.assertTemplateUsed(index, "polls/index.html")
-        
-    def test_detail(self):
-        detail = self.client.get(reverse("detail", args=(self.question1.id,)))
-        self.assertEqual(detail.status_code, 200)
-        self.assertTemplateUsed(detail, "polls/detail.html")
-        self.assertContains(detail, self.question1.question_text)
 
-    def test_votes(self):
-        # In votes we get a redirection to result page
+    def test_detail(self):
+        detail = self.client.get(reverse("detail", args=(self.question1.id, )))
+        self.assertEqual(detail.status_code, 200)
+        self.assertTemplateUsed(detail, "base.html")
+        self.assertTemplateUsed(detail, "polls/detail.html")
+
+    def test_result(self):
         votes = self.client.post(reverse("votes", args=(self.question1.id,)), {
             "choice": self.question1.choice_set.first().id
         })
@@ -47,33 +51,40 @@ class TestPages(TestCase):
 
         self.assertEqual(votes.url, f"/{self.question1.id}/result/")
 
-class TestBrowserPages(TestCase):
+
+class TestBrowser(TestCase):
     def setUp(self) -> None:
         self.chrome = Chrome()
         self.local = "http://localhost:8000{}"
 
     def test_process(self):
-        # visiting Polls (or index) page
-        self.chrome.get(self.local.format(reverse("index")))
-        self.assertEqual(self.chrome.title, "Polls")
+        # visiting polls page
+        url = self.local.format(reverse("index"))
+        # print(url)
+        self.chrome.get(url)
 
-        # find the first question and click it.
-        q = self.chrome.find_element(By.XPATH, '/html/body/ul/li[1]/a')
+        self.assertEqual(self.chrome.title, "Polls")
+        
+        # find the first question and click
+        q = self.chrome.find_element(By.XPATH, "/html/body/ul/li[1]/a")
         q.click()
 
-        # get a detail page,
-        # select 1 choice
+        # get detail page
+        # select a choice
         # click vote
         self.assertEqual(self.chrome.title, "Polls Detail")
-        choice = self.chrome.find_element(By.ID, "choice1").click()
+        choice = self.chrome.find_element(By.ID, "choice1")
+        choice.click()
+
         vote = self.chrome.find_element(By.XPATH, "/html/body/form/input[2]")
 
-        # after click on vote,
+
+        # after click on vote button.
         # django will redirect to result page.
         vote.click()
         self.assertEqual(self.chrome.title, "Polls Result")
 
-        sleep(2)
+        sleep(3)
 
     def tearDown(self) -> None:
         self.chrome.quit()
