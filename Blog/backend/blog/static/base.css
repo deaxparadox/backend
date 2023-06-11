@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+#container {
+    background-color: rgba(47, 79, 79, 0.178);
+    width: 500px;
+}
+
+#container > a {
+    display: block;
+    color: darkslategray;
+    text-decoration: none;
+    padding: 10px;
+    transform: all .5ms;
+    font-size: larger;
+}
+#container > a:hover {
+    color: violet;
+}
+
+
+/*  */
+#post-container {
+    width: 500px;
+    background-color: aliceblue;
+    padding: 30px;
+}
+
+#post-container > h1 {
+    color: rgba(255, 0, 0, 0.55);
+}
+
+#post-container > em > span {
+    font-size: 10px;
+    font-weight: bold;
+    color: grey;
+}
+#post-container > p {
+    padding: 20px 0px
+}

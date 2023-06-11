@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}Blog Detail{% endblock title %}
+
+{% block body %}
+<div id="post-container">
+    <h1>{{ post.title }}</h1>
+    <em><span>{{ post.created }}</span></em>
+    <p>
+        {{ post.body }}
+    </p>
+</div>
+{% endblock body %}
