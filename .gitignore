@@ -1,0 +1,7 @@
+**/__pycache__
+**/.pytest_cache
+**/*.code-workspace
+**/*env
+**/.stripe.env
+**/.postgres.env
+**/node_modules
