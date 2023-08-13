@@ -1,7 +1,17 @@
 services:
-  django:
+  web-django:
+    # it represent directory
     build: .
     ports:
       - "8000:8000"
-    command: python manage.py runserver
+
+    # command: python manage.py runserver
+    command: ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+
+    # Copy changes made to the project to your image in real-time.
+    volumes:  
+      - .:/simple-django-app
+
     container_name: simple-django-app
+
+    
