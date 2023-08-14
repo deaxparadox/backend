@@ -1,0 +1,7 @@
+#navbar {
+    background-color: var(--dark);
+    color: var(--warning);
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}

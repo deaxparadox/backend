@@ -1,0 +1,11 @@
+:root {
+    --warning: rgb(255, 196, 0);
+    --dark: rgb(55, 57, 58);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
