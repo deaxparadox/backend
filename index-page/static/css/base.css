@@ -1,0 +1,311 @@
+
+:root {
+    --color1: #f7fbff;
+    --color2: #deebf7;
+    --color3: #c6dbef;
+    --color4: #9ecae1;
+    --color5: #6baed6;
+    --color6: #4292c6;
+    --color7: #2171b5;
+    --color8: #08519c;
+    --color9: #08306b;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: var(--color1);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+/* NAVBAR */
+#navbar, .navbar-sub {
+    display: flex;
+    background-color: var(--color8);
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--color2);
+}
+
+#navbar {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    justify-content: space-between;
+    
+}
+
+
+.navbar-sub-item-link {
+    display: inline-block;
+    padding: 6px 15px;
+    font-size: inherit;
+    font-weight: inherit;
+    background-color: inherit;
+    color: inherit;
+    text-decoration: none;
+}
+.navbar-sub-item-link:hover {
+    background-color: var(--color9);
+}
+#site {
+    color: var(--color2);
+    border-right: 3px solid var(--color4);
+    /* box-shadow: 10px 3px 3px 3px var(--color4); */
+    /* padding: 0px 10px; */
+    /* border-radius: 5px; */
+    font-weight: bolder;
+}
+
+
+@keyframes ShowOtherTopics {
+    0% {
+        transform: scale(0, 0);
+    }
+    50% {
+        transform: scale(1, .01);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+@keyframes HideOtherTopics {
+    0% {
+        transform: scale(1, 1);
+    }
+    50% {
+        transform: scale(1, .01);
+    }
+    100% {
+        transform: scale(0, 0);
+    }
+}
+#other-topics-button {
+    font-size: inherit;
+    font-weight: inherit;
+    cursor: pointer;
+    background-color: var(--color7);
+    color: var(--color2);
+    padding: 0px 20px;
+}
+#other-topics-button:hover {
+    background-color: var(--color9);
+}
+#other-topics {
+    top: 0  px;
+    position: absolute;
+    list-style: none;
+    background-color: var(--color8);
+    color: var(--color2);
+    /* top: 27px; */
+    height: 100vh;
+    /* width: 100%; */
+    transform: scale(0, 0);
+    transform-origin: left;
+    transition: .3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+.other-topics-item-link {
+    width: 100%;
+    background-color: inherit;
+    color: inherit;
+    text-decoration: none;
+    padding: 6px 0px;
+    text-align: center;
+}
+.other-topics-item-link:hover {
+    background-color: var(--color4);
+    color: var(--color9);
+}
+
+/* BODY  */
+#row {
+    padding-top: 33px;
+    transition: .3s;
+    display: flex;
+    /* height: 100vh; */
+}
+#left, #right {
+    width: 20%;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+#center {
+    width: 60%;
+    background-color: var(--color4);
+}
+
+/* left */
+#left-heading {
+    background-color: var(--color6);
+    color: var(--color1);
+    text-align: center  ;
+    padding: 9px 0px;
+}
+#left > h3 > button {
+    background-color: inherit;
+    color: inherit;
+    padding: 6px 9px;
+    cursor: pointer;
+    border: 2px solid var(--color6);
+    border-radius: 6px;
+    font-size: 21px;
+    font-weight: bold;
+}
+#left > h3 > button:hover {
+    background-color: var(--color8);
+    border-color: var(--color4);
+}
+#left > h3 > button:active {
+    background-color: var(--color9);
+    border-color: var(--color3);
+}
+#left > a {
+    display: block;
+    text-align: center;
+    background-color: var(--color3);
+    color: var(--color9);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 0px;
+}
+#left > a:nth-child(odd) {
+    background-color: var(--color2);
+}
+#left > a:hover {
+    background-color: var(--color5);
+    color: var(--color9);
+}
+
+#left-box {
+    z-index: 3;
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #6bafd6d4;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    transition: .5s;
+}
+#left-box > button {
+    padding: 10px 12px;
+    margin: 12px;
+    border-radius: 50%;
+    background-color: var(--color2);
+    color: var(--color9);
+    cursor: pointer;
+}
+#left-map {
+    border-radius: 12px;
+    padding: 30px 10px;
+    width: 80%;
+    height: 75%;
+    overflow-y: scroll;
+    background-color: var(--color8);
+}
+.left-map-topics {
+    margin-top: 10px;
+    background-color: inherit;
+    color: var(--color2);
+}
+.left-map-topics > h3, h2 {
+    background-color: inherit;
+    margin-left:  20px;
+    /* text-decoration: underline; */
+}
+.left-map-topics > div {
+    background-color: inherit;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 40px;
+    padding-top: 6px;
+    list-style: none;
+    font-size: 18px;
+}
+.left-map-topics > div > a {
+    margin: 3px 6px;
+    background-color: var(--color9);
+    color: var(--color3);
+    border-radius: 12px;
+    padding: 3px 7px;
+    text-decoration: none;
+}
+.left-map-topics > div > a:hover {
+    background-color: var(--color4);
+    color: var(--color9);
+}
+.left-map-topics > div > a:active {
+    background-color: var(--color3);
+}
+
+
+/* center */
+#center > h1 {
+    background-color: var(--color9);
+    color: var(--color2);
+    padding: 18px 20px;
+}
+#center > h2, h3, h4, h5, h6 {
+    padding: 9px 24px;
+    background-color: var(--color8);
+    color: var(--color1);
+}
+#center > p {
+    background-color: var(--color4);
+    font-size: 21px;
+    padding: 18px 40px;
+}
+
+
+
+/* right */
+#right-heading {
+    background-color: var(--color6);
+    color: var(--color1);
+    text-align: center  ;
+    padding: 9px 0px;
+}
+.right-link {
+    display: block;
+    text-align: center;
+    background-color: var(--color2);
+    color: var(--color9);
+    text-decoration: none;
+    font-size: 12px;
+    padding: 3px 0px;
+}
+.right-link:nth-child(odd) {
+    background-color: var(--color3);
+}
+.right-link:hover {
+    background-color: var(--color5);
+    color: var(--color9);
+}
+
+/* footer */
+#footer {
+    /* position: fixed; */
+    /* bottom: 0; */
+    background-color: var(--color9);
+    width: 100%;
+    color: var(--color2);
+    text-align: center;
+}
+#footer > h1 {
+    background-color: inherit;
+    color: inherit;
+    padding: 10px;
+}
