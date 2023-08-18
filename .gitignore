@@ -1,7 +1,7 @@
 **/__pycache__
 **/.pytest_cache
 **/migrations/*
-**/!migrations/__init__.py
+!/**/migrations/__init__.py
 **/*.code-workspace
 **/*env
 **/.stripe.env
