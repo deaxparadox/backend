@@ -2,6 +2,8 @@ from django.http import HttpResponse, Http404, HttpResponseRedirect
 from django.shortcuts import render, get_object_or_404
 from django.urls import reverse
 from django.template import loader
+from django.contrib import messages
+from django.utils import timezone
 
 from .models import Question, Choice
 
@@ -44,3 +46,24 @@ def vote(request, pk):
         selected_choice.votes += 1
         selected_choice.save()
         return HttpResponseRedirect(reverse("app:results", args=(question.id,)))
+
+
+def create_question(request):
+    match request.method:
+        case "POST":
+            question = request.POST["question"]
+            if question:
+                q = Question.objects.create(question_text="My first question", pub_date=timezone.now())    
+            else:
+                messages.add_message(request, messages.INFO, "Invalid question!")
+                return HttpResponseRedirect(reverse("app:create_question"))
+            
+            messages.add_message(request, messages.INFO, "Post method.")
+            return HttpResponseRedirect(reverse("app:index"))
+        
+        case default:
+            return render(
+                request,
+                "app/question/create.html",
+                {}
+            )

@@ -1,0 +1,28 @@
+{% if messages %}
+<ul class="messages">
+    {% for message in messages %}
+    <li {% if message.tags %} class="{{ message.tags }}" {% endif %}>
+        <h1>
+            {{ message }}
+        </h1>
+    </li>
+    {% endfor %}
+</ul>
+{% endif %}
+
+<div></div>
+
+<div>
+    <form method="POST" action="{% url 'app:create_question' %}">
+        {% csrf_token %}
+        <fieldset>
+          <legend>Create your question.</legend>
+      
+          <label for="question">Question</label><br />
+          <input type="text" id="" name="question" value="" placeholder="Question please..." />
+          
+        </fieldset>
+        <input type="submit" value="Create">
+    </form>
+      
+</div>
