@@ -32,7 +32,7 @@ def vote(request, pk):
     question = get_object_or_404(Question, pk=pk)
 
     try:
-        selected_choice = question.choice_set.get(pk=request.POST['choice'])
+        selected_choice = question.choices.get(pk=request.POST['choice'])
     except (KeyError, Choice.DoesNotExist):
         return render(
             request,
@@ -51,9 +51,22 @@ def vote(request, pk):
 def create_question(request):
     match request.method:
         case "POST":
+            # get question from request POST
             question = request.POST["question"]
+
+            # get choices from request POST
+            choice1 = request.POST["choice1"]
+            choice2 = request.POST["choice2"]
+            choice3 = request.POST["choice3"]
+            choice4 = request.POST["choice4"]
+
+
             if question:
-                q = Question.objects.create(question_text="My first question", pub_date=timezone.now())    
+                q = Question.objects.create(question_text=question, pub_date=timezone.now())    
+                q.choices.create(choice_text=choice1)
+                q.choices.create(choice_text=choice2)
+                q.choices.create(choice_text=choice3)
+                q.choices.create(choice_text=choice4)
             else:
                 messages.add_message(request, messages.INFO, "Invalid question!")
                 return HttpResponseRedirect(reverse("app:create_question"))
