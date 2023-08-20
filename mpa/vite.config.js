@@ -6,10 +6,11 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, './index.html'),
-        linux: resolve(__dirname, './pages/linux.html'),
-        python: resolve(__dirname, './pages/python.html'),
-        python_introduction: resolve(__dirname, './pages/introduction.html'),
-        python_numeric_types: resolve(__dirname, './pages/numeric_types.html'),
+        polls: resolve(__dirname, './pages/polls/index.html'),
+        linux: resolve(__dirname, './pages/linux/index.html'),
+        python: resolve(__dirname, './pages/python/index.html'),
+        python_introduction: resolve(__dirname, './pages/python/introduction.html'),
+        python_numeric_types: resolve(__dirname, './pages/python/numeric_types.html'),
       },
     },
   },

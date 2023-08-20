@@ -7,6 +7,7 @@ module.exports = {
     "base": __dirname + "/static/ts/base.ts",
     "linux": __dirname + "/static/ts/linux.ts",
     "python": __dirname + "/static/ts/python.ts",    
+    "polls_base": __dirname + "/static/ts/polls/base.ts",    
   },
   module: {
     rules: [
