@@ -2,7 +2,7 @@ from django.urls import path
 from rest_framework.urlpatterns import format_suffix_patterns
 from snippets.views import format_suffix
 
-app_name = "restapi"
+app_name = "snippet_format_suffix"
 
 urlpatterns = [
     path("snippets/", format_suffix.snippet_list),

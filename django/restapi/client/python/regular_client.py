@@ -93,7 +93,7 @@ def main():
         print(response.text)
 
 def main2():
-    requesting(URL_format_suffix.path)
+    requesting(URL.path)
     data = load_data(return_data=True)
     show_data()
 
@@ -101,7 +101,7 @@ def main2():
 
     for data in data:
         id = data.get("id", None)
-        requesting(URL_format_suffix.snippet.format(str(id)))
+        requesting(URL.snippet.format(str(id)))
         # load_data()
         # show_data()
         print(response.text)

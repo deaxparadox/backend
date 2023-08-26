@@ -15,8 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from snippets.views import mixin_views, generic_views
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("", include("snippets.urls.format_suffix", namespace="restapi")),
+    path("snippets/", include("snippets.urls.urls", namespace="restapi")),
 ]
