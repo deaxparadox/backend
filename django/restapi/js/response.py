@@ -2,8 +2,13 @@ import requests
 import json 
 from typing import Any
 
-URL: str = "http://localhost:8000/snippets/"
-snippet: str = "http://localhost:8000/snippets/{}/"
+class URL:
+    path: str = "http://localhost:8000/snippets/"
+    snippet: str = "http://localhost:8000/snippets/{}/"
+
+class URL_format_suffix:
+    path: str = "http://localhost:8000/snippets.json/"
+    snippet: str = "http://localhost:8000/snippets/{}.json/"
 
 response: requests.Response | None = None
 current_data: str | None = None
@@ -11,6 +16,25 @@ current_data: str | None = None
 def requesting(url: str) -> requests.Response:
     global response
     response = requests.get(url)
+
+
+def requesting_json(url: str) -> requests.Response:
+    global response
+    response = requests.get(
+        url=url,
+        headers={
+            "Accept": "Application/json",
+        }
+    )
+
+def requesting_html(url: str) -> requests.Response:
+    global response
+    response = requests.get(
+        url=url,
+        headers={
+            "Accept": "text/html",
+        }
+    )
 
 
 def load_data(res: requests.Response | None = None, return_data: bool = False) -> None:
@@ -55,16 +79,33 @@ def show_data(data: Any | None = None) -> None:
 
 
 def main():
-    res = requesting(URL)
+    requesting(URL.path)
     data = load_data(return_data=True)
-    # show_data()
+    show_data()
+
+    print("-"*30)
 
     for data in data:
         id = data.get("id", None)
-        requesting(snippet.format(str(id)))
-        load_data()
-        show_data()
+        requesting_html(URL.snippet.format(str(id)))
+        # load_data()
+        # show_data()
+        print(response.text)
+
+def main2():
+    requesting(URL_format_suffix.path)
+    data = load_data(return_data=True)
+    show_data()
+
+    print("-"*30)
+
+    for data in data:
+        id = data.get("id", None)
+        requesting(URL_format_suffix.snippet.format(str(id)))
+        # load_data()
+        # show_data()
+        print(response.text)
         
 
 if __name__ == "__main__":
-    main()
+    main2()

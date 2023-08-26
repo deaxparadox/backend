@@ -4,6 +4,8 @@ from rest_framework.parsers import JSONParser
 from snippets.models import Snippet
 from snippets.serializers import SnippetSerializers
 
+
+
 @csrf_exempt
 def snippet_list(request):
     """
