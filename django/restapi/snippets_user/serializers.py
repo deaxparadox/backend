@@ -1,8 +1,8 @@
 from rest_framework import serializers
-from snippets.models import Snippet, LANGUAGE_CHOICES, STYLE_CHOICES
+from snippets_user.models import SnippetUser, LANGUAGE_CHOICES, STYLE_CHOICES
 from django.contrib.auth.models import User
 
-class SnippetSerializers(serializers.Serializer):
+class SnippetUserSerializers(serializers.Serializer):
     id = serializers.IntegerField(read_only=True)
     title = serializers.CharField(required=False, allow_blank=True, max_length=100)
     code = serializers.CharField(style={'base_template': 'textarea.html'})
@@ -12,7 +12,7 @@ class SnippetSerializers(serializers.Serializer):
 
 
     def create(self, validated_data):
-        return Snippet.objects.create(**validated_data)
+        return SnippetUser.objects.create(**validated_data)
     
     def update(self, instance, validated_data):
         instance.title = validated_data.get("title", instance.title)
@@ -24,15 +24,15 @@ class SnippetSerializers(serializers.Serializer):
         return instance
     
 
-class SnippetModelSerializers(serializers.ModelSerializer):
+class SnippetUserModelSerializers(serializers.ModelSerializer):
     class Meta:
-        model = Snippet
+        model = SnippetUser
         fields = ["id", 'title', 'code', 'linenos', 'language', 'style']
 
 
 
 class UserSerializer(serializers.ModelSerializer):
-    snippets = serializers.PrimaryKeyRelatedField(many=True, queryset=Snippet.objects.all())
+    snippets = serializers.PrimaryKeyRelatedField(many=True, queryset=SnippetUser.objects.all())
 
     class Meta:
         model = User

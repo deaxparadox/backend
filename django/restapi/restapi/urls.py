@@ -21,4 +21,5 @@ from snippets.views import mixin_views, generic_views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("snippets/", include("snippets.urls.urls", namespace="restapi")),
+    path("snippets_user/", include("snippets_user.urls", namespace="snippets_user")),
 ]

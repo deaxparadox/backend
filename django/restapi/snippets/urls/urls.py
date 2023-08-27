@@ -74,4 +74,4 @@ urlpatterns = [
         generic_views.SnippetDetail.as_view(), 
         name="snippet_generic_view_detail"
     ),
-]
+] 

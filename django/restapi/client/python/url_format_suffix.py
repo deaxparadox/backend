@@ -4,8 +4,8 @@ from typing import Any
 
 
 class URL:
-    path: str = "http://localhost:8000/snippets/format_suffix.json/"
-    snippet: str = "http://localhost:8000/snippets/format_suffix/{}.json/"
+    path: str = "http://localhost:8000/snippets/format_suffix/"
+    snippet: str = "http://localhost:8000/snippets/format_suffix/{}/"
 
 response: requests.Response | None = None
 current_data: str | None = None
@@ -90,7 +90,7 @@ def main():
         print(response.text)
 
 def main_json():
-    requesting(URL.path)
+    requesting_json(URL.path)
     data = load_data(return_data=True)
     show_data()
 
@@ -98,15 +98,16 @@ def main_json():
 
     for data in data:
         id = data.get("id", None)
-        requesting(URL.snippet.format(str(id)))
+        requesting_json(URL.snippet.format(str(id)))
         # load_data()
         # show_data()
         print(response.text)
 
 
 def main_html():
-    requesting_html(URL.path)
+    requesting(URL.path)
     data = load_data(return_data=True)
+    # print(response.text)
     show_data()
 
     print("-"*30)
@@ -121,4 +122,4 @@ def main_html():
 
 
 if __name__ == "__main__":
-    main()
+    main_html()
