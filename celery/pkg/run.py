@@ -1,12 +1,12 @@
 import time 
 
-from tasks import fibo, add
+from tasks.maths import fibonacci, add
 
 runners = [
-    fibo.delay(40), 
-    fibo.delay(40), 
-    fibo.delay(40), 
-    fibo.delay(40)
+    add.delay(40, 41), 
+    add.delay(40, 41), 
+    add.delay(40, 41), 
+    add.delay(40, 41)
 ]
 
 status: bool = True

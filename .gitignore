@@ -1,3 +1,7 @@
+**/*.pyc
+**/staticfiles
+
+
 **/__pycache__
 **/.pytest_cache
 **/migrations/*
