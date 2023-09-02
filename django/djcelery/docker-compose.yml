@@ -3,7 +3,7 @@ version: '3.8'
 services:
   web:
     build: ./
-    command: python manage.py runserver 0.0.0.0:8000 --settings=djcelery.settings.docker
+    command: python manage.py runserver 0.0.0.0:8000
     volumes:
       - ./:/usr/src/app/
     ports:
@@ -38,3 +38,4 @@ services:
 
   redis:
     image: redis:7-alpine
+    container_name: redis_djcelery
