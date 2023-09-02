@@ -2,11 +2,23 @@ import os
 
 from celery import Celery
 
+DOCKER = os.getenv("DOCKER", 0)
+print(DOCKER)
 
 # Set the default Django settings module for the 'celery' program.
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'djcelery.settings')
+if DOCKER:
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'djcelery.settings.docker')
+else:
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'djcelery.settings.local')
+
+
 app = Celery("djcelery")
-app.config_from_object('django.conf:settings', namespace='CELERY')
+
+if DOCKER:
+    app.config_from_object('django.conf:settings', namespace='CELERY')
+else:
+    app.config_from_object('django.conf:settings', namespace='CELERY')
+
 app.autodiscover_tasks()
 
 @app.task(bind=True, ignore_result=True)

@@ -6,7 +6,17 @@ import sys
 
 def main():
     """Run administrative tasks."""
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'djcelery.settings')
+
+    DOCKER = os.getenv("DOCKER", 0)
+    # Set the default Django settings module for the 'celery' program.
+    if DOCKER:
+        os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'djcelery.settings.docker')
+    else:
+        os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'djcelery.settings.local')
+
+    # os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'djcelery.settings.local')
+
+
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:
