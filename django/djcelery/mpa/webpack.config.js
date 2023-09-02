@@ -4,11 +4,7 @@ console.log(__dirname)
 
 module.exports = {
   entry: {
-    "base": __dirname + "/static/ts/base.ts",
-    "linux": __dirname + "/static/ts/linux.ts",
-    "python": __dirname + "/static/ts/python.ts",    
-    "polls_base": __dirname + "/static/ts/polls/base.ts",
-    "djcelery_add": __dirname + "/pages/djcelery/add/add.ts",    
+    "add": __dirname + "/pages/add/add.ts",    
   },
   module: {
     rules: [

@@ -1,0 +1,28 @@
+{% extends 'demoapp_base.html' %}
+
+{% block content %}
+    <h1>Demo App</h1>
+
+    <div id="row">
+        <div id="lef"></div>
+        <div id="content">
+            <h1>Demo App</h1>
+
+            <div class="box" id="add-box">
+                <fieldset>
+                    <legend>Add</legend>
+
+                    <br>
+                    <label for="add-box-a">A: </label>
+                    <input type="text" name="add-box-a" id="add-box-a">
+
+                    <br>
+                    <label for="add-box-b">B: </label>
+                    <input type="text" name="add-box-b" id="add-box-b">
+                </fieldset>
+                <button id="add-box-button" type="button">Add</button>
+
+            </div>
+        </div>
+        <div id="right"></div>
+{% endblock content %}

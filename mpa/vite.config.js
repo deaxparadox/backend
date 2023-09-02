@@ -11,6 +11,7 @@ export default defineConfig({
         python: resolve(__dirname, './pages/python/index.html'),
         python_introduction: resolve(__dirname, './pages/python/introduction.html'),
         python_numeric_types: resolve(__dirname, './pages/python/numeric_types.html'),
+        djcelery_add: resolve(__dirname, ".pages/djcelery/add/add.html")
       },
     },
   },
