@@ -1,6 +1,7 @@
 import time 
 
-from tasks.maths import fibonacci, add
+
+from project.tasks import add
 
 runners = [
     add.delay(40, 41), 
@@ -12,6 +13,9 @@ runners = [
 status: bool = True
 total_runners = len(runners)
 count: int = 0
+
+pending = []
+
 while status:
 
     for t in runners:
