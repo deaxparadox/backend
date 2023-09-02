@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     "django_celery_results",
     "rest_framework",
+    "demoapp",
 ]
 
 MIDDLEWARE = [
