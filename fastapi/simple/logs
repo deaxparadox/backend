@@ -1,0 +1,48 @@
+DEBUG:Log sever working
+DEBUG:App instance
+DEBUG:read_item:/items/1:using path parameter.
+DEBUG:read_item:/items/foo:using path parameter.
+DEBUG:Log sever working
+DEBUG:App instance
+DEBUG:Log sever working
+DEBUG:App instance
+DEBUG:read_item:/items/1:path parameters with types
+DEBUG:read_item:/items/1:path parameters with types
+DEBUG:Log sever working
+DEBUG:App instance
+DEBUG:Log sever working
+DEBUG:App instance
+DEBUG:Log sever working
+DEBUG:App instance
+DEBUG:Log sever working
+DEBUG:App instance
+DEBUG:Log sever working
+DEBUG:App instance
+DEBUG:read_users:/users:get all user
+DEBUG:read_user:/users/nitish:accept and return current user_id
+DEBUG:read_user_me:/users/me:get the current user
+DEBUG:read_users:/users:get all user
+DEBUG:Log sever working
+DEBUG:App instance
+DEBUG:Log sever working
+DEBUG:App instance
+DEBUG:Log sever working
+DEBUG:App instance
+DEBUG:get_model:/models/alexnet:return requested model
+DEBUG:get_model:/models/resnet:return requested model
+DEBUG:get_model:/models/lenet:return requested model
+DEBUG:Log sever working
+DEBUG:App instance
+DEBUG:Log sever working
+DEBUG:App instance
+DEBUG:Log sever working
+DEBUG:App instance
+DEBUG:read_item:/items/1:path and query parameter
+DEBUG:read_item:/items/1:path and query parameter
+DEBUG:read_item:/items/1:path and query parameter
+DEBUG:read_item:/items/1:path and query parameter
+DEBUG:read_item:/items/1:path and query parameter
+DEBUG:read_item:/items/1:path and query parameter
+DEBUG:read_item:/items/1:path and query parameter
+DEBUG:read_item:/items/1:path and query parameter
+DEBUG:read_item:/items/1:path and query parameter
