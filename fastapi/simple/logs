@@ -86,3 +86,5 @@ DEBUG:
 def create_task(task_type):
     return 1
 
+DEBUG:Log sever working
+DEBUG:App instance

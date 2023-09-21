@@ -1,0 +1,42 @@
+version: '3.8'
+
+services:
+  simple:
+    # it represent directory
+    build: .
+    ports:
+      - "8000:8000"
+    environment: 
+      - CELERY_BROKER_URL=redis://redis:6379/0
+      - CELERY_RESULT_BACKEND=redis://redis:6379/0
+
+    # command: python manage.py runserver
+    command: ["uvicorn", "app.main:app", "--reload", "--host=0.0.0.0", "--port=8000"]
+
+    # Copy changes made to the project to your image in real-time.
+    volumes:  
+      - .:/simple-fastapi-app
+
+    container_name: simple-fastapi-app
+
+    depends_on:
+      - redis
+      - celery
+
+
+  celery:
+    build: ./
+    command: celery --app=app.celery.worker.celery worker --loglevel=info
+    volumes:
+      - ./:/usr/src/app
+    environment:
+      - CELERY_BROKER_URL=redis://redis:6379/0
+      - CELERY_RESULT_BACKEND=redis://redis:6379/0
+    depends_on:
+      - redis
+    container_name: celery_djcelery
+
+
+  redis:
+    image: redis:7
+    container_name: simple-fastapi-redis

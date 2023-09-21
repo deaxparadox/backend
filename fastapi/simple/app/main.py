@@ -39,17 +39,6 @@ async def celery_worker():
         "task_id": task.id
     }
 
-# @app.get("/celery/result")
-# async def celery_worker(
-#     task_id: str
-# ):
-#     task_result = AsyncResult(task_id)
-#     result = {
-#         "task_id": task_id,
-#         "task_status": task_result.status,
-#         "task_result": task_result.result
-#     }
-#     return JSONResponse(result)
 
 
 
