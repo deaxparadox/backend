@@ -1,3 +1,3 @@
-# Backend: A Learn Place
+# Backend: Django API
 
-Roadmap: [>>>](./index-page/index.html)
+- backend : testing serializer
