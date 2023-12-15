@@ -21,7 +21,13 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("", views.home_page),
+    path(
+        "", 
+        include(
+            "app.urls",
+            namespace="app"
+        )
+    ),
 ] + [
     re_path(r"^", views.error_404)
 ]
