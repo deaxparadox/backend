@@ -1,7 +1,0 @@
-{
-  "dependencies": {
-    "websocket": "^1.0.34",
-    "websocket-nodejs": "^1.0.0",
-    "ws": "^8.13.0"
-  }
-}

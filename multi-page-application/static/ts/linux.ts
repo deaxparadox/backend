@@ -1,1 +1,0 @@
-console.log("Linux main page.")
