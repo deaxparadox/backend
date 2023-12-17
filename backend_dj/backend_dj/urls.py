@@ -28,6 +28,21 @@ urlpatterns = [
             namespace="app"
         )
     ),
+    path(
+        "api/",
+        include(
+            [
+                path(
+                    "pms/", 
+                    include(
+                        [
+                            path('v1/', include("pms.api.v1.urls", namespace="pms_api_v1"))
+                        ]
+                    )
+                )
+            ]
+        )
+    )
 ] + [
     re_path(r"^", views.error_404)
 ]
