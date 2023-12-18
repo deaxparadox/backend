@@ -10,17 +10,22 @@
     <link rel="stylesheet" href="{% static 'pms/css/index.css' %}">
 </head>
 <body>
+    {% include "pms/include/navbar.html" %}
 
-    {% block top %}{% endblock top %}
+    <div id="top">
+        {% block top %}{% endblock top %}
+    </div>
 
-    <div id="left">
-        {% block left %}{% endblock left %}
-    </div>
-    <div id="center">
-        {% block center %}{% endblock center %}
-    </div>
-    <div id="right">
-        {% block right %}{% endblock right %}
+    <div id="row">
+        <div id="left">
+            {% block left %}{% endblock left %}
+        </div>
+        <div id="center">
+            {% block center %}{% endblock center %}
+        </div>
+        <div id="right">
+            {% block right %}{% endblock right %}
+        </div>
     </div>
 
     {% block buttom %}{% endblock buttom %}

@@ -2,14 +2,14 @@
 {% block title %}
     PMS
 {% endblock title %}
-{% block top %}
+{% comment %} {% block top %}
 <h1>PMS Page.</h1>
 <ul>
     <li>
         <a href="{% url "app:dashboard" %}">Dashboard</a>
     </li>
 </ul>
-{% endblock top %}
+{% endblock top %} {% endcomment %}
 
 {% block center %}
     {% for heading in headings %}
@@ -21,3 +21,4 @@
         </div>
     {% endfor %}
 {% endblock center %}
+
