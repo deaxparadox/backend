@@ -1,0 +1,23 @@
+{% extends 'pms/base.html' %}
+{% block title %}
+    PMS
+{% endblock title %}
+{% block top %}
+<h1>PMS Page.</h1>
+<ul>
+    <li>
+        <a href="{% url "app:dashboard" %}">Dashboard</a>
+    </li>
+</ul>
+{% endblock top %}
+
+{% block center %}
+    {% for heading in headings %}
+        <div class="section">
+            <h1>
+                {{ heading.name }}
+            </h1>
+            <a href="{{ heading.get_absolute_url }}" type="button">Edit</a>
+        </div>
+    {% endfor %}
+{% endblock center %}

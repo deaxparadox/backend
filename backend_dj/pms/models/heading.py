@@ -15,12 +15,15 @@ class Heading(models.Model):
     start = models.DateField(null=True, blank=True)
     end = models.DateField(null=True, blank=True)
 
+    # managers
+    objects = models.Manager()
+
 
     def __str__(self) -> str:
         return self.name
     
-    # def get_absolute_url(self):
-    #     return reverse("app:edit_", kwargs={"pk": self.pk})
+    def get_absolute_url(self):
+        return reverse("pms:edit_heading_view", kwargs={"id": self.pk})
     
     def add_user(self, user: User | None = None) -> User:
         self.user = user 

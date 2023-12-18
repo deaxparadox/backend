@@ -1,6 +1,6 @@
 from django import forms
 
-from ..models.tasks import Task
+from pms.models.task import Task
 
 class TaskModelForm(forms.ModelForm):
     start = forms.DateField(
@@ -17,4 +17,4 @@ class TaskModelForm(forms.ModelForm):
     )
     class Meta:
         model = Task
-        fields = "__all__"
+        exclude = ['heading']

@@ -1,7 +1,7 @@
 from django import forms
 from django.contrib.admin.widgets import AdminDateWidget
 
-from ..models.headings import Heading
+from pms.models.heading import Heading
 
 # class HeadingDateInput(forms.TextInput):
 #     input_type = 'date'

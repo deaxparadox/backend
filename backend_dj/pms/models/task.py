@@ -2,7 +2,7 @@ from collections.abc import Iterable
 from django.db import models
 from django.dispatch import receiver, Signal
 from django.db.models.signals import pre_save
-
+from django.urls import reverse
 
 from .heading import Heading
 
@@ -28,6 +28,10 @@ class Task(models.Model):
         else return False.
         """
         return self.end > self.heading.end
+    
+    def get_absolute_url(self):
+        return reverse("pms:edit_task_view", kwargs={"id": self.pk})
+    
 
     def save(self, *args, **kwargs) -> None:
         return super().save(*args, **kwargs)

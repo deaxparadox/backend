@@ -1,0 +1,24 @@
+{% extends 'pms/base.html' %}
+
+{% block title %}Edit heading{% endblock title %}
+{% block top %}
+    <h1>Heading Edit</h1>
+{% endblock top %}
+{% block center %}
+    <div class="section">
+        <form action="" method="POST">
+            {{ form.as_p }}
+        </form>
+    </div>
+
+    <div class="section">
+        <h2>Task</h2>
+    </div>
+
+    {% for task in tasks %}
+        <div class="section">
+            <h3>{{ task.name }}</h3>
+            <a href="{{ task.get_absolute_url }}" type="button">Edit</a>
+        </div>
+    {% endfor %}
+{% endblock center %}

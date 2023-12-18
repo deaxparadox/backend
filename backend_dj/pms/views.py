@@ -3,6 +3,7 @@ from django.urls import reverse
 from django.contrib import messages
 
 from pms.models.heading import Heading
+from pms.models.task import Task
 from pms.forms.heading import HeadingModelForm
 from pms.forms.task import TaskModelForm
 
@@ -53,20 +54,22 @@ def edit_heading_view(request, id):
             "pms/edit/heading.html"
         )
     form = HeadingModelForm(instance=heading)
+    tasks = heading.tasks.all()
     return render(
         request,
-        "pms/edit/heading.html",
+        "pms/edit_heading.html",
         {
             # "heading": heading
-            "form": form
+            "form": form,
+            "tasks": tasks
         }
     )
 
 
 def edit_task_view(request, id):
-    heading: Heading|None = None
+    task: Task|None = None
     try:
-        heading = Heading.objects.get(id=id)
+        task = Task.objects.get(id=id)
     except Heading.DoesNotExist as e:
         messages.add_message(request, messages.INFO, "Heading does not exist")
         return render(
@@ -79,10 +82,11 @@ def edit_task_view(request, id):
             request,
             "pms/edit/task.html"
         )
+    form = TaskModelForm(instance=task)
     return render(
         request,
-        "pms/edit/task.html",
+        "pms/edit_task.html",
         {
-            "heading": heading
+            "form": form
         }
     )
