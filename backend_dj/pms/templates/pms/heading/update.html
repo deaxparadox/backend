@@ -8,53 +8,24 @@
 {% block center %}
     <div class="section-box">
         <div class="section-heading">
-            <h1>Heading Details</h1>
+            <h1>Heading Edit</h1>
         </div>
         <div class="section">
-            <form action="" method="POST">
+            <form action="{{ update_url}}" method="POST">
+                {% csrf_token %}
                 {{ form | crispy }}
+
+                
+            <div id="buttons">
+                <input type="submit" class="btn btn-lg btn-warning m-1" value="Update">
+            </div>
             </form>
         </div>
 
-        
-        <div id="buttons">
-            <a class="btn btn-danger btn-lg" href="{{ heading.get_detail_url }}" type="button">Details</a>
-        </div>
-
     </div>
 
-    {% comment %} 
-                        VIEW HEADING DETAIL    
-    {% endcomment %}
-    <div class="section-box">
-        <div class="section">
-            <h2 class="text-center">
-                {{ heading.name }}
-            </h2>
-            <hr>
-            <div id="date">
-                <div id="start">
-                    <strong><em>start:</em></strong>&ThickSpace; {% if heading.start %}{{ heading.start }}{% else %} <strong>-</strong> {% endif %}
-                </div>
-                <div id="end">
-                    <strong><em>end:</em></strong>&ThickSpace; {{ heading.start }}
-                </div>
-            </div>
-            {% comment %} <hr> {% endcomment %}
-            {% comment %} <hr> {% endcomment %}
+    {% comment %} <div class="section-box">
             
-            <div id="buttons">
-                <a class="btn btn-danger btn-lg" href="{{ heading.get_detail_url }}" type="button">Details</a>
-            </div>
-        </div>
-    </div>
-
-
-
-    {% comment %} 
-                    VIEW ALL TASKS
-    {% endcomment %}
-    <div class="section-box">
         <div class="section-heading">
             <h2>Task</h2>
         </div>
@@ -77,5 +48,5 @@
                 
             </div>
         {% endfor %}
-    </div>
+    </div> {% endcomment %}
 {% endblock center %}

@@ -12,7 +12,7 @@ from pms.forms.task import TaskModelForm
 
 def create_task_view(request):
     form = TaskModelForm()
-    return render(request, "pms/create/task.html", {
+    return render(request, "pms/task/create.html", {
         "form": form
     })
 
@@ -26,18 +26,18 @@ def edit_task_view(request, id):
         messages.add_message(request, messages.INFO, "Heading does not exist")
         return render(
             request,
-            "pms/edit/task.html"
+            "pms/task/update.html"
         )
     except Heading.MultipleObjectsReturned as e:
         messages.add_message(request, messages.INFO, "Multiple object returned")
         return render(
             request,
-            "pms/edit/task.html"
+            "pms/task/update.html"
         )
     form = TaskModelForm(instance=task)
     return render(
         request,
-        "pms/edit_task.html",
+        "pms/task/update.html",
         {
             "form": form
         }

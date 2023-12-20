@@ -14,12 +14,12 @@
 {% block center %}
 
     <div class="section-box">
-        <div class="section-heading">
-            <h3>Heading</h3>
-        </div>
+        <hr>
         <div id="buttons">
-            <a type="button" class="btn btn-success btn-lg" href="{% url "pms:create_heading" %}">Create</a>
+            <a type="button" class="btn btn-success btn-lg m-1" href="{% url "pms:create_heading_view" %}">Create Heading</a>
+            <a type="button" class="btn btn-success btn-lg m-1" href="{% url "pms:create_heading_view" %}">Create Task</a>
         </div>
+        <hr>
     </div>
 
     <div class="section-box">
@@ -34,19 +34,20 @@
                         <strong><em>start:</em></strong>&ThickSpace; {% if heading.start %}{{ heading.start }}{% else %} <strong>-</strong> {% endif %}
                     </div>
                     <div id="end">
-                        <strong><em>end:</em></strong>&ThickSpace; {{ heading.start }}
+                        <strong><em>end:</em></strong>&ThickSpace; {% if heading.note %}{{ heading.note }}{% else %} <strong>-</strong> {% endif %}
                     </div>
                 </div>
 
                 
                 <div id="note">
-                    {{ heading.note }}
+                    <strong><em>Note: </em></strong>&ThickSpace;{% if heading.note %}{{ heading.note }}{% else %} <strong>-</strong> {% endif %}
                 </div>
                 {% comment %} <hr> {% endcomment %}
                 {% comment %} <hr> {% endcomment %}
                 
                 <div id="buttons">
-                    <a class="btn btn-danger btn-lg" href="{{ heading.get_detail_url }}" type="button">Details</a>
+                    <a class="btn btn-warning btn-lg m-1" href="{{ heading.get_update_url }}" type="button">Update</a>
+                    <a class="btn btn-danger btn-lg m-1" href="{{ heading.get_detail_url }}" type="button">Details</a>
                 </div>
             </div>
         {% endfor %}

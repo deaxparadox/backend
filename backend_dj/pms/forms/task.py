@@ -18,3 +18,6 @@ class TaskModelForm(forms.ModelForm):
     class Meta:
         model = Task
         exclude = ['heading']
+        
+    
+    field_order = ['heading', 'name', 'description', 'note', 'start', 'end']

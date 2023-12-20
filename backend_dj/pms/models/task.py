@@ -13,6 +13,8 @@ class Task(models.Model):
     updated = models.DateTimeField(auto_now=True)
     name = models.CharField(max_length=255)
     heading = models.ForeignKey(Heading, on_delete=models.CASCADE, related_name="tasks")
+    description = models.TextField(null=True, blank=True)
+    note = models.CharField(max_length=120, null=True, blank=True)
     start = models.DateField(null=True, blank=True)
     end = models.DateField(null=True, blank=True)
 
@@ -30,8 +32,11 @@ class Task(models.Model):
         return self.end > self.heading.end
     
     def get_absolute_url(self):
-        return reverse("pms:edit_task_view", kwargs={"id": self.pk})
+        return reverse("pms:update_task_view", kwargs={"id": self.pk})
     
+    def get_update_url(self):
+        return reverse("pms:update_task_view", kwargs={"id": self.pk})
 
     def save(self, *args, **kwargs) -> None:
         return super().save(*args, **kwargs)
+    

@@ -50,9 +50,9 @@ body > #row > #center > .section-box > #buttons {
 }
 
 #row > #center > .section-box > .section-heading {
-    color: brown;
-    background-color: rgb(241, 228, 228);
-    /* background-image: linear-gradient(to right, rgb(250, 136, 136), white); */
+    color: bisque;
+    background-color: rgb(250, 165, 165);
+    background-image: linear-gradient(to bottom, rgb(109, 2, 2), rgb(71, 2, 2));
     padding: 20px;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -75,7 +75,8 @@ body > #row > #center > .section-box > #buttons {
     width: 100%;
     border-bottom: 1px sodid brown;
 }
-#row > #center > .section-box > .section > #buttons {
+#row > #center > .section-box > .section > #buttons,
+#row > #center > .section-box > .section > form > #buttons {
     margin-top: 30px;
     display: flex;
     justify-content: end;
@@ -91,9 +92,22 @@ body > #row > #center > .section-box > #buttons {
 }
 
 #row > #center > .section-box > .section > #note {
-    padding: 30px 10px;
-    /* font-weight: bold; */
-    font-size: large;
-    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    padding: 10px 10px;
+    font-weight: bold;
+    /* font-size: large; */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: brown;
+}
+#row > #center > .section-box > .section > #note > strong {
+    color: rgb(134, 134, 134)
+}
+#row > #center > .section-box > .section > #description {
+    padding: 10px 10px;
+    /* font-weight: bold; */
+    /* font-size: large; */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* color: brown; */
+}
+#row > #center > .section-box > .section > #description > strong {
+    color: rgb(134, 134, 134)
 }

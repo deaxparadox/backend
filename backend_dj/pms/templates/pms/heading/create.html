@@ -11,8 +11,12 @@
             <h1>Heading Create</h1>
         </div>
         <div class="section">
-            <form action="" method="POST">
+            <form action="{{ create_url }}" method="POST">
+                {% csrf_token %}
                 {{ form | crispy }}
+                <div id="buttons">
+                    <input type="submit" class="btn btn-lg btn-warning m-1" value="Update">
+                </div>
             </form>
         </div>
     

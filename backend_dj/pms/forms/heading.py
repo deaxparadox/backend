@@ -19,9 +19,16 @@ class HeadingModelForm(forms.ModelForm):
         label='End',
         help_text="specify the end (or final) date"
     )
+    note = forms.CharField(
+        # widget=forms.CharField(attrs={'type': 'text'}),
+        required=False,
+        help_text="Note describing your heading in less then 120 words"
+    )
     class Meta:
         model = Heading
         fields = "__all__"
         # widgets = {
         #     "end": forms.DateInput(attrs={"type": "date"})
         # }
+        
+    field_order = ['user', 'name', 'description', 'note', 'start', 'end']
