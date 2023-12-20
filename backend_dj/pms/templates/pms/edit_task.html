@@ -1,4 +1,6 @@
 {% extends 'pms/base.html' %}
+{% load crispy_forms_tags %}
+
 
 {% block title %}Edit heading{% endblock title %}
 {% comment %} {% block top %}
@@ -8,7 +10,7 @@
     <h1>Task Edit</h1>
     <div class="section">
         <form action="" method="POST">
-            {{ form.as_p }}
+            {{ form | crispy }}
         </form>
     </div>
 

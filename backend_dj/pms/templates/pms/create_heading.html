@@ -1,16 +1,23 @@
 {% extends 'pms/base.html' %}
+{% load crispy_forms_tags %}
 
 {% block title %}Edit heading{% endblock title %}
 {% comment %} {% block top %}
     
 {% endblock top %} {% endcomment %}
 {% block center %}
-<h1>Heading Create</h1>
-    <div class="section">
-        <form action="" method="POST">
-            {{ form.as_p }}
-        </form>
+    <div class="section-box">
+        <div class="section-heading">
+            <h1>Heading Create</h1>
+        </div>
+        <div class="section">
+            <form action="" method="POST">
+                {{ form | crispy }}
+            </form>
+        </div>
+    
     </div>
+
 
     {% comment %} <div class="section-heading">
         <h2>Task</h2>

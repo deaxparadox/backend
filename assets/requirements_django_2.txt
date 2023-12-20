@@ -1,16 +1,16 @@
-Django==5.0
-daphne==4.0.0
+celery==5.3.4
 channels==4.0.0
 channels-redis==4.1.0
+daphne==4.0.0
+Django==5.0
+django-celery-results==2.5.1
+django-cors-headers==4.3.1
 django-taggit==3.1.0
 djangorestframework==3.14.0
 graphene-django==3.0.0
 ipython==8.11.0
+jedi==0.19.1
 psycopg2-binary==2.9.9
-# wagtail==5.1.1
-selenium==4.11.2
-celery==5.3.4
-redis==4.6.0
-django-celery-results==2.5.1
 rich==13.5.2
-django-cors-headers==4.2.0
+selenium==4.11.2
+django-crispy-forms==2.1

@@ -1,0 +1,11 @@
+#footer {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    padding: 20px;
+    /* background-color: rgb(71, 10, 10);
+    background-color: brown; */
+    background-image: linear-gradient(to top, rgb(71, 10, 10), rgb(206, 29, 29));
+    color: burlywood;
+}

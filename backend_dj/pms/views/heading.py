@@ -31,7 +31,7 @@ async def home_view(request):
         }
     )
 
-def create_heading_view(request):
+async def create_heading_view(request):
     form = HeadingModelForm()
     return render(request, "pms/create_heading.html", {
         "form": form
@@ -62,6 +62,36 @@ def edit_heading_view(request, id):
         "pms/edit_heading.html",
         {
             # "heading": heading
+            "form": form,
+            "tasks": tasks
+        }
+    )
+
+
+async def detail_heading_view(request, id):
+    heading: Heading|None = None
+    try:
+        heading = Heading.objects.get(id=id)
+    except Heading.DoesNotExist as e:
+        messages.add_message(request, messages.INFO, "Heading does not exist")
+        # return render(
+        #     request,
+        #     "pms/edit/heading.html"
+        # )
+        return redirect(reverse("app:home"))
+    except Heading.MultipleObjectsReturned as e:
+        messages.add_message(request, messages.INFO, "Multiple object returned")
+        return render(
+            request,
+            "pms/edit/heading.html"
+        )
+    form = HeadingModelForm(instance=heading)
+    tasks = heading.tasks.all()
+    return render(
+        request,
+        "pms/detail_heading.html",
+        {
+            "heading": heading,
             "form": form,
             "tasks": tasks
         }
