@@ -1,3 +1,6 @@
-# Backend: A Learn Place
+# Backend
 
-Roadmap: [>>>](./index-page/index.html)
+A backend repository integrating all the project into the single repository.
+
+Python : `3.12.0`
+requirements: `assets/requirements.txt`
