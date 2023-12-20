@@ -30,13 +30,14 @@ def home_view(request):
     """
     Send a response with all heading
     """
-    user_token: str | None = get_token_from_header(request)
+    # user_token: str | None = get_token_from_header(request)
     
-    if not user_token:
-        return Response({}, status=status.HTTP_401_UNAUTHORIZED)
+    # if not user_token:
+    #     return Response({}, status=status.HTTP_401_UNAUTHORIZED)
     
       
-    headings = user_token.user.heading.all()
+    # headings = user_token.user.heading.all()
+    headings = Heading.objects.all().order_by("-created")
     
     serializers = HeadingModelSerializer(headings, many=True)
     return Response(
