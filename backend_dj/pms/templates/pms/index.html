@@ -12,6 +12,11 @@
 {% endblock top %} {% endcomment %}
 
 {% block center %}
+
+    <div class="section">
+        <a type="button" class="link-button" href="{% url "pms:create_heading" %}">Create</a:button>
+    </div>
+
     {% for heading in headings %}
         <div class="section">
             <h1>
