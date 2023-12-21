@@ -4,7 +4,8 @@ from django.urls import include, path
 
 
 from . import views
-from .views import heading as heading_views
+from pms.api.v1.views import heading as heading
+
 
 app_name = "pms_api_v1"
 
@@ -15,13 +16,13 @@ urlpatterns = [
         "", include(
             [
                 # /api/v1/
-                path("", views.home_view, name="api_home_view"),
+                path("", heading.home_view, name="api_home_view"),
                 
                 # /api/v1/<int:id>/
-                path("<int:id>/", heading_views.GetSingleHeading.as_view(), name="api_single_heading_view"),
+                path("<int:id>/", heading.HeadingDetail.as_view(), name="api_single_heading_view"),
                 
                 # /api/v1/c/
-                path("c/", heading_views.create_heading, name="api_create_heading_view"),
+                path("c/", heading.create_heading, name="api_create_heading_view"),
             ]
         )
     ),
