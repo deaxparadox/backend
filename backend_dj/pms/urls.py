@@ -17,11 +17,12 @@ urlpatterns = [
     
     # task view
     path(
-        "task",
+        "task/",
         include(
             [
+                path("<int:id>/", task.detail_task_view,  name="detail_task_view"),
                 path("create/", task.create_task_view, name="create_task_view"),
-                path("<int:id>/update/", task.edit_task_view, name="update_task_view"),
+                path("<int:id>/update/", task.update_task_view, name="update_task_view"),
             ]
         )
     )

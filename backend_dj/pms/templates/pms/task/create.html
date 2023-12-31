@@ -1,0 +1,36 @@
+{% extends 'pms/base.html' %}
+{% load crispy_forms_tags %}
+
+{% block title %}Edit Task{% endblock title %}
+{% comment %} {% block top %}
+    
+{% endblock top %} {% endcomment %}
+{% block center %}
+    <div class="section-box">
+        <div class="section-heading">
+            <h1>Task Create</h1>
+        </div>
+        <div class="section">
+            <form action="{{ create_url }}" method="POST">
+                {% csrf_token %}
+                {{ form | crispy }}
+                <div id="buttons">
+                    <input type="submit" class="btn btn-lg btn-success m-1" value="Create">
+                </div>
+            </form>
+        </div>
+    
+    </div>
+
+
+    {% comment %} <div class="section-heading">
+        <h2>Task</h2>
+    </div>
+
+    {% for task in tasks %}
+        <div class="section">
+            <h3>{{ task.name }}</h3>
+            <a href="{{ task.get_absolute_url }}" type="button">Edit</a>
+        </div>
+    {% endfor %} {% endcomment %}
+{% endblock center %}

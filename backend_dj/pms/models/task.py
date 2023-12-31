@@ -32,11 +32,15 @@ class Task(models.Model):
         return self.end > self.heading.end
     
     def get_absolute_url(self):
-        return reverse("pms:update_task_view", kwargs={"id": self.pk})
+        return reverse("pms:detail_task_view", kwargs={"id": self.pk})
     
     def get_update_url(self):
         return reverse("pms:update_task_view", kwargs={"id": self.pk})
 
+    @staticmethod
+    def get_create_url():
+        return reverse("pms:create_task_view")
+    
     def save(self, *args, **kwargs) -> None:
         return super().save(*args, **kwargs)
     
