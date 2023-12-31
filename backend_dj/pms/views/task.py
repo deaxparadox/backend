@@ -3,6 +3,7 @@ from django.urls import reverse
 from django.contrib import messages
 
 from pms.models.heading import Heading
+from django.db import IntegrityError
 from pms.models.task import Task
 from pms.forms.heading import HeadingModelForm
 from pms.forms.task import TaskModelForm
@@ -12,10 +13,19 @@ from pms.forms.task import TaskModelForm
 
 def create_task_view(request):
     if request.method == "POST":
-        # post_form = TaskModelForm(request.POST)
-        # if post_form.is_valid()
-        # returen
-        return redirect(reverse("pms:detail_"))
+        post_form = TaskModelForm(request.POST)
+        if post_form.is_valid():
+            try:
+                task: Task = post_form.save()
+                heading_id = int(post_form.cleaned_data['select_heading'])
+                if heading_id > 0:
+                    heading = Heading.objects.get(id=heading_id)
+                    task.heading = heading
+                    task.save()
+            except IntegrityError as e:
+                messages.add_message(request, messages.INFO, e)
+                return redirect(reverse("pms:create_task_view"))
+            return redirect(reverse("pms:detail_task_view", kwargs={"id": task.id}))
     form = TaskModelForm()
     return render(request, "pms/task/create.html", {
         "form": form,

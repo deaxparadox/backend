@@ -12,7 +12,7 @@ class Task(models.Model):
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
     name = models.CharField(max_length=255)
-    heading = models.ForeignKey(Heading, on_delete=models.CASCADE, related_name="tasks")
+    heading = models.ForeignKey(Heading, on_delete=models.CASCADE, related_name="tasks", null=True, blank=True)
     description = models.TextField(null=True, blank=True)
     note = models.CharField(max_length=120, null=True, blank=True)
     start = models.DateField(null=True, blank=True)

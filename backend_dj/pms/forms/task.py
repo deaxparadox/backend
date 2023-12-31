@@ -4,9 +4,10 @@ from pms.models.task import Task
 from pms.models.heading import Heading
 
 class TaskModelForm(forms.ModelForm):
-    heading_names = [
-        (str(h.id), h.name) for h in Heading.objects.all()
-    ]
+    heading_names = [('-1', "None")]
+    for h in Heading.objects.all():
+        heading_names.append((str(h.id), h.name))
+
     start = forms.DateField(
         widget=forms.DateInput(attrs={"type": "date"}),
         required=False,
@@ -32,7 +33,7 @@ class TaskModelForm(forms.ModelForm):
         model = Task
         exclude = ['heading']
         fields = "__all__"
-        
+
     
     field_order = [
         # 'user',
