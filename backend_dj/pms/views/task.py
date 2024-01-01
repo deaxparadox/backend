@@ -25,7 +25,11 @@ def create_task_view(request):
             except IntegrityError as e:
                 messages.add_message(request, messages.INFO, e)
                 return redirect(reverse("pms:create_task_view"))
+            
+            # successfully created
+            messages.add_message(request, messages.INFO, "Task created successfully.")
             return redirect(reverse("pms:detail_task_view", kwargs={"id": task.id}))
+
     form = TaskModelForm()
     return render(request, "pms/task/create.html", {
         "form": form,
