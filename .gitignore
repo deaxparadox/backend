@@ -54,3 +54,7 @@
 # System files
 **/.DS_Store
 **/Thumbs.db
+
+# 
+**/target/
+**/Cargo.lock
