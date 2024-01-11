@@ -12,9 +12,8 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-import sconfig.config_file
-
+import sconfig.settings
 # os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'backend_dj.settings')
-os.environ.get("DJANGO_SETTINGS_MODULE", 'backend_dj.settings')
+# os.environ.get("DJANGO_SETTINGS_MODULE", 'backend_dj.settings')
 
 application = get_wsgi_application()

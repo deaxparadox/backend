@@ -12,8 +12,24 @@ services:
       - ./.env.dev
     depends_on:
       - redis
+      - db
+    container_name: backend-django-server
+    
+  db:
+    image: postgres
+    ports:
+      - 5432:5432
+    volumes:
+      - ./database:/var/lib/postgresql/data
+    environment:      
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=136900
+      - POSTGRES_DB=dockerdb
+    container_name: backend-db
+
     
   redis:
     image: redis:5
     ports:
       - 6379:6379
+    container_name: backend-redis

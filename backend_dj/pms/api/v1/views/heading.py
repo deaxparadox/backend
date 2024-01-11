@@ -4,6 +4,9 @@ from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.authtoken.models import Token
 
+from asyncio import sleep as asleep
+from time import sleep
+
 from pms.api.helpers.auth import get_token_from_header
 
 from ..serializers import HeadingModelSerializer
@@ -21,6 +24,7 @@ def home_view(request):
     
     Get all headings.
     """
+    # sleep(3)
     # user_token: str | None = get_token_from_header(request)
     
     # if not user_token:

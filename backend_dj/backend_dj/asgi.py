@@ -12,8 +12,7 @@ import os
 from django.core.asgi import get_asgi_application
 from channels.routing import ProtocolTypeRouter
 
-import sconfig.config_file
-
+import sconfig.settings
 # os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'backend_dj.settings')
 
 application = ProtocolTypeRouter(
