@@ -27,6 +27,7 @@ urlpatterns = [
             [
                 path("", include("app.urls", namespace="app")),
                 path('pms/', include("pms.urls", namespace="pms")),
+                path('py/', include("python.urls", namespace="python")),
             ]
         )
     ),

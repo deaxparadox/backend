@@ -55,6 +55,9 @@ INSTALLED_APPS = [
     # 
     "heroes.apps.HeroesConfig",
     "pms.apps.PmsConfig",
+] + [
+    # language app
+    "python.apps.PythonConfig",
 ]
 
 MIDDLEWARE = [
