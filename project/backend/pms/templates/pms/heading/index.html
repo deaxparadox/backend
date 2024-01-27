@@ -1,0 +1,56 @@
+{% extends 'pms/base.html' %}
+{% block title %}
+    PMS
+{% endblock title %}
+{% comment %} {% block top %}
+<h1>PMS Page.</h1>
+<ul>
+    <li>
+        <a href="{% url "app:dashboard" %}">Dashboard</a>
+    </li>
+</ul>
+{% endblock top %} {% endcomment %}
+
+{% block center %}
+
+    <div class="section-box">
+        <hr>
+        <div id="buttons">
+            <a type="button" class="btn btn-success btn-lg m-1" href="{% url "pms:create_heading_view" %}">Create Heading</a>
+            <a type="button" class="btn btn-success btn-lg m-1" href="{% url "pms:create_task_view" %}">Create Task</a>
+        </div>
+        <hr>
+    </div>
+
+    <div class="section-box">
+        {% for heading in headings %}
+            <div class="section">
+                <h2 class="text-center">
+                    {{ heading.name }}
+                </h2>
+                <hr>
+                <div id="date">
+                    <div id="start">
+                        <strong><em>start:</em></strong>&ThickSpace; {% if heading.start %}{{ heading.start }}{% else %} <strong>-</strong> {% endif %}
+                    </div>
+                    <div id="end">
+                        <strong><em>end:</em></strong>&ThickSpace; {% if heading.note %}{{ heading.note }}{% else %} <strong>-</strong> {% endif %}
+                    </div>
+                </div>
+
+                
+                <div id="note">
+                    <strong><em>Note: </em></strong>&ThickSpace;{% if heading.note %}{{ heading.note }}{% else %} <strong>-</strong> {% endif %}
+                </div>
+                {% comment %} <hr> {% endcomment %}
+                {% comment %} <hr> {% endcomment %}
+                
+                <div id="buttons">
+                    <a class="btn btn-warning btn-lg m-1" href="{{ heading.get_update_url }}" type="button">Update</a>
+                    <a class="btn btn-danger btn-lg m-1" href="{{ heading.get_detail_url }}" type="button">Details</a>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock center %}
+

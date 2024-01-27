@@ -1,0 +1,27 @@
+{% load static %}
+    
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %}{% endblock title %}
+    </title>
+    <link rel="stylesheet" href="{% static "css/_base.css" %}">
+    {% block css %}{% endblock css %}
+</head>
+<body>
+
+    {% block body %}{% endblock body %}
+
+    <script src="{% static "js/_base.js" %}"></script>
+    <script>
+        console.log("Welcome to backend.");
+    </script>
+    {% block js %}{% endblock js %}
+
+</body>
+</html>

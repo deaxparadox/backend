@@ -1,0 +1,52 @@
+{% extends 'pms/base.html' %}
+{% load crispy_forms_tags %}
+
+{% block title %}Edit heading{% endblock title %}
+{% comment %} {% block top %}
+    
+{% endblock top %} {% endcomment %}
+{% block center %}
+    <div class="section-box">
+        <div class="section-heading">
+            <h1>Heading Edit</h1>
+        </div>
+        <div class="section">
+            <form action="{{ update_url}}" method="POST">
+                {% csrf_token %}
+                {{ form | crispy }}
+
+                
+            <div id="buttons">
+                <input type="submit" class="btn btn-lg btn-warning m-1" value="Update">
+            </div>
+            </form>
+        </div>
+
+    </div>
+
+    {% comment %} <div class="section-box">
+            
+        <div class="section-heading">
+            <h2>Task</h2>
+        </div>
+        {% for task in tasks %}
+            <div class="section">
+                <h3 class="text-center">{{ task.name }}</h3>
+                <hr>
+                <div id="date">
+                    <div id="start">
+                        <strong><em>start:</em></strong>&ThickSpace; {{ task.start }}
+                    </div>
+                    <div id="end">
+                        <strong><em>end:</em></strong>&ThickSpace; {{ task.end }}
+                    </div>
+                </div>
+                <div id="buttons">
+                    <a class="btn btn-warning btn-lg mx-1" href="{{ task.get_absolute_url }}" type="button">Edit</a>
+                    <a class="btn btn-danger btn-lg mx-1" href="{{ task.get_absolute_url }}" type="button">Delete</a>
+                </div>
+                
+            </div>
+        {% endfor %}
+    </div> {% endcomment %}
+{% endblock center %}

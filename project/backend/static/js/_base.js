@@ -1,0 +1,1 @@
+console.log("Base templates, for website dynamic content goes here.")

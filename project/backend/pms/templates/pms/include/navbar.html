@@ -1,0 +1,17 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'pms/css/navbar.css' %}">
+<div id="navbar">
+    <div id="nav-left" class="nav-section">
+        <a href="/" class="nav-item nav-item-site">
+            <h2>
+                /
+            </h2>
+        </a>
+        <a href="{% url "pms:home" %}" class="nav-item nav-item-other pms">PMS</a>
+    </div>
+    <div id="nav-right" class="nav-section auth">
+        <a href="#" class="nav-item nav-item-other">
+            Login
+        </a>
+    </div>
+</div>
