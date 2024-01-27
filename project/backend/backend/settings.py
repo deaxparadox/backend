@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 
 from pathlib import Path
 import os
+from celery.schedules import crontab
+from datetime import timedelta
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -30,7 +32,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY", 'django-insecure-b!u%n31g0mc%n7s!r%&kp
 DEBUG = int(os.environ.get("DEBUG", default=0))
 
 # ALLOWED_HOSTS = []
-ALLOWED_HOSTS = os.environ.get("DJANGO_ALLOWED_HOSTS").split(" ")
+ALLOWED_HOSTS = os.environ.get("DJANGO_ALLOWED_HOSTS", "localhost 127.0.0.1 ::1").split(" ")
 
 
 
@@ -46,6 +48,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 ] + [
     "rest_framework",
+    "django_celery_beat",
 ] + [
     # apps
     "pms.apps.PmsConfig",
@@ -146,3 +149,13 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CELERY_BROKER_URL = os.environ.get("CELERY_BROKER", "redis://redis:6379/0")
 CELERY_RESULT_BACKEND = os.environ.get("CELERY_BROKER", "redis://redis:6379/0")
+CELERY_BEAT_SCHEDULE = {
+    "sample_task": {
+        "task": "backend.tasks.sample_task",
+        "schedule": crontab(minute="*/1"),
+    },
+    "just_printing": {
+        "task": "backend.tasks.just_print",
+        "schedule": timedelta(seconds=1),
+    },
+}

@@ -423,3 +423,1429 @@ you should set broker_connection_retry_on_startup to True.
 [2024-01-28 00:14:37,778: INFO/ForkPoolWorker-3] Task maths.tasks.task_sum[f0f6f091-0583-46d6-a3a4-6d8e61b4b2b2] succeeded in 1.00185542597319s: 12
 [2024-01-28 00:14:37,892: INFO/ForkPoolWorker-2] Task maths.tasks.task_sum[bf7c52c8-d0f6-488e-a46f-8627545e3663] succeeded in 1.0013154420012143s: 12
 [2024-01-28 00:14:37,918: INFO/ForkPoolWorker-4] Task maths.tasks.task_sum[3df0e88b-87b2-470c-b81f-860dc0af9c1a] succeeded in 1.0015528530057054s: 12
+[2024-01-28 02:09:10,234: WARNING/MainProcess] /usr/local/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-01-28 02:09:10,242: INFO/MainProcess] Connected to redis://redis:6379/0
+[2024-01-28 02:09:10,244: WARNING/MainProcess] /usr/local/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-01-28 02:09:10,246: INFO/MainProcess] mingle: searching for neighbors
+[2024-01-28 02:09:11,256: INFO/MainProcess] mingle: all alone
+[2024-01-28 02:09:11,276: INFO/MainProcess] celery@e91e60a837f1 ready.
+[2024-01-28 02:09:14,432: INFO/MainProcess] Events of group {task} enabled by remote.
+[2024-01-28 02:10:28,439: INFO/MainProcess] Task maths.tasks.task_sum[0b1e5910-6ee8-4937-a4b8-c890e0982b35] received
+[2024-01-28 02:10:29,460: INFO/ForkPoolWorker-1] Task maths.tasks.task_sum[0b1e5910-6ee8-4937-a4b8-c890e0982b35] succeeded in 1.0183899299881887s: 12
+[2024-01-28 02:11:48,702: INFO/MainProcess] Task maths.tasks.task_sum[5e621c00-3b22-45bf-b629-f43b6db7cc16] received
+[2024-01-28 02:11:49,706: INFO/ForkPoolWorker-1] Task maths.tasks.task_sum[5e621c00-3b22-45bf-b629-f43b6db7cc16] succeeded in 1.0020302410121076s: 101
+[2024-01-28 02:14:31,280: WARNING/MainProcess] /usr/local/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-01-28 02:14:31,286: INFO/MainProcess] Connected to redis://redis:6379/0
+[2024-01-28 02:14:31,288: WARNING/MainProcess] /usr/local/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-01-28 02:14:31,290: INFO/MainProcess] mingle: searching for neighbors
+[2024-01-28 02:14:32,299: INFO/MainProcess] mingle: all alone
+[2024-01-28 02:14:32,314: INFO/MainProcess] celery@84604942bb71 ready.
+[2024-01-28 02:14:35,962: INFO/MainProcess] Events of group {task} enabled by remote.
+[2024-01-28 02:14:52,653: INFO/MainProcess] Task maths.tasks.task_sum[882e4e63-8c74-4fb5-a5e6-dd96dc9a995c] received
+[2024-01-28 02:14:53,658: INFO/ForkPoolWorker-1] Task maths.tasks.task_sum[882e4e63-8c74-4fb5-a5e6-dd96dc9a995c] succeeded in 1.0033090359938797s: 101
+[2024-01-28 02:15:13,109: INFO/MainProcess] Task maths.tasks.task_sum[1ae77e50-6f5d-48f4-8eae-2e78f8d4592f] received
+[2024-01-28 02:15:14,121: INFO/ForkPoolWorker-1] Task maths.tasks.task_sum[1ae77e50-6f5d-48f4-8eae-2e78f8d4592f] succeeded in 1.005634519009618s: 12
+[2024-01-28 02:30:56,337: WARNING/MainProcess] /usr/local/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-01-28 02:30:56,346: INFO/MainProcess] Connected to redis://redis:6379/0
+[2024-01-28 02:30:56,347: WARNING/MainProcess] /usr/local/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-01-28 02:30:56,351: INFO/MainProcess] mingle: searching for neighbors
+[2024-01-28 02:30:57,360: INFO/MainProcess] mingle: all alone
+[2024-01-28 02:30:57,373: INFO/MainProcess] celery@76a1d1192f38 ready.
+[2024-01-28 02:31:01,112: INFO/MainProcess] Events of group {task} enabled by remote.
+[2024-01-28 02:40:38,246: WARNING/MainProcess] /usr/local/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-01-28 02:40:38,252: INFO/MainProcess] Connected to redis://redis:6379/0
+[2024-01-28 02:40:38,254: WARNING/MainProcess] /usr/local/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-01-28 02:40:38,256: INFO/MainProcess] mingle: searching for neighbors
+[2024-01-28 02:40:39,266: INFO/MainProcess] mingle: all alone
+[2024-01-28 02:40:39,280: INFO/MainProcess] celery@66b0e6300ac9 ready.
+[2024-01-28 02:40:42,725: INFO/MainProcess] Events of group {task} enabled by remote.
+[2024-01-28 02:43:48,984: WARNING/MainProcess] /usr/local/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-01-28 02:43:48,990: INFO/MainProcess] Connected to redis://redis:6379/0
+[2024-01-28 02:43:48,991: WARNING/MainProcess] /usr/local/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-01-28 02:43:48,993: INFO/MainProcess] mingle: searching for neighbors
+[2024-01-28 02:43:50,002: INFO/MainProcess] mingle: all alone
+[2024-01-28 02:43:50,019: INFO/MainProcess] celery@fdce8fa6d75e ready.
+[2024-01-28 02:43:53,599: INFO/MainProcess] Events of group {task} enabled by remote.
+[2024-01-28 02:52:45,541: WARNING/MainProcess] /usr/local/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-01-28 02:52:45,547: INFO/MainProcess] Connected to redis://redis:6379/0
+[2024-01-28 02:52:45,548: WARNING/MainProcess] /usr/local/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-01-28 02:52:45,551: INFO/MainProcess] mingle: searching for neighbors
+[2024-01-28 02:52:46,560: INFO/MainProcess] mingle: all alone
+[2024-01-28 02:52:46,574: INFO/MainProcess] celery@78bd971de628 ready.
+[2024-01-28 02:52:50,073: INFO/MainProcess] Events of group {task} enabled by remote.
+[2024-01-28 02:53:25,320: WARNING/MainProcess] /usr/local/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-01-28 02:53:25,327: INFO/MainProcess] Connected to redis://redis:6379/0
+[2024-01-28 02:53:25,329: WARNING/MainProcess] /usr/local/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-01-28 02:53:25,331: INFO/MainProcess] mingle: searching for neighbors
+[2024-01-28 02:53:26,342: INFO/MainProcess] mingle: all alone
+[2024-01-28 02:53:26,356: INFO/MainProcess] celery@995ad0e9d3ef ready.
+[2024-01-28 02:53:29,926: INFO/MainProcess] Events of group {task} enabled by remote.
+[2024-01-28 02:54:00,010: ERROR/MainProcess] Received unregistered task of type 'backend.tasks.sample_task'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'backend.tasks.sample_task', 'id': 'bc8369c9-dccb-463e-85a2-2058bf02ad39', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': 'bc8369c9-dccb-463e-85a2-2058bf02ad39', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen1@144c43379355', 'ignore_result': False, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 658, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'backend.tasks.sample_task'
+[2024-01-28 02:55:00,007: ERROR/MainProcess] Received unregistered task of type 'backend.tasks.sample_task'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'backend.tasks.sample_task', 'id': '53b1c314-7a8e-4a4d-b89c-dfe32dc0ff84', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': '53b1c314-7a8e-4a4d-b89c-dfe32dc0ff84', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen1@144c43379355', 'ignore_result': False, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 658, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'backend.tasks.sample_task'
+[2024-01-28 02:56:00,021: ERROR/MainProcess] Received unregistered task of type 'backend.tasks.sample_task'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'backend.tasks.sample_task', 'id': '0a8e2d74-691f-46e3-8fc2-4df1142cee1a', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': '0a8e2d74-691f-46e3-8fc2-4df1142cee1a', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen1@144c43379355', 'ignore_result': False, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 658, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'backend.tasks.sample_task'
+[2024-01-28 02:57:00,016: ERROR/MainProcess] Received unregistered task of type 'backend.tasks.sample_task'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'backend.tasks.sample_task', 'id': '39a45ca7-4b01-43cf-ae07-02166a4c0dba', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': '39a45ca7-4b01-43cf-ae07-02166a4c0dba', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen1@144c43379355', 'ignore_result': False, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 658, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'backend.tasks.sample_task'
+[2024-01-28 02:58:00,002: ERROR/MainProcess] Received unregistered task of type 'backend.tasks.sample_task'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'backend.tasks.sample_task', 'id': '257c86a5-1622-4068-b40a-afb83506a760', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': '257c86a5-1622-4068-b40a-afb83506a760', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen1@144c43379355', 'ignore_result': False, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 658, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'backend.tasks.sample_task'
+[2024-01-28 02:59:00,018: ERROR/MainProcess] Received unregistered task of type 'backend.tasks.sample_task'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'backend.tasks.sample_task', 'id': '726d2c5f-23ce-4a7f-91af-bd17eb8aee68', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': '726d2c5f-23ce-4a7f-91af-bd17eb8aee68', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen1@144c43379355', 'ignore_result': False, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 658, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'backend.tasks.sample_task'
+[2024-01-28 03:00:00,007: ERROR/MainProcess] Received unregistered task of type 'backend.tasks.sample_task'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'backend.tasks.sample_task', 'id': 'f6af663f-1590-4435-864d-75c3d5bc4334', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': 'f6af663f-1590-4435-864d-75c3d5bc4334', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen1@144c43379355', 'ignore_result': False, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 658, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'backend.tasks.sample_task'
+[2024-01-28 03:01:00,018: ERROR/MainProcess] Received unregistered task of type 'backend.tasks.sample_task'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'backend.tasks.sample_task', 'id': '31c01b23-4d2f-4df5-9555-a68136db2ac2', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': '31c01b23-4d2f-4df5-9555-a68136db2ac2', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen1@144c43379355', 'ignore_result': False, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 658, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'backend.tasks.sample_task'
+[2024-01-28 03:02:00,017: ERROR/MainProcess] Received unregistered task of type 'backend.tasks.sample_task'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'backend.tasks.sample_task', 'id': 'c76bf0e8-8bf1-44a8-9893-6ae3d1eefc74', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': 'c76bf0e8-8bf1-44a8-9893-6ae3d1eefc74', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen1@144c43379355', 'ignore_result': False, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 658, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'backend.tasks.sample_task'
+[2024-01-28 03:03:00,016: ERROR/MainProcess] Received unregistered task of type 'backend.tasks.sample_task'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'backend.tasks.sample_task', 'id': 'ae610a07-4414-48f0-9452-c886400537c3', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': 'ae610a07-4414-48f0-9452-c886400537c3', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen1@144c43379355', 'ignore_result': False, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 658, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'backend.tasks.sample_task'
+[2024-01-28 03:04:00,027: ERROR/MainProcess] Received unregistered task of type 'backend.tasks.sample_task'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'backend.tasks.sample_task', 'id': '6d2fc48c-062a-4513-8156-dafd67935507', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': '6d2fc48c-062a-4513-8156-dafd67935507', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen1@144c43379355', 'ignore_result': False, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 658, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'backend.tasks.sample_task'
+[2024-01-28 03:05:00,017: ERROR/MainProcess] Received unregistered task of type 'backend.tasks.sample_task'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'backend.tasks.sample_task', 'id': '8e72bb82-35a8-4023-9462-470561ab2521', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': '8e72bb82-35a8-4023-9462-470561ab2521', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen1@144c43379355', 'ignore_result': False, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 658, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'backend.tasks.sample_task'
+[2024-01-28 03:06:00,045: ERROR/MainProcess] Received unregistered task of type 'backend.tasks.sample_task'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'backend.tasks.sample_task', 'id': 'f019ab41-406b-45ce-ab97-b50d21a4f20d', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': 'f019ab41-406b-45ce-ab97-b50d21a4f20d', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen1@144c43379355', 'ignore_result': False, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 658, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'backend.tasks.sample_task'
+[2024-01-28 03:07:14,168: WARNING/MainProcess] /usr/local/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-01-28 03:07:14,176: INFO/MainProcess] Connected to redis://redis:6379/0
+[2024-01-28 03:07:14,178: WARNING/MainProcess] /usr/local/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-01-28 03:07:14,181: INFO/MainProcess] mingle: searching for neighbors
+[2024-01-28 03:07:15,192: INFO/MainProcess] mingle: all alone
+[2024-01-28 03:07:15,208: INFO/MainProcess] celery@b6eb8b4b8547 ready.
+[2024-01-28 03:07:15,620: ERROR/MainProcess] Received unregistered task of type 'backend.tasks.sample_task'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'backend.tasks.sample_task', 'id': 'ab1a4a9e-79a4-4f31-bc91-f2a0a50116b8', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': 'ab1a4a9e-79a4-4f31-bc91-f2a0a50116b8', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen1@4a61d860fb60', 'ignore_result': False, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 658, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'backend.tasks.sample_task'
+[2024-01-28 03:07:18,641: INFO/MainProcess] Events of group {task} enabled by remote.
+[2024-01-28 03:08:00,023: ERROR/MainProcess] Received unregistered task of type 'backend.tasks.sample_task'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'backend.tasks.sample_task', 'id': '0e286c85-fadd-4c29-9a2a-d5d2985bcc3c', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': '0e286c85-fadd-4c29-9a2a-d5d2985bcc3c', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen1@4a61d860fb60', 'ignore_result': False, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 658, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'backend.tasks.sample_task'
+[2024-01-28 03:09:00,003: ERROR/MainProcess] Received unregistered task of type 'backend.tasks.sample_task'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'backend.tasks.sample_task', 'id': '34d15c08-c899-4a71-ab52-6a9769ea09a7', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': '34d15c08-c899-4a71-ab52-6a9769ea09a7', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen1@4a61d860fb60', 'ignore_result': False, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 658, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'backend.tasks.sample_task'
+[2024-01-28 03:18:10,603: WARNING/MainProcess] /usr/local/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-01-28 03:18:10,620: INFO/MainProcess] Connected to redis://redis:6379/0
+[2024-01-28 03:18:10,625: WARNING/MainProcess] /usr/local/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-01-28 03:18:10,629: INFO/MainProcess] mingle: searching for neighbors
+[2024-01-28 03:18:11,645: INFO/MainProcess] mingle: all alone
+[2024-01-28 03:18:11,661: INFO/MainProcess] celery@96e7a41f98d4 ready.
+[2024-01-28 03:18:12,091: ERROR/MainProcess] Received unregistered task of type 'backend.tasks.sample_task'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'backend.tasks.sample_task', 'id': 'fbfb47fc-4e00-47d7-b69e-1f4275be4231', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': 'fbfb47fc-4e00-47d7-b69e-1f4275be4231', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen1@ce27befd6d0d', 'ignore_result': False, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 658, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'backend.tasks.sample_task'
+[2024-01-28 03:18:12,097: ERROR/MainProcess] Received unregistered task of type 'backend.tasks.just_print'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'backend.tasks.just_print', 'id': '167e9f57-33e0-4923-9f0b-69d21111d164', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': '167e9f57-33e0-4923-9f0b-69d21111d164', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen1@ce27befd6d0d', 'ignore_result': False, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 658, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'backend.tasks.just_print'
+[2024-01-28 03:18:12,665: ERROR/MainProcess] Received unregistered task of type 'backend.tasks.just_print'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'backend.tasks.just_print', 'id': '728eeb8a-f555-42dd-a364-a7b8916cfa0f', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': '728eeb8a-f555-42dd-a364-a7b8916cfa0f', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen1@ce27befd6d0d', 'ignore_result': False, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 658, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'backend.tasks.just_print'
+[2024-01-28 03:18:13,665: ERROR/MainProcess] Received unregistered task of type 'backend.tasks.just_print'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'backend.tasks.just_print', 'id': 'ec036d45-aa1f-479b-9f4a-091d70d3a196', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': 'ec036d45-aa1f-479b-9f4a-091d70d3a196', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen1@ce27befd6d0d', 'ignore_result': False, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 658, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'backend.tasks.just_print'
+[2024-01-28 03:18:14,665: ERROR/MainProcess] Received unregistered task of type 'backend.tasks.just_print'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'backend.tasks.just_print', 'id': '513f90ca-b49f-4e15-8650-eb1da53254db', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': '513f90ca-b49f-4e15-8650-eb1da53254db', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen1@ce27befd6d0d', 'ignore_result': False, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 658, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'backend.tasks.just_print'
+[2024-01-28 03:18:14,992: INFO/MainProcess] Events of group {task} enabled by remote.
+[2024-01-28 03:18:15,678: ERROR/MainProcess] Received unregistered task of type 'backend.tasks.just_print'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'backend.tasks.just_print', 'id': 'ff6edfd8-cbfb-4731-8f81-24db53662627', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': 'ff6edfd8-cbfb-4731-8f81-24db53662627', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen1@ce27befd6d0d', 'ignore_result': False, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 658, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'backend.tasks.just_print'
+[2024-01-28 03:18:16,677: ERROR/MainProcess] Received unregistered task of type 'backend.tasks.just_print'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'backend.tasks.just_print', 'id': '41c344bc-faf1-4f1d-aadf-18d2baafe09b', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': '41c344bc-faf1-4f1d-aadf-18d2baafe09b', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen1@ce27befd6d0d', 'ignore_result': False, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 658, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'backend.tasks.just_print'
+[2024-01-28 03:18:17,680: ERROR/MainProcess] Received unregistered task of type 'backend.tasks.just_print'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'backend.tasks.just_print', 'id': '9c7ba798-b912-430e-99a8-8f8e8d3aaae4', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': '9c7ba798-b912-430e-99a8-8f8e8d3aaae4', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen1@ce27befd6d0d', 'ignore_result': False, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 658, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'backend.tasks.just_print'
+[2024-01-28 03:18:18,677: ERROR/MainProcess] Received unregistered task of type 'backend.tasks.just_print'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'backend.tasks.just_print', 'id': 'f9d2f3df-1310-43a9-a2af-b5bbeb910004', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': 'f9d2f3df-1310-43a9-a2af-b5bbeb910004', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen1@ce27befd6d0d', 'ignore_result': False, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 658, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'backend.tasks.just_print'
+[2024-01-28 03:18:19,685: ERROR/MainProcess] Received unregistered task of type 'backend.tasks.just_print'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'backend.tasks.just_print', 'id': '8b206399-61e2-42a7-8315-bed1affb43be', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': '8b206399-61e2-42a7-8315-bed1affb43be', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen1@ce27befd6d0d', 'ignore_result': False, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 658, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'backend.tasks.just_print'
+[2024-01-28 03:18:20,669: ERROR/MainProcess] Received unregistered task of type 'backend.tasks.just_print'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'backend.tasks.just_print', 'id': 'acbd31cf-3f75-41e2-9265-3ff717be4e27', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': 'acbd31cf-3f75-41e2-9265-3ff717be4e27', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen1@ce27befd6d0d', 'ignore_result': False, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 658, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'backend.tasks.just_print'
+[2024-01-28 03:18:21,673: ERROR/MainProcess] Received unregistered task of type 'backend.tasks.just_print'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'backend.tasks.just_print', 'id': 'e855f088-a321-4c10-b556-8a472ed851f7', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': 'e855f088-a321-4c10-b556-8a472ed851f7', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen1@ce27befd6d0d', 'ignore_result': False, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 658, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'backend.tasks.just_print'
+[2024-01-28 03:18:22,679: ERROR/MainProcess] Received unregistered task of type 'backend.tasks.just_print'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'backend.tasks.just_print', 'id': 'b6d9e4ad-2533-4611-a55e-22bc931f0975', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': 'b6d9e4ad-2533-4611-a55e-22bc931f0975', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen1@ce27befd6d0d', 'ignore_result': False, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 658, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'backend.tasks.just_print'
+[2024-01-28 03:18:23,669: ERROR/MainProcess] Received unregistered task of type 'backend.tasks.just_print'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'backend.tasks.just_print', 'id': '0dc2c27e-b916-4b0e-8dbd-28fef286f593', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': '0dc2c27e-b916-4b0e-8dbd-28fef286f593', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen1@ce27befd6d0d', 'ignore_result': False, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 658, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'backend.tasks.just_print'
+[2024-01-28 03:18:24,669: ERROR/MainProcess] Received unregistered task of type 'backend.tasks.just_print'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'backend.tasks.just_print', 'id': 'fb6f722e-7028-4949-9197-31f0133e46ee', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': 'fb6f722e-7028-4949-9197-31f0133e46ee', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen1@ce27befd6d0d', 'ignore_result': False, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 658, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'backend.tasks.just_print'
+[2024-01-28 03:18:25,679: ERROR/MainProcess] Received unregistered task of type 'backend.tasks.just_print'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'backend.tasks.just_print', 'id': '26b062fb-1861-445e-8bf5-c3f65569b746', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': '26b062fb-1861-445e-8bf5-c3f65569b746', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen1@ce27befd6d0d', 'ignore_result': False, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 658, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'backend.tasks.just_print'
+[2024-01-28 03:18:26,670: ERROR/MainProcess] Received unregistered task of type 'backend.tasks.just_print'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'backend.tasks.just_print', 'id': 'c2d06fce-ac14-4ab0-bbbd-a39b5533f914', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': 'c2d06fce-ac14-4ab0-bbbd-a39b5533f914', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen1@ce27befd6d0d', 'ignore_result': False, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 658, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'backend.tasks.just_print'
+[2024-01-28 03:18:27,682: ERROR/MainProcess] Received unregistered task of type 'backend.tasks.just_print'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'backend.tasks.just_print', 'id': '5503a7fb-54e3-4522-b056-2ebeae6994ec', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': '5503a7fb-54e3-4522-b056-2ebeae6994ec', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen1@ce27befd6d0d', 'ignore_result': False, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 658, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'backend.tasks.just_print'
+[2024-01-28 03:18:28,670: ERROR/MainProcess] Received unregistered task of type 'backend.tasks.just_print'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'backend.tasks.just_print', 'id': '856f0922-e79a-4ce3-90af-9137ee7c89b7', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': '856f0922-e79a-4ce3-90af-9137ee7c89b7', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen1@ce27befd6d0d', 'ignore_result': False, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 658, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'backend.tasks.just_print'
+[2024-01-28 03:18:29,670: ERROR/MainProcess] Received unregistered task of type 'backend.tasks.just_print'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'backend.tasks.just_print', 'id': 'abc9f0ae-0397-4404-9782-6c0b051c46d3', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': 'abc9f0ae-0397-4404-9782-6c0b051c46d3', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen1@ce27befd6d0d', 'ignore_result': False, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 658, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'backend.tasks.just_print'
+[2024-01-28 03:18:30,680: ERROR/MainProcess] Received unregistered task of type 'backend.tasks.just_print'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'backend.tasks.just_print', 'id': '614bebb1-ea3f-43f1-ba5c-452bc6cec382', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': '614bebb1-ea3f-43f1-ba5c-452bc6cec382', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen1@ce27befd6d0d', 'ignore_result': False, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 658, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'backend.tasks.just_print'
+[2024-01-28 03:18:31,683: ERROR/MainProcess] Received unregistered task of type 'backend.tasks.just_print'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'backend.tasks.just_print', 'id': 'bc2d5fbe-7981-4dbe-89a9-59130c54c47e', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': 'bc2d5fbe-7981-4dbe-89a9-59130c54c47e', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen1@ce27befd6d0d', 'ignore_result': False, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 658, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'backend.tasks.just_print'
+[2024-01-28 03:18:32,683: ERROR/MainProcess] Received unregistered task of type 'backend.tasks.just_print'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'backend.tasks.just_print', 'id': 'e0ad4a75-704f-474e-af34-549d4f74498c', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': 'e0ad4a75-704f-474e-af34-549d4f74498c', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen1@ce27befd6d0d', 'ignore_result': False, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 658, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'backend.tasks.just_print'
+[2024-01-28 03:18:33,683: ERROR/MainProcess] Received unregistered task of type 'backend.tasks.just_print'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'backend.tasks.just_print', 'id': '219eb192-9694-4daf-9021-b62ec32a9413', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': '219eb192-9694-4daf-9021-b62ec32a9413', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen1@ce27befd6d0d', 'ignore_result': False, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 658, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'backend.tasks.just_print'
+[2024-01-28 03:18:34,685: ERROR/MainProcess] Received unregistered task of type 'backend.tasks.just_print'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'backend.tasks.just_print', 'id': '12fd8622-13de-417e-87fe-051cd6f25c6c', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': '12fd8622-13de-417e-87fe-051cd6f25c6c', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen1@ce27befd6d0d', 'ignore_result': False, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 658, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'backend.tasks.just_print'
+[2024-01-28 03:18:35,685: ERROR/MainProcess] Received unregistered task of type 'backend.tasks.just_print'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'backend.tasks.just_print', 'id': '5285974d-9497-4a33-9fe4-764a799a2f80', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': '5285974d-9497-4a33-9fe4-764a799a2f80', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen1@ce27befd6d0d', 'ignore_result': False, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 658, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'backend.tasks.just_print'
+[2024-01-28 03:18:36,684: ERROR/MainProcess] Received unregistered task of type 'backend.tasks.just_print'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'backend.tasks.just_print', 'id': '429292c6-5619-4080-ac94-899a31c44059', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': '429292c6-5619-4080-ac94-899a31c44059', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen1@ce27befd6d0d', 'ignore_result': False, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 658, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'backend.tasks.just_print'
+[2024-01-28 03:18:37,684: ERROR/MainProcess] Received unregistered task of type 'backend.tasks.just_print'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'backend.tasks.just_print', 'id': '0878a80e-d3ca-49ce-aa46-0ae69f6764a9', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': '0878a80e-d3ca-49ce-aa46-0ae69f6764a9', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen1@ce27befd6d0d', 'ignore_result': False, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 658, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'backend.tasks.just_print'
+[2024-01-28 03:18:38,686: ERROR/MainProcess] Received unregistered task of type 'backend.tasks.just_print'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'backend.tasks.just_print', 'id': '2ae360a2-3973-467d-ad87-5da6e0158d17', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': '2ae360a2-3973-467d-ad87-5da6e0158d17', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen1@ce27befd6d0d', 'ignore_result': False, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 658, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'backend.tasks.just_print'
+[2024-01-28 03:18:39,679: ERROR/MainProcess] Received unregistered task of type 'backend.tasks.just_print'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'backend.tasks.just_print', 'id': '7d2c2450-d00f-44be-af15-3b17a6e38e93', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': '7d2c2450-d00f-44be-af15-3b17a6e38e93', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen1@ce27befd6d0d', 'ignore_result': False, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 658, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'backend.tasks.just_print'
+[2024-01-28 03:18:40,678: ERROR/MainProcess] Received unregistered task of type 'backend.tasks.just_print'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'backend.tasks.just_print', 'id': 'af24de52-8a27-4256-80d0-b997fd81d36e', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': 'af24de52-8a27-4256-80d0-b997fd81d36e', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen1@ce27befd6d0d', 'ignore_result': False, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 658, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'backend.tasks.just_print'
+[2024-01-28 03:18:41,686: ERROR/MainProcess] Received unregistered task of type 'backend.tasks.just_print'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'backend.tasks.just_print', 'id': '9bbc70f5-b798-4f82-baf9-31e2f095612b', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': '9bbc70f5-b798-4f82-baf9-31e2f095612b', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen1@ce27befd6d0d', 'ignore_result': False, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 658, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'backend.tasks.just_print'
+[2024-01-28 03:18:42,686: ERROR/MainProcess] Received unregistered task of type 'backend.tasks.just_print'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'backend.tasks.just_print', 'id': 'ef9ffc3f-928d-49eb-a852-d0ffa2c87a27', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': 'ef9ffc3f-928d-49eb-a852-d0ffa2c87a27', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen1@ce27befd6d0d', 'ignore_result': False, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 658, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'backend.tasks.just_print'
+[2024-01-28 03:18:43,687: ERROR/MainProcess] Received unregistered task of type 'backend.tasks.just_print'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'backend.tasks.just_print', 'id': '82238dc7-1637-4b25-8f48-63b9ac4cb0fd', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': '82238dc7-1637-4b25-8f48-63b9ac4cb0fd', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen1@ce27befd6d0d', 'ignore_result': False, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 658, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'backend.tasks.just_print'
+[2024-01-28 03:18:44,686: ERROR/MainProcess] Received unregistered task of type 'backend.tasks.just_print'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'backend.tasks.just_print', 'id': 'ca423b10-3297-4f78-9d1c-278830a9181f', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': 'ca423b10-3297-4f78-9d1c-278830a9181f', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen1@ce27befd6d0d', 'ignore_result': False, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 658, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'backend.tasks.just_print'
+[2024-01-28 03:18:45,677: ERROR/MainProcess] Received unregistered task of type 'backend.tasks.just_print'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'backend.tasks.just_print', 'id': '866d06c8-f1d5-4c67-82ed-217abaadd798', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': '866d06c8-f1d5-4c67-82ed-217abaadd798', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen1@ce27befd6d0d', 'ignore_result': False, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 658, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'backend.tasks.just_print'
+[2024-01-28 03:18:46,687: ERROR/MainProcess] Received unregistered task of type 'backend.tasks.just_print'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'backend.tasks.just_print', 'id': 'a6bbc041-4035-4fa7-8cf0-d5549e15daef', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': 'a6bbc041-4035-4fa7-8cf0-d5549e15daef', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen1@ce27befd6d0d', 'ignore_result': False, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 658, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'backend.tasks.just_print'
+[2024-01-28 03:18:47,687: ERROR/MainProcess] Received unregistered task of type 'backend.tasks.just_print'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'backend.tasks.just_print', 'id': 'b7cd348c-248c-45fe-9ad0-3b59b91297ae', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': 'b7cd348c-248c-45fe-9ad0-3b59b91297ae', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen1@ce27befd6d0d', 'ignore_result': False, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 658, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'backend.tasks.just_print'
+[2024-01-28 03:18:48,700: ERROR/MainProcess] Received unregistered task of type 'backend.tasks.just_print'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'backend.tasks.just_print', 'id': 'a817e722-6f83-4dcf-8702-26c50753b93f', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': 'a817e722-6f83-4dcf-8702-26c50753b93f', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen1@ce27befd6d0d', 'ignore_result': False, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 658, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'backend.tasks.just_print'

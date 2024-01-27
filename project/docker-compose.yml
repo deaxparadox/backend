@@ -39,6 +39,19 @@ services:
       - redis
       # - db
     container_name: backend-django-celery
+
+  celery-beat:
+    build: ./backend
+    command: celery -A backend beat --loglevel=INFO
+    volumes:
+      - ./backend/:/usr/src/app/
+    env_file:
+      - ./.env.dev
+    depends_on:
+      - redis
+      - celery
+    container_name: backend-django-celery-beat
+
     
   redis:
     image: redis:5
@@ -58,3 +71,4 @@ services:
       - redis
       - celery
     container_name: backend-django-flower
+    

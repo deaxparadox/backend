@@ -11,7 +11,7 @@ class Status(enum.Enum):
 
 class Client:
     _url_submit = "http://localhost:9000/maths/submit/"
-    _url_result = "http://localhost:9000/maths/result/{}/"
+    _url_result = "http://localhost:9000/api/result/{}/"
     _task_id: str | None = None
 
     def __init__(self, *args):

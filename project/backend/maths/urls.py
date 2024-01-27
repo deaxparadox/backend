@@ -6,5 +6,5 @@ app_name = "maths"
 
 urlpatterns = [
     path("submit/", views.submit, name="submit"),
-    path("result/<str:task_id>/", views.result, name="result"),
+    # path("result/<str:task_id>/", views.result, name="result"),
 ]
