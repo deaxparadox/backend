@@ -3,10 +3,14 @@ from django import forms
 from pms.models.task import Task
 from pms.models.heading import Heading
 
-class TaskModelForm(forms.ModelForm):
+def get_heading_names() -> list[tuple]:
     heading_names = [('-1', "None")]
     for h in Heading.objects.all():
         heading_names.append((str(h.id), h.name))
+    return heading_names
+
+class TaskModelForm(forms.ModelForm):
+    heading_names: list[tuple] = get_heading_names()
 
     start = forms.DateField(
         widget=forms.DateInput(attrs={"type": "date"}),

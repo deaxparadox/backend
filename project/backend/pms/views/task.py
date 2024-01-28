@@ -16,6 +16,7 @@ def create_task_view(request):
         post_form = TaskModelForm(request.POST)
         if post_form.is_valid():
             try:
+                # save the form
                 task: Task = post_form.save()
                 heading_id = int(post_form.cleaned_data['select_heading'])
                 if heading_id > 0:

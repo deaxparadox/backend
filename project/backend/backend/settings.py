@@ -40,6 +40,9 @@ ALLOWED_HOSTS = os.environ.get("DJANGO_ALLOWED_HOSTS", "localhost 127.0.0.1 ::1"
 # Application definition
 
 INSTALLED_APPS = [
+    "daphne",
+    "channels",
+] + [
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -50,7 +53,10 @@ INSTALLED_APPS = [
     "rest_framework",
     "django_celery_beat",
 ] + [
-    # apps
+    "crispy_forms",
+    "crispy_bootstrap5"
+] + [
+    "app.apps.AppConfig",
     "pms.apps.PmsConfig",
     "maths.apps.MathsConfig",
 ]
@@ -86,7 +92,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'backend.wsgi.application'
-
+ASGI_APPLICATION = "backend.asgi.application"
 
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
@@ -146,7 +152,36 @@ STATICFILES_DIRS = [
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
+# REST FRAMEWORK CONFIGURATIONS
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:4200",
+    "http://127.0.0.1:4200",
+]
 
+CORS_ALLOW_METHODS = (
+    "DELETE",
+    "GET",
+    "OPTIONS",
+    "PATCH",
+    "POST",
+    "PUT",
+)
+
+CORS_ALLOW_HEADERS = (
+    "accept",
+    "authorization",
+    "content-type",
+    "user-agent",
+    "x-csrftoken",
+    "x-requested-with",
+)
+
+# CRISPY_FORMS CONFIGURATIONS
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
+CRISPY_TEMPLATE_PACK = "bootstrap5" 
+
+
+# CELERY CONFIGURATIONS
 CELERY_BROKER_URL = os.environ.get("CELERY_BROKER", "redis://redis:6379/0")
 CELERY_RESULT_BACKEND = os.environ.get("CELERY_BROKER", "redis://redis:6379/0")
 CELERY_BEAT_SCHEDULE = {
@@ -154,8 +189,8 @@ CELERY_BEAT_SCHEDULE = {
         "task": "backend.tasks.sample_task",
         "schedule": crontab(minute="*/1"),
     },
-    "just_printing": {
-        "task": "backend.tasks.just_print",
-        "schedule": timedelta(seconds=1),
-    },
+    # "just_printing": {
+    #     "task": "backend.tasks.just_print",
+    #     "schedule": timedelta(seconds=1),
+    # },
 }

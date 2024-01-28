@@ -2,8 +2,7 @@ from django.shortcuts import render, redirect
 from django.urls import reverse
 from django.contrib import messages
 
-
-
+from asgiref.sync import sync_to_async
 from channels.db import database_sync_to_async
 
 from pms.models.heading import Heading
@@ -12,6 +11,7 @@ from pms.forms.heading import HeadingModelForm
 from pms.forms.task import TaskModelForm
 
 
+@sync_to_async
 def get_all_heading():
     """
     Return queryset, ordering by created date in reverse order.
@@ -22,7 +22,7 @@ async def async_get_all_heading():
     return await database_sync_to_async(get_all_heading)()
 
 async def home_view(request):
-    headings = await async_get_all_heading()
+    headings = await get_all_heading()
     # headings = []
     if len(headings) == 0:
         messages.add_message(request, messages.INFO, "No task created :(")
