@@ -41,6 +41,10 @@ INSTALLED_APPS = [
 ] + [
     "code_gen.apps.CodeGenConfig",
     "todo.apps.TodoConfig",
+    "mathe.apps.MatheConfig",
+    "fb.apps.FbConfig",
+] + [
+    "django_celery_results",
 ]
 
 MIDDLEWARE = [
@@ -138,3 +142,12 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
 ]
+
+
+
+######################################
+#       CELERY CONFIG                #
+######################################
+# CELERY_CACHE_BACKEND = 'django-cache'
+CELERY_BROKER_URL = os.environ.get("CELERY_BROKER", "redis://redis:6379/0")
+CELERY_RESULT_BACKEND = os.environ.get("CELERY_BROKER", "redis://redis:6379/0")
