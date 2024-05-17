@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 ] + [
+    "app.apps.AppConfig",
+] + [
     "code_gen.apps.CodeGenConfig",
     "todo.apps.TodoConfig",
     "mathe.apps.MatheConfig",

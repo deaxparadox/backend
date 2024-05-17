@@ -1,0 +1,23 @@
+{% extends '_base.html' %}
+{% block title %}
+  Backend
+{% endblock %}
+
+{% block app %}
+  <div class="container">
+    <div class="d-flex justify-content-start m-1">
+      <nav aria-label="breadcrumb">
+        <!-- BREADCRUMB -->
+        <ol class="breadcrumb bg-light p-1 px-3">
+          <li class="breadcrumb-item active" aria-current="page">
+            <a href="{% url 'app:index' %}">Backend</a>
+          </li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+
+  <div class="container">
+    <h1>Welcome to Home</h1>
+  </div>
+{% endblock %}
